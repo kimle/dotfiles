@@ -1,0 +1,22 @@
+[Default Applications]
+text/plain=sublime-text.desktop
+image/jpeg=eog.desktop
+image/png=eog.desktop
+x-scheme-handler/http=firefox.desktop
+text/html=firefox.desktop
+text/xml=firefox.desktop
+application/xhtml+xml=firefox.desktop
+application/vnd.mozilla.xul+xml=firefox.desktop
+text/mml=firefox.desktop
+x-scheme-handler/https=firefox.desktop
+
+[Added Associations]
+text/plain=sublime-text.desktop;
+image/jpeg=feh.desktop;eog.desktop;
+image/png=feh.desktop;eog.desktop;
+text/html=firefox.desktop;
+text/xml=firefox.desktop;
+application/xhtml+xml=firefox.desktop;
+application/vnd.mozilla.xul+xml=firefox.desktop;
+text/mml=firefox.desktop;
+x-scheme-handler/https=firefox.desktop;

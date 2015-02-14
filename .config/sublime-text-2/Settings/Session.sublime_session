@@ -1,0 +1,682 @@
+{
+	"folder_history":
+	[
+		"/home/kim/Documents"
+	],
+	"last_window_id": 4,
+	"settings":
+	{
+		"new_window_height": 765.0,
+		"new_window_settings":
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"vol",
+						"vol_ident"
+					],
+					[
+						"iso",
+						"isovoldesc"
+					],
+					[
+						"FIL",
+						"FILENAME"
+					],
+					[
+						"t",
+						"txt"
+					]
+				]
+			},
+			"build_system": "",
+			"command_palette":
+			{
+				"height": 400.0,
+				"selected_items":
+				[
+					[
+						"Package Control: ",
+						"Package Control: Install Package"
+					],
+					[
+						"",
+						"Preferences: Browse Packages"
+					]
+				],
+				"width": 408.0
+			},
+			"console":
+			{
+				"height": 125.0
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/kim/ayylmao.txt",
+				"/home/kim/.config/mpd/mpd.conf",
+				"/home/kim/.weechat/weechat.conf",
+				"/home/kim/.mpdscribble/mpdscribble.conf",
+				"/home/kim/.config/sublime-text-2/Packages/Theme - Soda/Soda Dark.sublime-theme",
+				"/home/kim/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+				"/home/kim/.config/sublime-text-2/Packages/User/Package Control.sublime-settings",
+				"/home/kim/Documents/test.c",
+				"/home/kim/Documents/opsys/18.txt",
+				"/home/kim/Documents/opsys/10.txt",
+				"/home/kim/Documents/opsys/11.txt",
+				"/home/kim/Documents/opsys/12.txt",
+				"/home/kim/Documents/opsys/13.txt",
+				"/home/kim/Documents/opsys/1.txt",
+				"/home/kim/Documents/opsys/2.txt",
+				"/home/kim/Documents/opsys/3.txt",
+				"/home/kim/Documents/opsys/4.txt",
+				"/home/kim/Documents/opsys/5.txt",
+				"/home/kim/Documents/opsys/37.txt",
+				"/home/kim/Documents/opsys/38.txt",
+				"/home/kim/Documents/opsys/20.txt",
+				"/home/kim/Documents/opsys/99.txt",
+				"/home/kim/Documents/opsys/0.txt",
+				"/home/kim/Documents/opsys/results28229648.txt",
+				"/home/kim/Documents/untitled",
+				"/home/kim/.config/sublime-text-2/Packages/Theme - Spacegray/base16-eighties.dark.tmTheme",
+				"/home/kim/.config/sublime-text-2/Packages/Theme - Spacegray/base16-ocean.dark.tmTheme",
+				"/home/kim/.ncmpcpp/config",
+				"/home/kim/.config/fontconfig/fonts.conf",
+				"/home/kim/.Xresources",
+				"/home/kim/.xinitrc",
+				"/home/kim/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+				"/home/kim/Documents/swap.c",
+				"/home/kim/Downloads/builds/ttf-win7-fonts/PKGBUILD"
+			],
+			"find":
+			{
+				"height": 34.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"software",
+					"nicklist",
+					".org",
+					"! vim: set filetype=xdefaults :\n*foreground: #D7D0C7\n*background: #151515\n\n!black\n!*color0:     #AF875F\n!*color8:     #AF875F\n*color0:     #101010\n*color8:     #404040\n!red\n*color1:     #E84F4F\n*color9:     #D23D3D\n!green\n*color2:     #B8D68C\n*color10:    #A0CF5D\n!yellow\n*color3:     #E1AA5D\n*color11:    #F39D21\n!blue\n*color4:     #6095C5\n*color12:    #98CBFE\n!magenta\n*color5:     #9B64FB\n*color13:    #8542FF\n!cyan\n*color6:     #6D878D\n*color14:    #42717B\n!white\n*color7:     #dddddd\n*color15:    #dddddd\n",
+					"nicklist",
+					"browser_playlist_prefix",
+					"lemon",
+					"\"\n"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"incremental_find":
+			{
+				"height": 0.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"replace":
+			{
+				"height": 0.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": true,
+			"show_open_files": true,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 150.0,
+			"status_bar_visible": true
+		},
+		"new_window_width": 1278.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"c",
+						"case"
+					],
+					[
+						"wa",
+						"wallpaper"
+					],
+					[
+						"vol",
+						"vol_ident"
+					],
+					[
+						"iso",
+						"isovoldesc"
+					],
+					[
+						"FIL",
+						"FILENAME"
+					],
+					[
+						"t",
+						"txt"
+					]
+				]
+			},
+			"buffers":
+			[
+				{
+					"file": "/home/kim/.config/awesome/rc.lua",
+					"settings":
+					{
+						"buffer_size": 24622,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/kim/Documents/C practice/switch.c",
+					"settings":
+					{
+						"buffer_size": 604,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/kim/.Xresources",
+					"settings":
+					{
+						"buffer_size": 2187,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/kim/.xinitrc",
+					"settings":
+					{
+						"buffer_size": 845,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/kim/Documents/opsys/file.c",
+					"settings":
+					{
+						"buffer_size": 538,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/kim/Documents/opsys/test.c",
+					"settings":
+					{
+						"buffer_size": 685,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/kim/.ncmpcpp/config",
+					"settings":
+					{
+						"buffer_size": 1701,
+						"line_ending": "Unix"
+					}
+				}
+			],
+			"build_system": "",
+			"command_palette":
+			{
+				"height": 400.0,
+				"selected_items":
+				[
+					[
+						"Package Control: ",
+						"Package Control: Install Package"
+					],
+					[
+						"",
+						"Preferences: Browse Packages"
+					]
+				],
+				"width": 408.0
+			},
+			"console":
+			{
+				"height": 125.0
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/kim/pkglist.txt",
+				"/home/kim/.config/awesome/themes/outputnoise/theme.lua",
+				"/home/kim/Downloads/pipes.sh/pipes.sh",
+				"/home/kim/ayylmao.txt",
+				"/home/kim/Documents/PES/mxwebsrvr.c",
+				"/usr/share/themes/Phosphene-master/gnome-shell/gnome-shell.css",
+				"/usr/share/themes/Phosphene-master/firefox.css",
+				"/home/kim/Documents/mxwebsrvr.c",
+				"/home/kim/.i3/config",
+				"/home/kim/.ncmpcpp/config",
+				"/home/kim/Documents/test.java",
+				"/home/kim/.i3/conkyi3bar",
+				"/home/kim/Documents/swap.c",
+				"/home/kim/.i3/conkyrc",
+				"/home/kim/.i3/Package Control Messages",
+				"/home/kim/.config/mpd/mpd.conf",
+				"/home/kim/bin",
+				"/home/kim/.conkyrc",
+				"/home/kim/.weechat/weechat.conf",
+				"/home/kim/.mpdscribble/mpdscribble.conf",
+				"/home/kim/.config/sublime-text-2/Packages/Theme - Soda/Soda Dark.sublime-theme",
+				"/home/kim/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+				"/home/kim/.config/sublime-text-2/Packages/User/Package Control.sublime-settings",
+				"/home/kim/Documents/test.c",
+				"/home/kim/Documents/opsys/18.txt",
+				"/home/kim/Documents/opsys/10.txt",
+				"/home/kim/Documents/opsys/11.txt",
+				"/home/kim/Documents/opsys/12.txt",
+				"/home/kim/Documents/opsys/13.txt",
+				"/home/kim/Documents/opsys/1.txt",
+				"/home/kim/Documents/opsys/2.txt",
+				"/home/kim/Documents/opsys/3.txt",
+				"/home/kim/Documents/opsys/4.txt",
+				"/home/kim/Documents/opsys/5.txt",
+				"/home/kim/Documents/opsys/37.txt",
+				"/home/kim/Documents/opsys/38.txt",
+				"/home/kim/Documents/opsys/20.txt",
+				"/home/kim/Documents/opsys/99.txt",
+				"/home/kim/Documents/opsys/0.txt",
+				"/home/kim/Documents/opsys/results28229648.txt",
+				"/home/kim/Documents/untitled",
+				"/home/kim/.config/sublime-text-2/Packages/Theme - Spacegray/base16-eighties.dark.tmTheme",
+				"/home/kim/.config/sublime-text-2/Packages/Theme - Spacegray/base16-ocean.dark.tmTheme",
+				"/home/kim/.config/fontconfig/fonts.conf",
+				"/home/kim/.Xresources",
+				"/home/kim/.xinitrc",
+				"/home/kim/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+				"/home/kim/Downloads/builds/ttf-win7-fonts/PKGBUILD"
+			],
+			"find":
+			{
+				"height": 34.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"color0 = #666661\ncolor8 = #7F7F7a",
+					"bat_no",
+					"bat_noti",
+					"notify",
+					"software",
+					"nicklist",
+					".org",
+					"! vim: set filetype=xdefaults :\n*foreground: #D7D0C7\n*background: #151515\n\n!black\n!*color0:     #AF875F\n!*color8:     #AF875F\n*color0:     #101010\n*color8:     #404040\n!red\n*color1:     #E84F4F\n*color9:     #D23D3D\n!green\n*color2:     #B8D68C\n*color10:    #A0CF5D\n!yellow\n*color3:     #E1AA5D\n*color11:    #F39D21\n!blue\n*color4:     #6095C5\n*color12:    #98CBFE\n!magenta\n*color5:     #9B64FB\n*color13:    #8542FF\n!cyan\n*color6:     #6D878D\n*color14:    #42717B\n!white\n*color7:     #dddddd\n*color15:    #dddddd\n",
+					"nicklist",
+					"browser_playlist_prefix",
+					"lemon",
+					"\"\n"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"groups":
+			[
+				{
+					"selected": 1,
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "/home/kim/.config/awesome/rc.lua",
+							"settings":
+							{
+								"buffer_size": 24622,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										4654,
+										4654
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Lua/Lua.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 88.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/home/kim/Documents/C practice/switch.c",
+							"settings":
+							{
+								"buffer_size": 604,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										602,
+										602
+									]
+								],
+								"settings":
+								{
+									"auto_name": "",
+									"syntax": "Packages/C++/C.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "/home/kim/.Xresources",
+							"settings":
+							{
+								"buffer_size": 2187,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1736,
+										1736
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage",
+									"tab_size": 3,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 48.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 3,
+							"file": "/home/kim/.xinitrc",
+							"settings":
+							{
+								"buffer_size": 845,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 4,
+							"file": "/home/kim/Documents/opsys/file.c",
+							"settings":
+							{
+								"buffer_size": 538,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/C++/C.tmLanguage",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 5,
+							"file": "/home/kim/Documents/opsys/test.c",
+							"settings":
+							{
+								"buffer_size": 685,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										18,
+										18
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/C++/C.tmLanguage",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 6,
+							"file": "/home/kim/.ncmpcpp/config",
+							"settings":
+							{
+								"buffer_size": 1701,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										612,
+										612
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 0.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"position": "0,1,0,0,0,0,0,0,0,1280,800",
+			"replace":
+			{
+				"height": 0.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": true,
+			"show_open_files": true,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 150.0,
+			"status_bar_visible": true,
+			"window_id": 2,
+			"workspace_name": ""
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+		]
+	}
+}

@@ -1,0 +1,2371 @@
+2014-12-14 23:06:54	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-14 23:06:54	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-14 23:06:54		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-14 23:07:23		fifo: pipe closed
+2014-12-14 23:20:51	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-14 23:20:51	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-14 23:20:51		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-14 23:21:52		fifo: pipe closed
+2014-12-14 23:21:54	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-14 23:21:54	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-14 23:21:54		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-14 23:22:10		fifo: pipe closed
+2014-12-14 23:22:52	 !!! 	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-14 23:22:52	 !!! 	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-14 23:22:52		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-14 23:23:00	 !!! 	irc: command "nick" must be executed on irc buffer (server or channel)
+2014-12-14 23:23:36	 !!! 	Error with command "/nick" (help on command: /help nick)
+2014-12-14 23:23:39		[irc]  /nick  [-all] <nick>
+2014-12-14 23:23:39		change current nick
+2014-12-14 23:23:39		-all: set new nick for all connected servers
+2014-12-14 23:23:39		nick: new nick
+2014-12-15 01:20:01		[crypt] (sec.conf)
+2014-12-15 01:20:01		  sec.crypt.cipher = aes256
+2014-12-15 01:20:01		  sec.crypt.hash_algo = sha256
+2014-12-15 01:20:01		  sec.crypt.passphrase_file = ""
+2014-12-15 01:20:01		  sec.crypt.salt = on
+2014-12-15 01:20:01		[startup] (weechat.conf)
+2014-12-15 01:20:01		  weechat.startup.command_after_plugins = "/buffer clear"  (default: "")
+2014-12-15 01:20:01		  weechat.startup.command_before_plugins = ""
+2014-12-15 01:20:01		  weechat.startup.display_logo = off  (default: on)
+2014-12-15 01:20:01		  weechat.startup.display_version = off  (default: on)
+2014-12-15 01:20:01		  weechat.startup.sys_rlimit = ""
+2014-12-15 01:20:01		[look] (weechat.conf)
+2014-12-15 01:20:01		  weechat.look.align_end_of_lines = message
+2014-12-15 01:20:01		  weechat.look.bar_more_down = " + "  (default: "++")
+2014-12-15 01:20:01		  weechat.look.bar_more_left = " -- "  (default: "<<")
+2014-12-15 01:20:01		  weechat.look.bar_more_right = " ++ "  (default: ">>")
+2014-12-15 01:20:01		  weechat.look.bar_more_up = " - "  (default: "--")
+2014-12-15 01:20:01		  weechat.look.bare_display_exit_on_input = on
+2014-12-15 01:20:01		  weechat.look.bare_display_time_format = "%H:%M"
+2014-12-15 01:20:01		  weechat.look.buffer_auto_renumber = on
+2014-12-15 01:20:01		  weechat.look.buffer_notify_default = all
+2014-12-15 01:20:01		  weechat.look.buffer_position = end
+2014-12-15 01:20:01		  weechat.look.buffer_search_case_sensitive = off
+2014-12-15 01:20:01		  weechat.look.buffer_search_force_default = off
+2014-12-15 01:20:01		  weechat.look.buffer_search_regex = off
+2014-12-15 01:20:01		  weechat.look.buffer_search_where = message  (default: prefix_message)
+2014-12-15 01:20:01		  weechat.look.buffer_time_format = " "  (default: "%H:%M:%S")
+2014-12-15 01:20:01		  weechat.look.color_basic_force_bold = off
+2014-12-15 01:20:01		  weechat.look.color_inactive_buffer = off  (default: on)
+2014-12-15 01:20:01		  weechat.look.color_inactive_message = on
+2014-12-15 01:20:02		  weechat.look.color_inactive_prefix = on
+2014-12-15 01:20:02		  weechat.look.color_inactive_prefix_buffer = on
+2014-12-15 01:20:02		  weechat.look.color_inactive_time = off
+2014-12-15 01:20:02		  weechat.look.color_inactive_window = off  (default: on)
+2014-12-15 01:20:02		  weechat.look.color_nick_offline = off
+2014-12-15 01:20:02		  weechat.look.color_pairs_auto_reset = 5
+2014-12-15 01:20:02		  weechat.look.color_real_white = off
+2014-12-15 01:20:02		  weechat.look.command_chars = ""
+2014-12-15 01:20:02		  weechat.look.confirm_quit = off
+2014-12-15 01:20:02		  weechat.look.day_change = on
+2014-12-15 01:20:02		  weechat.look.day_change_message_1date = "-- %a, %d %b %Y --"
+2014-12-15 01:20:02		  weechat.look.day_change_message_2dates = "-- %%a, %%d %%b %%Y (%a, %d %b %Y) --"
+2014-12-15 01:20:02		  weechat.look.eat_newline_glitch = off
+2014-12-15 01:20:02		  weechat.look.emphasized_attributes = ""
+2014-12-15 01:20:02		  weechat.look.highlight = ""
+2014-12-15 01:20:02		  weechat.look.highlight_regex = ""
+2014-12-15 01:20:02		  weechat.look.highlight_tags = ""
+2014-12-15 01:20:02		  weechat.look.hotlist_add_conditions = "${away} || ${buffer.num_displayed} == 0"
+2014-12-15 01:20:02		  weechat.look.hotlist_buffer_separator = ", "
+2014-12-15 01:20:02		  weechat.look.hotlist_count_max = 2
+2014-12-15 01:20:02		  weechat.look.hotlist_count_min_msg = 2
+2014-12-15 01:20:02		  weechat.look.hotlist_names_count = 3
+2014-12-15 01:20:02		  weechat.look.hotlist_names_length = 0
+2014-12-15 01:20:02		  weechat.look.hotlist_names_level = 12
+2014-12-15 01:20:02		  weechat.look.hotlist_names_merged_buffers = off
+2014-12-15 01:20:02		  weechat.look.hotlist_prefix = "H: "
+2014-12-15 01:20:02		  weechat.look.hotlist_remove = merged
+2014-12-15 01:20:02		  weechat.look.hotlist_short_names = on
+2014-12-15 01:20:02		  weechat.look.hotlist_sort = group_time_asc
+2014-12-15 01:20:02		  weechat.look.hotlist_suffix = ""
+2014-12-15 01:20:02		  weechat.look.hotlist_unique_numbers = on
+2014-12-15 01:20:02		  weechat.look.input_cursor_scroll = 20
+2014-12-15 01:20:02		  weechat.look.input_share = none
+2014-12-15 01:20:02		  weechat.look.input_share_overwrite = off
+2014-12-15 01:20:02		  weechat.look.input_undo_max = 32
+2014-12-15 01:20:02		  weechat.look.item_buffer_filter = "*"
+2014-12-15 01:20:02		  weechat.look.item_buffer_zoom = "!"
+2014-12-15 01:20:02		  weechat.look.item_time_format = "%l:%M"  (default: "%H:%M")
+2014-12-15 01:20:02		  weechat.look.jump_current_to_previous_buffer = on
+2014-12-15 01:20:02		  weechat.look.jump_previous_buffer_when_closing = on
+2014-12-15 01:20:02		  weechat.look.jump_smart_back_to_buffer = on
+2014-12-15 01:20:02		  weechat.look.key_bind_safe = on
+2014-12-15 01:20:02		  weechat.look.mouse = off
+2014-12-15 01:20:02		  weechat.look.mouse_timer_delay = 100
+2014-12-15 01:20:02		  weechat.look.nick_prefix = ""
+2014-12-15 01:20:02		  weechat.look.nick_suffix = ""
+2014-12-15 01:20:02		  weechat.look.paste_bracketed = off  (default: on)
+2014-12-15 01:20:02		  weechat.look.paste_bracketed_timer_delay = 10
+2014-12-15 01:20:02		  weechat.look.paste_max_lines = 5  (default: 1)
+2014-12-15 01:20:02		  weechat.look.prefix_action = "*"  (default: " *")
+2014-12-15 01:20:02		  weechat.look.prefix_align = right
+2014-12-15 01:20:02		  weechat.look.prefix_align_max = 0
+2014-12-15 01:20:02		  weechat.look.prefix_align_min = 0
+2014-12-15 01:20:02		  weechat.look.prefix_align_more = "+"
+2014-12-15 01:20:02		  weechat.look.prefix_align_more_after = on
+2014-12-15 01:20:02		  weechat.look.prefix_buffer_align = right
+2014-12-15 01:20:02		  weechat.look.prefix_buffer_align_max = 0
+2014-12-15 01:20:02		  weechat.look.prefix_buffer_align_more = "+"
+2014-12-15 01:20:02		  weechat.look.prefix_buffer_align_more_after = on
+2014-12-15 01:20:02		  weechat.look.prefix_error = " !!! "  (default: "=!=")
+2014-12-15 01:20:02		  weechat.look.prefix_join = " > "  (default: "-->")
+2014-12-15 01:20:02		  weechat.look.prefix_network = " - "  (default: "--")
+2014-12-15 01:20:02		  weechat.look.prefix_quit = " < "  (default: "<--")
+2014-12-15 01:20:02		  weechat.look.prefix_same_nick = ""
+2014-12-15 01:20:02		  weechat.look.prefix_suffix = "│"  (default: "|")
+2014-12-15 01:20:02		  weechat.look.read_marker = line
+2014-12-15 01:20:02		  weechat.look.read_marker_always_show = off
+2014-12-15 01:20:02		  weechat.look.read_marker_string = "- "
+2014-12-15 01:20:02		  weechat.look.save_config_on_exit = on
+2014-12-15 01:20:02		  weechat.look.save_layout_on_exit = all  (default: none)
+2014-12-15 01:20:02		  weechat.look.scroll_amount = 3
+2014-12-15 01:20:02		  weechat.look.scroll_bottom_after_switch = off
+2014-12-15 01:20:02		  weechat.look.scroll_page_percent = 100
+2014-12-15 01:20:02		  weechat.look.search_text_not_found_alert = on
+2014-12-15 01:20:02		  weechat.look.separator_horizontal = " "  (default: "-")
+2014-12-15 01:20:02		  weechat.look.separator_vertical = ""
+2014-12-15 01:20:02		  weechat.look.tab_width = 1
+2014-12-15 01:20:02		  weechat.look.time_format = "%a, %d %b %Y %T"
+2014-12-15 01:20:02		  weechat.look.window_auto_zoom = off
+2014-12-15 01:20:02		  weechat.look.window_separator_horizontal = on
+2014-12-15 01:20:02		  weechat.look.window_separator_vertical = on
+2014-12-15 01:20:02		  weechat.look.window_title = "WeeChat ${info:version}"
+2014-12-15 01:20:02		[palette] (weechat.conf)
+2014-12-15 01:20:02		  weechat.palette.100 = ""
+2014-12-15 01:20:02		  weechat.palette.101 = ""
+2014-12-15 01:20:02		  weechat.palette.102 = ""
+2014-12-15 01:20:02		  weechat.palette.103 = ""
+2014-12-15 01:20:02		  weechat.palette.104 = ""
+2014-12-15 01:20:02		  weechat.palette.105 = ""
+2014-12-15 01:20:02		  weechat.palette.106 = ""
+2014-12-15 01:20:02		  weechat.palette.107 = ""
+2014-12-15 01:20:02		  weechat.palette.108 = ""
+2014-12-15 01:20:02		  weechat.palette.109 = ""
+2014-12-15 01:20:02		  weechat.palette.110 = ""
+2014-12-15 01:20:02		  weechat.palette.111 = ""
+2014-12-15 01:20:02		  weechat.palette.112 = ""
+2014-12-15 01:20:02		  weechat.palette.113 = ""
+2014-12-15 01:20:02		  weechat.palette.114 = ""
+2014-12-15 01:20:02		  weechat.palette.115 = ""
+2014-12-15 01:20:02		  weechat.palette.116 = ""
+2014-12-15 01:20:02		  weechat.palette.117 = ""
+2014-12-15 01:20:02		  weechat.palette.118 = ""
+2014-12-15 01:20:02		  weechat.palette.119 = ""
+2014-12-15 01:20:02		  weechat.palette.120 = ""
+2014-12-15 01:20:02		  weechat.palette.121 = ""
+2014-12-15 01:20:02		  weechat.palette.122 = ""
+2014-12-15 01:20:02		  weechat.palette.123 = ""
+2014-12-15 01:20:02		  weechat.palette.124 = ""
+2014-12-15 01:20:02		  weechat.palette.125 = ""
+2014-12-15 01:20:02		  weechat.palette.126 = ""
+2014-12-15 01:20:02		  weechat.palette.127 = ""
+2014-12-15 01:20:02		  weechat.palette.128 = ""
+2014-12-15 01:20:02		  weechat.palette.129 = ""
+2014-12-15 01:20:02		  weechat.palette.130 = ""
+2014-12-15 01:20:02		  weechat.palette.131 = ""
+2014-12-15 01:20:02		  weechat.palette.132 = ""
+2014-12-15 01:20:02		  weechat.palette.133 = ""
+2014-12-15 01:20:02		  weechat.palette.134 = ""
+2014-12-15 01:20:02		  weechat.palette.135 = ""
+2014-12-15 01:20:02		  weechat.palette.136 = ""
+2014-12-15 01:20:02		  weechat.palette.137 = ""
+2014-12-15 01:20:02		  weechat.palette.138 = ""
+2014-12-15 01:20:02		  weechat.palette.139 = ""
+2014-12-15 01:20:02		  weechat.palette.140 = ""
+2014-12-15 01:20:02		  weechat.palette.141 = ""
+2014-12-15 01:20:02		  weechat.palette.142 = ""
+2014-12-15 01:20:02		  weechat.palette.143 = ""
+2014-12-15 01:20:02		  weechat.palette.144 = ""
+2014-12-15 01:20:02		  weechat.palette.145 = ""
+2014-12-15 01:20:02		  weechat.palette.146 = ""
+2014-12-15 01:20:02		  weechat.palette.147 = ""
+2014-12-15 01:20:02		  weechat.palette.148 = ""
+2014-12-15 01:20:02		  weechat.palette.149 = ""
+2014-12-15 01:20:02		  weechat.palette.150 = ""
+2014-12-15 01:20:02		  weechat.palette.151 = ""
+2014-12-15 01:20:02		  weechat.palette.152 = ""
+2014-12-15 01:20:02		  weechat.palette.153 = ""
+2014-12-15 01:20:02		  weechat.palette.154 = ""
+2014-12-15 01:20:02		  weechat.palette.155 = ""
+2014-12-15 01:20:02		  weechat.palette.156 = ""
+2014-12-15 01:20:02		  weechat.palette.157 = ""
+2014-12-15 01:20:02		  weechat.palette.158 = ""
+2014-12-15 01:20:02		  weechat.palette.159 = ""
+2014-12-15 01:20:02		  weechat.palette.160 = ""
+2014-12-15 01:20:02		  weechat.palette.161 = ""
+2014-12-15 01:20:02		  weechat.palette.162 = ""
+2014-12-15 01:20:02		  weechat.palette.163 = ""
+2014-12-15 01:20:02		  weechat.palette.164 = ""
+2014-12-15 01:20:02		  weechat.palette.165 = ""
+2014-12-15 01:20:02		  weechat.palette.166 = ""
+2014-12-15 01:20:02		  weechat.palette.167 = ""
+2014-12-15 01:20:02		  weechat.palette.168 = ""
+2014-12-15 01:20:02		  weechat.palette.169 = ""
+2014-12-15 01:20:02		  weechat.palette.17 = ""
+2014-12-15 01:20:02		  weechat.palette.170 = ""
+2014-12-15 01:20:02		  weechat.palette.171 = ""
+2014-12-15 01:20:02		  weechat.palette.172 = ""
+2014-12-15 01:20:02		  weechat.palette.173 = ""
+2014-12-15 01:20:02		  weechat.palette.174 = ""
+2014-12-15 01:20:02		  weechat.palette.175 = ""
+2014-12-15 01:20:02		  weechat.palette.176 = ""
+2014-12-15 01:20:02		  weechat.palette.177 = ""
+2014-12-15 01:20:02		  weechat.palette.178 = ""
+2014-12-15 01:20:02		  weechat.palette.179 = ""
+2014-12-15 01:20:02		  weechat.palette.18 = ""
+2014-12-15 01:20:02		  weechat.palette.180 = ""
+2014-12-15 01:20:02		  weechat.palette.181 = ""
+2014-12-15 01:20:02		  weechat.palette.182 = ""
+2014-12-15 01:20:02		  weechat.palette.183 = ""
+2014-12-15 01:20:02		  weechat.palette.184 = ""
+2014-12-15 01:20:02		  weechat.palette.185 = ""
+2014-12-15 01:20:02		  weechat.palette.186 = ""
+2014-12-15 01:20:02		  weechat.palette.187 = ""
+2014-12-15 01:20:02		  weechat.palette.188 = ""
+2014-12-15 01:20:02		  weechat.palette.189 = ""
+2014-12-15 01:20:02		  weechat.palette.19 = ""
+2014-12-15 01:20:02		  weechat.palette.190 = ""
+2014-12-15 01:20:02		  weechat.palette.191 = ""
+2014-12-15 01:20:02		  weechat.palette.192 = ""
+2014-12-15 01:20:02		  weechat.palette.193 = ""
+2014-12-15 01:20:02		  weechat.palette.194 = ""
+2014-12-15 01:20:02		  weechat.palette.195 = ""
+2014-12-15 01:20:02		  weechat.palette.196 = ""
+2014-12-15 01:20:02		  weechat.palette.197 = ""
+2014-12-15 01:20:02		  weechat.palette.198 = ""
+2014-12-15 01:20:02		  weechat.palette.199 = ""
+2014-12-15 01:20:02		  weechat.palette.20 = ""
+2014-12-15 01:20:02		  weechat.palette.200 = ""
+2014-12-15 01:20:02		  weechat.palette.201 = ""
+2014-12-15 01:20:02		  weechat.palette.202 = ""
+2014-12-15 01:20:02		  weechat.palette.203 = ""
+2014-12-15 01:20:02		  weechat.palette.204 = ""
+2014-12-15 01:20:02		  weechat.palette.205 = ""
+2014-12-15 01:20:02		  weechat.palette.206 = ""
+2014-12-15 01:20:02		  weechat.palette.207 = ""
+2014-12-15 01:20:02		  weechat.palette.208 = ""
+2014-12-15 01:20:02		  weechat.palette.209 = ""
+2014-12-15 01:20:02		  weechat.palette.21 = ""
+2014-12-15 01:20:02		  weechat.palette.210 = ""
+2014-12-15 01:20:02		  weechat.palette.211 = ""
+2014-12-15 01:20:02		  weechat.palette.212 = ""
+2014-12-15 01:20:02		  weechat.palette.213 = ""
+2014-12-15 01:20:02		  weechat.palette.214 = ""
+2014-12-15 01:20:02		  weechat.palette.215 = ""
+2014-12-15 01:20:02		  weechat.palette.216 = ""
+2014-12-15 01:20:02		  weechat.palette.217 = ""
+2014-12-15 01:20:02		  weechat.palette.218 = ""
+2014-12-15 01:20:02		  weechat.palette.219 = ""
+2014-12-15 01:20:02		  weechat.palette.22 = ""
+2014-12-15 01:20:02		  weechat.palette.220 = ""
+2014-12-15 01:20:02		  weechat.palette.221 = ""
+2014-12-15 01:20:02		  weechat.palette.222 = ""
+2014-12-15 01:20:02		  weechat.palette.223 = ""
+2014-12-15 01:20:02		  weechat.palette.224 = ""
+2014-12-15 01:20:02		  weechat.palette.225 = ""
+2014-12-15 01:20:02		  weechat.palette.226 = ""
+2014-12-15 01:20:02		  weechat.palette.227 = ""
+2014-12-15 01:20:02		  weechat.palette.228 = ""
+2014-12-15 01:20:02		  weechat.palette.229 = ""
+2014-12-15 01:20:02		  weechat.palette.23 = ""
+2014-12-15 01:20:02		  weechat.palette.230 = ""
+2014-12-15 01:20:02		  weechat.palette.231 = ""
+2014-12-15 01:20:02		  weechat.palette.232 = ""
+2014-12-15 01:20:02		  weechat.palette.233 = ""
+2014-12-15 01:20:02		  weechat.palette.234 = ""
+2014-12-15 01:20:02		  weechat.palette.235 = ""
+2014-12-15 01:20:02		  weechat.palette.236 = ""
+2014-12-15 01:20:02		  weechat.palette.237 = ""
+2014-12-15 01:20:02		  weechat.palette.238 = ""
+2014-12-15 01:20:02		  weechat.palette.239 = ""
+2014-12-15 01:20:02		  weechat.palette.24 = ""
+2014-12-15 01:20:02		  weechat.palette.240 = ""
+2014-12-15 01:20:02		  weechat.palette.241 = ""
+2014-12-15 01:20:02		  weechat.palette.242 = ""
+2014-12-15 01:20:02		  weechat.palette.243 = ""
+2014-12-15 01:20:02		  weechat.palette.244 = ""
+2014-12-15 01:20:02		  weechat.palette.245 = ""
+2014-12-15 01:20:02		  weechat.palette.246 = ""
+2014-12-15 01:20:02		  weechat.palette.247 = ""
+2014-12-15 01:20:02		  weechat.palette.248 = ""
+2014-12-15 01:20:02		  weechat.palette.249 = ""
+2014-12-15 01:20:02		  weechat.palette.25 = ""
+2014-12-15 01:20:02		  weechat.palette.250 = ""
+2014-12-15 01:20:02		  weechat.palette.251 = ""
+2014-12-15 01:20:02		  weechat.palette.252 = ""
+2014-12-15 01:20:02		  weechat.palette.253 = ""
+2014-12-15 01:20:02		  weechat.palette.254 = ""
+2014-12-15 01:20:02		  weechat.palette.255 = ""
+2014-12-15 01:20:02		  weechat.palette.256 = ""
+2014-12-15 01:20:02		  weechat.palette.26 = ""
+2014-12-15 01:20:02		  weechat.palette.27 = ""
+2014-12-15 01:20:02		  weechat.palette.28 = ""
+2014-12-15 01:20:02		  weechat.palette.29 = ""
+2014-12-15 01:20:02		  weechat.palette.30 = ""
+2014-12-15 01:20:02		  weechat.palette.31 = ""
+2014-12-15 01:20:02		  weechat.palette.32 = ""
+2014-12-15 01:20:02		  weechat.palette.33 = ""
+2014-12-15 01:20:02		  weechat.palette.34 = ""
+2014-12-15 01:20:02		  weechat.palette.35 = ""
+2014-12-15 01:20:02		  weechat.palette.36 = ""
+2014-12-15 01:20:02		  weechat.palette.37 = ""
+2014-12-15 01:20:02		  weechat.palette.38 = ""
+2014-12-15 01:20:02		  weechat.palette.39 = ""
+2014-12-15 01:20:02		  weechat.palette.40 = ""
+2014-12-15 01:20:02		  weechat.palette.41 = ""
+2014-12-15 01:20:02		  weechat.palette.42 = ""
+2014-12-15 01:20:02		  weechat.palette.43 = ""
+2014-12-15 01:20:02		  weechat.palette.44 = ""
+2014-12-15 01:20:02		  weechat.palette.45 = ""
+2014-12-15 01:20:02		  weechat.palette.46 = ""
+2014-12-15 01:20:02		  weechat.palette.47 = ""
+2014-12-15 01:20:02		  weechat.palette.48 = ""
+2014-12-15 01:20:02		  weechat.palette.49 = ""
+2014-12-15 01:20:02		  weechat.palette.50 = ""
+2014-12-15 01:20:02		  weechat.palette.51 = ""
+2014-12-15 01:20:02		  weechat.palette.52 = ""
+2014-12-15 01:20:02		  weechat.palette.53 = ""
+2014-12-15 01:20:02		  weechat.palette.54 = ""
+2014-12-15 01:20:02		  weechat.palette.55 = ""
+2014-12-15 01:20:02		  weechat.palette.56 = ""
+2014-12-15 01:20:02		  weechat.palette.57 = ""
+2014-12-15 01:20:02		  weechat.palette.58 = ""
+2014-12-15 01:20:02		  weechat.palette.59 = ""
+2014-12-15 01:20:02		  weechat.palette.60 = ""
+2014-12-15 01:20:02		  weechat.palette.61 = ""
+2014-12-15 01:20:02		  weechat.palette.62 = ""
+2014-12-15 01:20:02		  weechat.palette.63 = ""
+2014-12-15 01:20:02		  weechat.palette.64 = ""
+2014-12-15 01:20:02		  weechat.palette.65 = ""
+2014-12-15 01:20:02		  weechat.palette.66 = ""
+2014-12-15 01:20:02		  weechat.palette.67 = ""
+2014-12-15 01:20:02		  weechat.palette.68 = ""
+2014-12-15 01:20:02		  weechat.palette.69 = ""
+2014-12-15 01:20:02		  weechat.palette.70 = ""
+2014-12-15 01:20:02		  weechat.palette.71 = ""
+2014-12-15 01:20:02		  weechat.palette.72 = ""
+2014-12-15 01:20:02		  weechat.palette.73 = ""
+2014-12-15 01:20:02		  weechat.palette.74 = ""
+2014-12-15 01:20:02		  weechat.palette.75 = ""
+2014-12-15 01:20:02		  weechat.palette.76 = ""
+2014-12-15 01:20:02		  weechat.palette.77 = ""
+2014-12-15 01:20:02		  weechat.palette.78 = ""
+2014-12-15 01:20:02		  weechat.palette.79 = ""
+2014-12-15 01:20:02		  weechat.palette.80 = ""
+2014-12-15 01:20:02		  weechat.palette.81 = ""
+2014-12-15 01:20:02		  weechat.palette.82 = ""
+2014-12-15 01:20:02		  weechat.palette.83 = ""
+2014-12-15 01:20:02		  weechat.palette.84 = ""
+2014-12-15 01:20:02		  weechat.palette.85 = ""
+2014-12-15 01:20:02		  weechat.palette.86 = ""
+2014-12-15 01:20:02		  weechat.palette.87 = ""
+2014-12-15 01:20:02		  weechat.palette.88 = ""
+2014-12-15 01:20:02		  weechat.palette.89 = ""
+2014-12-15 01:20:02		  weechat.palette.90 = ""
+2014-12-15 01:20:02		  weechat.palette.91 = ""
+2014-12-15 01:20:02		  weechat.palette.92 = ""
+2014-12-15 01:20:02		  weechat.palette.93 = ""
+2014-12-15 01:20:02		  weechat.palette.94 = ""
+2014-12-15 01:20:02		  weechat.palette.95 = ""
+2014-12-15 01:20:02		  weechat.palette.96 = ""
+2014-12-15 01:20:02		  weechat.palette.97 = ""
+2014-12-15 01:20:02		  weechat.palette.98 = ""
+2014-12-15 01:20:02		  weechat.palette.99 = ""
+2014-12-15 01:20:02		[color] (weechat.conf)
+2014-12-15 01:20:02		  weechat.color.bar_more = green  (default: lightmagenta)
+2014-12-15 01:20:02		  weechat.color.chat = white  (default: default)
+2014-12-15 01:20:02		  weechat.color.chat_bg = default
+2014-12-15 01:20:02		  weechat.color.chat_buffer = white
+2014-12-15 01:20:02		  weechat.color.chat_channel = white
+2014-12-15 01:20:02		  weechat.color.chat_day_change = cyan
+2014-12-15 01:20:02		  weechat.color.chat_delimiters = green
+2014-12-15 01:20:02		  weechat.color.chat_highlight = yellow
+2014-12-15 01:20:02		  weechat.color.chat_highlight_bg = default  (default: magenta)
+2014-12-15 01:20:02		  weechat.color.chat_host = cyan
+2014-12-15 01:20:02		  weechat.color.chat_inactive_buffer = darkgray  (default: default)
+2014-12-15 01:20:02		  weechat.color.chat_inactive_window = darkgray  (default: default)
+2014-12-15 01:20:02		  weechat.color.chat_nick = cyan  (default: lightcyan)
+2014-12-15 01:20:02		  weechat.color.chat_nick_colors = "magenta,lightcyan,lightmagenta,lightgreen,lightred,brown,darkbrown"  (default: "cyan,magenta,green,brown,lightblue,default,lightcyan,lightmagenta,lightgreen,blue")
+2014-12-15 01:20:02		  weechat.color.chat_nick_offline = darkgray  (default: default)
+2014-12-15 01:20:02		  weechat.color.chat_nick_offline_highlight = default
+2014-12-15 01:20:02		  weechat.color.chat_nick_offline_highlight_bg = darkgray  (default: blue)
+2014-12-15 01:20:02		  weechat.color.chat_nick_other = white  (default: cyan)
+2014-12-15 01:20:02		  weechat.color.chat_nick_prefix = green
+2014-12-15 01:20:02		  weechat.color.chat_nick_self = green  (default: white)
+2014-12-15 01:20:02		  weechat.color.chat_nick_suffix = green
+2014-12-15 01:20:02		  weechat.color.chat_prefix_action = white
+2014-12-15 01:20:02		  weechat.color.chat_prefix_buffer = red  (default: brown)
+2014-12-15 01:20:02		  weechat.color.chat_prefix_buffer_inactive_buffer = darkgray  (default: default)
+2014-12-15 01:20:02		  weechat.color.chat_prefix_error = yellow
+2014-12-15 01:20:02		  weechat.color.chat_prefix_join = lightgreen
+2014-12-15 01:20:02		  weechat.color.chat_prefix_more = lightmagenta
+2014-12-15 01:20:02		  weechat.color.chat_prefix_network = magenta
+2014-12-15 01:20:02		  weechat.color.chat_prefix_quit = lightred
+2014-12-15 01:20:02		  weechat.color.chat_prefix_suffix = darkgray  (default: green)
+2014-12-15 01:20:02		  weechat.color.chat_read_marker = magenta
+2014-12-15 01:20:02		  weechat.color.chat_read_marker_bg = default
+2014-12-15 01:20:02		  weechat.color.chat_server = brown
+2014-12-15 01:20:02		  weechat.color.chat_tags = red
+2014-12-15 01:20:02		  weechat.color.chat_text_found = yellow
+2014-12-15 01:20:02		  weechat.color.chat_text_found_bg = lightmagenta
+2014-12-15 01:20:02		  weechat.color.chat_time = red  (default: default)
+2014-12-15 01:20:02		  weechat.color.chat_time_delimiters = red  (default: brown)
+2014-12-15 01:20:02		  weechat.color.chat_value = cyan
+2014-12-15 01:20:02		  weechat.color.emphasized = yellow
+2014-12-15 01:20:02		  weechat.color.emphasized_bg = magenta
+2014-12-15 01:20:02		  weechat.color.input_actions = lightgreen
+2014-12-15 01:20:02		  weechat.color.input_text_not_found = red
+2014-12-15 01:20:02		  weechat.color.nicklist_away = cyan
+2014-12-15 01:20:02		  weechat.color.nicklist_group = green
+2014-12-15 01:20:02		  weechat.color.nicklist_offline = blue
+2014-12-15 01:20:02		  weechat.color.separator = darkgray  (default: blue)
+2014-12-15 01:20:02		  weechat.color.status_count_highlight = magenta
+2014-12-15 01:20:02		  weechat.color.status_count_msg = brown
+2014-12-15 01:20:02		  weechat.color.status_count_other = default
+2014-12-15 01:20:02		  weechat.color.status_count_private = green
+2014-12-15 01:20:02		  weechat.color.status_data_highlight = lightmagenta
+2014-12-15 01:20:02		  weechat.color.status_data_msg = yellow
+2014-12-15 01:20:02		  weechat.color.status_data_other = default
+2014-12-15 01:20:02		  weechat.color.status_data_private = lightgreen
+2014-12-15 01:20:02		  weechat.color.status_filter = green
+2014-12-15 01:20:02		  weechat.color.status_more = yellow
+2014-12-15 01:20:02		  weechat.color.status_name = white
+2014-12-15 01:20:02		  weechat.color.status_name_ssl = lightgreen
+2014-12-15 01:20:02		  weechat.color.status_nicklist_count = default
+2014-12-15 01:20:02		  weechat.color.status_number = yellow
+2014-12-15 01:20:02		  weechat.color.status_time = default
+2014-12-15 01:20:02		[completion] (weechat.conf)
+2014-12-15 01:20:02		  weechat.completion.base_word_until_cursor = on
+2014-12-15 01:20:02		  weechat.completion.default_template = "%(nicks)|%(irc_channels)"
+2014-12-15 01:20:02		  weechat.completion.nick_add_space = on
+2014-12-15 01:20:02		  weechat.completion.nick_completer = ":"
+2014-12-15 01:20:02		  weechat.completion.nick_first_only = off
+2014-12-15 01:20:02		  weechat.completion.nick_ignore_chars = "[]-^"  (default: "[]`_-^")
+2014-12-15 01:20:02		  weechat.completion.partial_completion_alert = on
+2014-12-15 01:20:02		  weechat.completion.partial_completion_command = off
+2014-12-15 01:20:02		  weechat.completion.partial_completion_command_arg = off
+2014-12-15 01:20:02		  weechat.completion.partial_completion_count = on
+2014-12-15 01:20:02		  weechat.completion.partial_completion_other = off
+2014-12-15 01:20:02		[history] (weechat.conf)
+2014-12-15 01:20:02		  weechat.history.display_default = 5
+2014-12-15 01:20:02		  weechat.history.max_buffer_lines_minutes = 0
+2014-12-15 01:20:02		  weechat.history.max_buffer_lines_number = 100  (default: 4096)
+2014-12-15 01:20:02		  weechat.history.max_commands = 100
+2014-12-15 01:20:02		  weechat.history.max_visited_buffers = 50
+2014-12-15 01:20:02		[network] (weechat.conf)
+2014-12-15 01:20:02		  weechat.network.connection_timeout = 60
+2014-12-15 01:20:02		  weechat.network.gnutls_ca_file = "%h/ssl/CAs.pem"  (default: "/etc/ssl/certs/ca-certificates.crt")
+2014-12-15 01:20:02		  weechat.network.gnutls_handshake_timeout = 30
+2014-12-15 01:20:02		  weechat.network.proxy_curl = ""
+2014-12-15 01:20:02		[plugin] (weechat.conf)
+2014-12-15 01:20:02		  weechat.plugin.autoload = "*"
+2014-12-15 01:20:02		  weechat.plugin.debug = off
+2014-12-15 01:20:02		  weechat.plugin.extension = ".so"  (default: ".so,.dll")
+2014-12-15 01:20:02		  weechat.plugin.path = "%h/plugins"
+2014-12-15 01:20:02		  weechat.plugin.save_config_on_unload = on
+2014-12-15 01:20:02		[bar] (weechat.conf)
+2014-12-15 01:20:02		  weechat.bar.buddylist.color_bg = default
+2014-12-15 01:20:02		  weechat.bar.buddylist.color_delim = default
+2014-12-15 01:20:02		  weechat.bar.buddylist.color_fg = default
+2014-12-15 01:20:02		  weechat.bar.buddylist.conditions = ""
+2014-12-15 01:20:02		  weechat.bar.buddylist.filling_left_right = vertical
+2014-12-15 01:20:02		  weechat.bar.buddylist.filling_top_bottom = horizontal
+2014-12-15 01:20:02		  weechat.bar.buddylist.hidden = on
+2014-12-15 01:20:02		  weechat.bar.buddylist.items = "buddylist"  (default: "")
+2014-12-15 01:20:02		  weechat.bar.buddylist.position = left
+2014-12-15 01:20:02		  weechat.bar.buddylist.priority = 0
+2014-12-15 01:20:02		  weechat.bar.buddylist.separator = on
+2014-12-15 01:20:02		  weechat.bar.buddylist.size = 0
+2014-12-15 01:20:02		  weechat.bar.buddylist.size_max = 0
+2014-12-15 01:20:02		  weechat.bar.buddylist.type = root
+2014-12-15 01:20:02		  weechat.bar.buffers.color_bg = default
+2014-12-15 01:20:02		  weechat.bar.buffers.color_delim = default
+2014-12-15 01:20:02		  weechat.bar.buffers.color_fg = default
+2014-12-15 01:20:02		  weechat.bar.buffers.conditions = ""
+2014-12-15 01:20:02		  weechat.bar.buffers.filling_left_right = vertical
+2014-12-15 01:20:02		  weechat.bar.buffers.filling_top_bottom = horizontal
+2014-12-15 01:20:02		  weechat.bar.buffers.hidden = on
+2014-12-15 01:20:02		  weechat.bar.buffers.items = "buffers"  (default: "")
+2014-12-15 01:20:02		  weechat.bar.buffers.position = top
+2014-12-15 01:20:02		  weechat.bar.buffers.priority = 0
+2014-12-15 01:20:02		  weechat.bar.buffers.separator = off
+2014-12-15 01:20:02		  weechat.bar.buffers.size = 0
+2014-12-15 01:20:02		  weechat.bar.buffers.size_max = 0
+2014-12-15 01:20:02		  weechat.bar.buffers.type = root
+2014-12-15 01:20:02		  weechat.bar.input.color_bg = default
+2014-12-15 01:20:02		  weechat.bar.input.color_delim = red
+2014-12-15 01:20:02		  weechat.bar.input.color_fg = default
+2014-12-15 01:20:02		  weechat.bar.input.conditions = ""
+2014-12-15 01:20:02		  weechat.bar.input.filling_left_right = horizontal
+2014-12-15 01:20:02		  weechat.bar.input.filling_top_bottom = horizontal
+2014-12-15 01:20:02		  weechat.bar.input.hidden = off
+2014-12-15 01:20:02		  weechat.bar.input.items = " >>,input_text "  (default: "[input_prompt]+(away),[input_search],[input_paste],input_text")
+2014-12-15 01:20:02		  weechat.bar.input.position = bottom
+2014-12-15 01:20:02		  weechat.bar.input.priority = 1000
+2014-12-15 01:20:02		  weechat.bar.input.separator = on
+2014-12-15 01:20:02		  weechat.bar.input.size = 1
+2014-12-15 01:20:02		  weechat.bar.input.size_max = 0
+2014-12-15 01:20:02		  weechat.bar.input.type = root
+2014-12-15 01:20:02		  weechat.bar.nicklist.color_bg = default
+2014-12-15 01:20:02		  weechat.bar.nicklist.color_delim = black
+2014-12-15 01:20:02		  weechat.bar.nicklist.color_fg = default
+2014-12-15 01:20:02		  weechat.bar.nicklist.conditions = "nicklist"
+2014-12-15 01:20:02		  weechat.bar.nicklist.filling_left_right = vertical
+2014-12-15 01:20:02		  weechat.bar.nicklist.filling_top_bottom = columns_horizontal
+2014-12-15 01:20:02		  weechat.bar.nicklist.hidden = on
+2014-12-15 01:20:02		  weechat.bar.nicklist.items = "buffer_nicklist"
+2014-12-15 01:20:02		  weechat.bar.nicklist.position = right
+2014-12-15 01:20:02		  weechat.bar.nicklist.priority = 200
+2014-12-15 01:20:02		  weechat.bar.nicklist.separator = off
+2014-12-15 01:20:02		  weechat.bar.nicklist.size = 13
+2014-12-15 01:20:02		  weechat.bar.nicklist.size_max = 0
+2014-12-15 01:20:02		  weechat.bar.nicklist.type = root
+2014-12-15 01:20:02		  weechat.bar.title.color_bg = default
+2014-12-15 01:20:02		  weechat.bar.title.color_delim = darkgray
+2014-12-15 01:20:02		  weechat.bar.title.color_fg = green
+2014-12-15 01:20:02		  weechat.bar.title.conditions = ""
+2014-12-15 01:20:02		  weechat.bar.title.filling_left_right = horizontal
+2014-12-15 01:20:02		  weechat.bar.title.filling_top_bottom = horizontal
+2014-12-15 01:20:02		  weechat.bar.title.hidden = on
+2014-12-15 01:20:02		  weechat.bar.title.items = " [hotlist],[buffer_plugin],buffer_name,[buffer_nicklist_count],buffer_nicklist "  (default: "buffer_title")
+2014-12-15 01:20:02		  weechat.bar.title.position = top
+2014-12-15 01:20:02		  weechat.bar.title.priority = 0
+2014-12-15 01:20:02		  weechat.bar.title.separator = on
+2014-12-15 01:20:02		  weechat.bar.title.size = 1
+2014-12-15 01:20:02		  weechat.bar.title.size_max = 0
+2014-12-15 01:20:02		  weechat.bar.title.type = root
+2014-12-15 01:20:02		[var] (plugins.conf)
+2014-12-15 01:20:02		  plugins.var.fifo.fifo = "on"
+2014-12-15 01:20:02		  plugins.var.guile.check_license = "off"
+2014-12-15 01:20:02		  plugins.var.lua.check_license = "off"
+2014-12-15 01:20:02		  plugins.var.perl.check_license = "off"
+2014-12-15 01:20:02		  plugins.var.python.check_license = "off"
+2014-12-15 01:20:02		  plugins.var.ruby.check_license = "off"
+2014-12-15 01:20:02		[look] (logger.conf)
+2014-12-15 01:20:02		  logger.look.backlog = 20
+2014-12-15 01:20:02		[color] (logger.conf)
+2014-12-15 01:20:02		  logger.color.backlog_end = default
+2014-12-15 01:20:02		  logger.color.backlog_line = default
+2014-12-15 01:20:02		[file] (logger.conf)
+2014-12-15 01:20:02		  logger.file.auto_log = on
+2014-12-15 01:20:02		  logger.file.flush_delay = 120
+2014-12-15 01:20:02		  logger.file.info_lines = off
+2014-12-15 01:20:02		  logger.file.mask = "$plugin.$name.weechatlog"
+2014-12-15 01:20:02		  logger.file.name_lower_case = on
+2014-12-15 01:20:02		  logger.file.nick_prefix = ""
+2014-12-15 01:20:02		  logger.file.nick_suffix = ""
+2014-12-15 01:20:02		  logger.file.path = "%h/logs/"
+2014-12-15 01:20:02		  logger.file.replacement_char = "_"
+2014-12-15 01:20:02		  logger.file.time_format = "%Y-%m-%d %H:%M:%S"
+2014-12-15 01:20:02		[look] (script.conf)
+2014-12-15 01:20:02		  script.look.columns = "%s %n %V %v %u | %d | %t"
+2014-12-15 01:20:02		  script.look.diff_color = on
+2014-12-15 01:20:02		  script.look.diff_command = "auto"
+2014-12-15 01:20:02		  script.look.display_source = on
+2014-12-15 01:20:02		  script.look.quiet_actions = on
+2014-12-15 01:20:02		  script.look.sort = "p,n"
+2014-12-15 01:20:02		  script.look.translate_description = on
+2014-12-15 01:20:02		  script.look.use_keys = on
+2014-12-15 01:20:02		[color] (script.conf)
+2014-12-15 01:20:02		  script.color.status_autoloaded = cyan
+2014-12-15 01:20:02		  script.color.status_held = white
+2014-12-15 01:20:02		  script.color.status_installed = lightcyan
+2014-12-15 01:20:02		  script.color.status_obsolete = lightmagenta
+2014-12-15 01:20:02		  script.color.status_popular = yellow
+2014-12-15 01:20:02		  script.color.status_running = lightgreen
+2014-12-15 01:20:02		  script.color.status_unknown = lightred
+2014-12-15 01:20:02		  script.color.text = default
+2014-12-15 01:20:02		  script.color.text_bg = default
+2014-12-15 01:20:02		  script.color.text_bg_selected = red
+2014-12-15 01:20:02		  script.color.text_date = default
+2014-12-15 01:20:02		  script.color.text_date_selected = white
+2014-12-15 01:20:02		  script.color.text_delimiters = default
+2014-12-15 01:20:02		  script.color.text_description = default
+2014-12-15 01:20:02		  script.color.text_description_selected = white
+2014-12-15 01:20:02		  script.color.text_extension = default
+2014-12-15 01:20:02		  script.color.text_extension_selected = white
+2014-12-15 01:20:02		  script.color.text_name = cyan
+2014-12-15 01:20:02		  script.color.text_name_selected = lightcyan
+2014-12-15 01:20:02		  script.color.text_selected = white
+2014-12-15 01:20:02		  script.color.text_tags = brown
+2014-12-15 01:20:02		  script.color.text_tags_selected = yellow
+2014-12-15 01:20:02		  script.color.text_version = magenta
+2014-12-15 01:20:02		  script.color.text_version_loaded = default
+2014-12-15 01:20:02		  script.color.text_version_loaded_selected = white
+2014-12-15 01:20:02		  script.color.text_version_selected = lightmagenta
+2014-12-15 01:20:02		[scripts] (script.conf)
+2014-12-15 01:20:02		  script.scripts.autoload = on
+2014-12-15 01:20:02		  script.scripts.cache_expire = 1440
+2014-12-15 01:20:02		  script.scripts.dir = "%h/script"
+2014-12-15 01:20:02		  script.scripts.hold = ""
+2014-12-15 01:20:02		  script.scripts.url = "http://weechat.org/files/plugins.xml.gz"
+2014-12-15 01:20:02		[color] (aspell.conf)
+2014-12-15 01:20:02		  aspell.color.misspelled = lightred
+2014-12-15 01:20:02		  aspell.color.suggestions = default
+2014-12-15 01:20:02		[check] (aspell.conf)
+2014-12-15 01:20:02		  aspell.check.commands = "ame,amsg,away,command,cycle,kick,kickban,me,msg,notice,part,query,quit,topic"
+2014-12-15 01:20:02		  aspell.check.default_dict = ""
+2014-12-15 01:20:02		  aspell.check.during_search = off
+2014-12-15 01:20:02		  aspell.check.enabled = off
+2014-12-15 01:20:02		  aspell.check.real_time = off
+2014-12-15 01:20:02		  aspell.check.suggestions = -1
+2014-12-15 01:20:02		  aspell.check.word_min_length = 2
+2014-12-15 01:20:02		[command] (exec.conf)
+2014-12-15 01:20:02		  exec.command.default_options = ""
+2014-12-15 01:20:02		  exec.command.purge_delay = 0
+2014-12-15 01:20:02		[color] (exec.conf)
+2014-12-15 01:20:02		  exec.color.flag_finished = lightred
+2014-12-15 01:20:02		  exec.color.flag_running = lightgreen
+2014-12-15 01:20:02		[cmd] (alias.conf)
+2014-12-15 01:20:02		  alias.cmd.AAWAY = "allserv /away"
+2014-12-15 01:20:02		  alias.cmd.AME = "allchan /me"
+2014-12-15 01:20:02		  alias.cmd.AMSG = "allchan /msg *"
+2014-12-15 01:20:02		  alias.cmd.ANICK = "allserv /nick"
+2014-12-15 01:20:02		  alias.cmd.BEEP = "print -beep"
+2014-12-15 01:20:02		  alias.cmd.BYE = "quit"
+2014-12-15 01:20:02		  alias.cmd.C = "buffer clear"
+2014-12-15 01:20:02		  alias.cmd.CHAT = "dcc chat"
+2014-12-15 01:20:02		  alias.cmd.CL = "buffer clear"
+2014-12-15 01:20:02		  alias.cmd.CLOSE = "buffer close"
+2014-12-15 01:20:02		  alias.cmd.EXIT = "quit"
+2014-12-15 01:20:02		  alias.cmd.IG = "ignore"
+2014-12-15 01:20:02		  alias.cmd.J = "join"
+2014-12-15 01:20:02		  alias.cmd.K = "kick"
+2014-12-15 01:20:02		  alias.cmd.KB = "kickban"
+2014-12-15 01:20:02		  alias.cmd.LEAVE = "part"
+2014-12-15 01:20:02		  alias.cmd.M = "msg"
+2014-12-15 01:20:02		  alias.cmd.MSGBUF = "command -buffer $1 * /input send $2-"
+2014-12-15 01:20:02		  alias.cmd.MUB = "unban *"
+2014-12-15 01:20:02		  alias.cmd.N = "names"
+2014-12-15 01:20:02		  alias.cmd.Q = "query"
+2014-12-15 01:20:02		  alias.cmd.REDRAW = "window refresh"
+2014-12-15 01:20:02		  alias.cmd.SAY = "msg *"
+2014-12-15 01:20:02		  alias.cmd.SIGNOFF = "quit"
+2014-12-15 01:20:02		  alias.cmd.T = "topic"
+2014-12-15 01:20:02		  alias.cmd.UB = "unban"
+2014-12-15 01:20:02		  alias.cmd.UMODE = "mode $nick"
+2014-12-15 01:20:02		  alias.cmd.V = "command core version"
+2014-12-15 01:20:02		  alias.cmd.W = "who"
+2014-12-15 01:20:02		  alias.cmd.WC = "window merge"
+2014-12-15 01:20:02		  alias.cmd.WI = "whois"
+2014-12-15 01:20:02		  alias.cmd.WII = "whois $1 $1"
+2014-12-15 01:20:02		  alias.cmd.WW = "whowas"
+2014-12-15 01:20:02		[completion] (alias.conf)
+2014-12-15 01:20:02		  alias.completion.MSGBUF = "%(buffers_plugins_names)"
+2014-12-15 01:20:02		[look] (xfer.conf)
+2014-12-15 01:20:02		  xfer.look.auto_open_buffer = on
+2014-12-15 01:20:02		  xfer.look.progress_bar_size = 20
+2014-12-15 01:20:02		  xfer.look.pv_tags = "notify_private"
+2014-12-15 01:20:02		[color] (xfer.conf)
+2014-12-15 01:20:02		  xfer.color.status_aborted = lightred
+2014-12-15 01:20:02		  xfer.color.status_active = lightblue
+2014-12-15 01:20:02		  xfer.color.status_connecting = yellow
+2014-12-15 01:20:02		  xfer.color.status_done = lightgreen
+2014-12-15 01:20:02		  xfer.color.status_failed = lightred
+2014-12-15 01:20:02		  xfer.color.status_waiting = lightcyan
+2014-12-15 01:20:02		  xfer.color.text = default
+2014-12-15 01:20:02		  xfer.color.text_bg = default
+2014-12-15 01:20:02		  xfer.color.text_selected = white
+2014-12-15 01:20:02		[network] (xfer.conf)
+2014-12-15 01:20:02		  xfer.network.blocksize = 65536
+2014-12-15 01:20:02		  xfer.network.fast_send = on
+2014-12-15 01:20:02		  xfer.network.own_ip = ""
+2014-12-15 01:20:02		  xfer.network.port_range = ""
+2014-12-15 01:20:02		  xfer.network.speed_limit = 0
+2014-12-15 01:20:02		  xfer.network.timeout = 300
+2014-12-15 01:20:02		[file] (xfer.conf)
+2014-12-15 01:20:02		  xfer.file.auto_accept_chats = off
+2014-12-15 01:20:02		  xfer.file.auto_accept_files = off
+2014-12-15 01:20:02		  xfer.file.auto_accept_nicks = ""
+2014-12-15 01:20:02		  xfer.file.auto_check_crc32 = off
+2014-12-15 01:20:02		  xfer.file.auto_rename = on
+2014-12-15 01:20:02		  xfer.file.auto_resume = on
+2014-12-15 01:20:02		  xfer.file.convert_spaces = on
+2014-12-15 01:20:02		  xfer.file.download_path = "%h/xfer"
+2014-12-15 01:20:02		  xfer.file.upload_path = "~"
+2014-12-15 01:20:02		  xfer.file.use_nick_in_filename = on
+2014-12-15 01:20:02		[look] (trigger.conf)
+2014-12-15 01:20:02		  trigger.look.enabled = on
+2014-12-15 01:20:02		  trigger.look.monitor_strip_colors = off
+2014-12-15 01:20:02		[color] (trigger.conf)
+2014-12-15 01:20:02		  trigger.color.flag_command = lightgreen
+2014-12-15 01:20:02		  trigger.color.flag_conditions = yellow
+2014-12-15 01:20:02		  trigger.color.flag_regex = lightcyan
+2014-12-15 01:20:02		  trigger.color.flag_return_code = lightmagenta
+2014-12-15 01:20:02		  trigger.color.regex = white
+2014-12-15 01:20:02		  trigger.color.replace = cyan
+2014-12-15 01:20:02		  trigger.color.trigger = green
+2014-12-15 01:20:02		  trigger.color.trigger_disabled = red
+2014-12-15 01:20:02		[trigger] (trigger.conf)
+2014-12-15 01:20:02		  trigger.trigger.beep.arguments = ""
+2014-12-15 01:20:02		  trigger.trigger.beep.command = "/print -beep"
+2014-12-15 01:20:02		  trigger.trigger.beep.conditions = "${tg_highlight} || ${tg_msg_pv}"
+2014-12-15 01:20:02		  trigger.trigger.beep.enabled = on
+2014-12-15 01:20:02		  trigger.trigger.beep.hook = print
+2014-12-15 01:20:02		  trigger.trigger.beep.regex = ""
+2014-12-15 01:20:02		  trigger.trigger.beep.return_code = ok
+2014-12-15 01:20:02		  trigger.trigger.cmd_pass.arguments = "5000|input_text_display;5000|history_add;5000|irc_command_auth"
+2014-12-15 01:20:02		  trigger.trigger.cmd_pass.command = ""
+2014-12-15 01:20:02		  trigger.trigger.cmd_pass.conditions = ""
+2014-12-15 01:20:02		  trigger.trigger.cmd_pass.enabled = on
+2014-12-15 01:20:02		  trigger.trigger.cmd_pass.hook = modifier
+2014-12-15 01:20:02		  trigger.trigger.cmd_pass.regex = "==^((/(msg|quote) +nickserv +(id|identify|register|ghost +[^ ]+|release +[^ ]+|regain +[^ ]+) +)|/oper +[^ ]+ +|/quote +pass +|/set +[^ ]*password[^ ]* +|/secure +(passphrase|decrypt|set +[^ ]+) +)(.*)==$1$.*+"
+2014-12-15 01:20:02		  trigger.trigger.cmd_pass.return_code = ok
+2014-12-15 01:20:02		  trigger.trigger.msg_auth.arguments = "5000|irc_message_auth"
+2014-12-15 01:20:02		  trigger.trigger.msg_auth.command = ""
+2014-12-15 01:20:02		  trigger.trigger.msg_auth.conditions = ""
+2014-12-15 01:20:02		  trigger.trigger.msg_auth.enabled = on
+2014-12-15 01:20:02		  trigger.trigger.msg_auth.hook = modifier
+2014-12-15 01:20:02		  trigger.trigger.msg_auth.regex = "==^(.*(id|identify|register|ghost +[^ ]+|release +[^ ]+) +)(.*)==$1$.*+"
+2014-12-15 01:20:02		  trigger.trigger.msg_auth.return_code = ok
+2014-12-15 01:20:02		  trigger.trigger.server_pass.arguments = "5000|input_text_display;5000|history_add"
+2014-12-15 01:20:02		  trigger.trigger.server_pass.command = ""
+2014-12-15 01:20:02		  trigger.trigger.server_pass.conditions = ""
+2014-12-15 01:20:02		  trigger.trigger.server_pass.enabled = on
+2014-12-15 01:20:02		  trigger.trigger.server_pass.hook = modifier
+2014-12-15 01:20:02		  trigger.trigger.server_pass.regex = "==^(/(server|connect) .*-(sasl_)?password=)([^ ]+)(.*)==$1$.*4$5"
+2014-12-15 01:20:02		  trigger.trigger.server_pass.return_code = ok
+2014-12-15 01:20:02		[look] (relay.conf)
+2014-12-15 01:20:02		  relay.look.auto_open_buffer = on
+2014-12-15 01:20:02		  relay.look.raw_messages = 256
+2014-12-15 01:20:02		[color] (relay.conf)
+2014-12-15 01:20:02		  relay.color.client = cyan
+2014-12-15 01:20:02		  relay.color.status_active = lightblue
+2014-12-15 01:20:02		  relay.color.status_auth_failed = lightred
+2014-12-15 01:20:02		  relay.color.status_connecting = yellow
+2014-12-15 01:20:02		  relay.color.status_disconnected = lightred
+2014-12-15 01:20:02		  relay.color.status_waiting_auth = brown
+2014-12-15 01:20:02		  relay.color.text = default
+2014-12-15 01:20:02		  relay.color.text_bg = default
+2014-12-15 01:20:02		  relay.color.text_selected = white
+2014-12-15 01:20:02		[network] (relay.conf)
+2014-12-15 01:20:02		  relay.network.allowed_ips = ""
+2014-12-15 01:20:02		  relay.network.bind_address = ""
+2014-12-15 01:20:02		  relay.network.clients_purge_delay = 0
+2014-12-15 01:20:02		  relay.network.compression_level = 6
+2014-12-15 01:20:02		  relay.network.ipv6 = on
+2014-12-15 01:20:02		  relay.network.max_clients = 5
+2014-12-15 01:20:02		  relay.network.password = ""
+2014-12-15 01:20:02		  relay.network.ssl_cert_key = "%h/ssl/relay.pem"
+2014-12-15 01:20:02		  relay.network.websocket_allowed_origins = ""
+2014-12-15 01:20:02		[irc] (relay.conf)
+2014-12-15 01:20:02		  relay.irc.backlog_max_minutes = 1440
+2014-12-15 01:20:02		  relay.irc.backlog_max_number = 256
+2014-12-15 01:20:02		  relay.irc.backlog_since_last_disconnect = on
+2014-12-15 01:20:02		  relay.irc.backlog_tags = "irc_privmsg"
+2014-12-15 01:20:02		  relay.irc.backlog_time_format = "[%H:%M] "
+2014-12-15 01:20:02		[default] (charset.conf)
+2014-12-15 01:20:02		  charset.default.decode = "iso-8859-1"
+2014-12-15 01:20:02		  charset.default.encode = ""
+2014-12-15 01:20:02		[look] (irc.conf)
+2014-12-15 01:20:02		  irc.look.buffer_switch_autojoin = on
+2014-12-15 01:20:02		  irc.look.buffer_switch_join = on
+2014-12-15 01:20:02		  irc.look.color_nicks_in_names = off
+2014-12-15 01:20:02		  irc.look.color_nicks_in_nicklist = off
+2014-12-15 01:20:02		  irc.look.color_nicks_in_server_messages = on
+2014-12-15 01:20:02		  irc.look.color_pv_nick_like_channel = on
+2014-12-15 01:20:02		  irc.look.ctcp_time_format = "%a, %d %b %Y %T %z"
+2014-12-15 01:20:02		  irc.look.display_away = local
+2014-12-15 01:20:02		  irc.look.display_ctcp_blocked = on
+2014-12-15 01:20:02		  irc.look.display_ctcp_reply = on
+2014-12-15 01:20:02		  irc.look.display_ctcp_unknown = on
+2014-12-15 01:20:02		  irc.look.display_host_join = on
+2014-12-15 01:20:02		  irc.look.display_host_join_local = on
+2014-12-15 01:20:02		  irc.look.display_host_quit = on
+2014-12-15 01:20:02		  irc.look.display_join_message = "329,332,333,366"
+2014-12-15 01:20:02		  irc.look.display_old_topic = on
+2014-12-15 01:20:02		  irc.look.display_pv_away_once = on
+2014-12-15 01:20:02		  irc.look.display_pv_back = on
+2014-12-15 01:20:02		  irc.look.highlight_channel = "$nick"
+2014-12-15 01:20:02		  irc.look.highlight_pv = "$nick"
+2014-12-15 01:20:02		  irc.look.highlight_server = "$nick"
+2014-12-15 01:20:02		  irc.look.highlight_tags_restrict = "irc_privmsg,irc_notice"
+2014-12-15 01:20:02		  irc.look.item_away_message = on
+2014-12-15 01:20:02		  irc.look.item_channel_modes_hide_args = "k"
+2014-12-15 01:20:02		  irc.look.item_display_server = buffer_plugin
+2014-12-15 01:20:02		  irc.look.item_nick_modes = on
+2014-12-15 01:20:02		  irc.look.item_nick_prefix = on
+2014-12-15 01:20:02		  irc.look.join_auto_add_chantype = off
+2014-12-15 01:20:02		  irc.look.msgbuffer_fallback = current
+2014-12-15 01:20:02		  irc.look.new_channel_position = none
+2014-12-15 01:20:02		  irc.look.new_pv_position = none
+2014-12-15 01:20:02		  irc.look.nick_color_force = ""
+2014-12-15 01:20:02		  irc.look.nick_color_hash = sum
+2014-12-15 01:20:02		  irc.look.nick_color_stop_chars = "_|["
+2014-12-15 01:20:02		  irc.look.nick_completion_smart = speakers
+2014-12-15 01:20:02		  irc.look.nick_mode = prefix
+2014-12-15 01:20:02		  irc.look.nick_mode_empty = off
+2014-12-15 01:20:02		  irc.look.nicks_hide_password = "nickserv"
+2014-12-15 01:20:02		  irc.look.notice_as_pv = auto
+2014-12-15 01:20:02		  irc.look.notice_welcome_redirect = on
+2014-12-15 01:20:02		  irc.look.notice_welcome_tags = ""
+2014-12-15 01:20:02		  irc.look.notify_tags_ison = "notify_message"
+2014-12-15 01:20:02		  irc.look.notify_tags_whois = "notify_message"
+2014-12-15 01:20:02		  irc.look.part_closes_buffer = off
+2014-12-15 01:20:02		  irc.look.pv_buffer = independent
+2014-12-15 01:20:02		  irc.look.pv_tags = "notify_private"
+2014-12-15 01:20:02		  irc.look.raw_messages = 256
+2014-12-15 01:20:02		  irc.look.server_buffer = merge_with_core
+2014-12-15 01:20:02		  irc.look.smart_filter = on
+2014-12-15 01:20:02		  irc.look.smart_filter_delay = 5
+2014-12-15 01:20:02		  irc.look.smart_filter_join = on
+2014-12-15 01:20:02		  irc.look.smart_filter_join_unmask = 30
+2014-12-15 01:20:02		  irc.look.smart_filter_mode = "+"
+2014-12-15 01:20:02		  irc.look.smart_filter_nick = on
+2014-12-15 01:20:02		  irc.look.smart_filter_quit = on
+2014-12-15 01:20:02		  irc.look.topic_strip_colors = off
+2014-12-15 01:20:02		[color] (irc.conf)
+2014-12-15 01:20:02		  irc.color.input_nick = lightcyan
+2014-12-15 01:20:02		  irc.color.item_away = yellow
+2014-12-15 01:20:02		  irc.color.item_channel_modes = default
+2014-12-15 01:20:02		  irc.color.item_lag_counting = default
+2014-12-15 01:20:02		  irc.color.item_lag_finished = yellow
+2014-12-15 01:20:02		  irc.color.item_nick_modes = default
+2014-12-15 01:20:02		  irc.color.message_join = green
+2014-12-15 01:20:02		  irc.color.message_quit = red
+2014-12-15 01:20:02		  irc.color.mirc_remap = "1,-1:darkgray"
+2014-12-15 01:20:02		  irc.color.nick_prefixes = "q:lightred;a:lightcyan;o:lightgreen;h:lightmagenta;v:yellow;*:lightblue"
+2014-12-15 01:20:02		  irc.color.notice = green
+2014-12-15 01:20:02		  irc.color.reason_quit = default
+2014-12-15 01:20:02		  irc.color.topic_new = white
+2014-12-15 01:20:02		  irc.color.topic_old = default
+2014-12-15 01:20:02		[network] (irc.conf)
+2014-12-15 01:20:02		  irc.network.alternate_nick = on
+2014-12-15 01:20:02		  irc.network.autoreconnect_delay_growing = 2
+2014-12-15 01:20:02		  irc.network.autoreconnect_delay_max = 600
+2014-12-15 01:20:02		  irc.network.ban_mask_default = "*!$ident@$host"
+2014-12-15 01:20:02		  irc.network.colors_receive = on
+2014-12-15 01:20:02		  irc.network.colors_send = on
+2014-12-15 01:20:02		  irc.network.lag_check = 60
+2014-12-15 01:20:02		  irc.network.lag_max = 1800
+2014-12-15 01:20:02		  irc.network.lag_min_show = 500
+2014-12-15 01:20:02		  irc.network.lag_reconnect = 0
+2014-12-15 01:20:02		  irc.network.lag_refresh_interval = 1
+2014-12-15 01:20:02		  irc.network.notify_check_ison = 1
+2014-12-15 01:20:02		  irc.network.notify_check_whois = 5
+2014-12-15 01:20:02		  irc.network.send_unknown_commands = off
+2014-12-15 01:20:02		  irc.network.whois_double_nick = off
+2014-12-15 01:20:02		[server_default] (irc.conf)
+2014-12-15 01:20:02		  irc.server_default.addresses = ""
+2014-12-15 01:20:02		  irc.server_default.anti_flood_prio_high = 2
+2014-12-15 01:20:02		  irc.server_default.anti_flood_prio_low = 2
+2014-12-15 01:20:02		  irc.server_default.autoconnect = off
+2014-12-15 01:20:02		  irc.server_default.autojoin = ""
+2014-12-15 01:20:02		  irc.server_default.autoreconnect = on
+2014-12-15 01:20:02		  irc.server_default.autoreconnect_delay = 10
+2014-12-15 01:20:02		  irc.server_default.autorejoin = off
+2014-12-15 01:20:02		  irc.server_default.autorejoin_delay = 30
+2014-12-15 01:20:02		  irc.server_default.away_check = 0
+2014-12-15 01:20:02		  irc.server_default.away_check_max_nicks = 25
+2014-12-15 01:20:02		  irc.server_default.capabilities = ""
+2014-12-15 01:20:02		  irc.server_default.command = ""
+2014-12-15 01:20:02		  irc.server_default.command_delay = 0
+2014-12-15 01:20:02		  irc.server_default.connection_timeout = 60
+2014-12-15 01:20:02		  irc.server_default.default_msg_kick = ""
+2014-12-15 01:20:02		  irc.server_default.default_msg_part = "WeeChat %v"
+2014-12-15 01:20:02		  irc.server_default.default_msg_quit = "WeeChat %v"
+2014-12-15 01:20:02		  irc.server_default.ipv6 = on
+2014-12-15 01:20:02		  irc.server_default.local_hostname = ""
+2014-12-15 01:20:02		  irc.server_default.nicks = "kim,kim1,kim2,kim3,kim4"  (default: "")
+2014-12-15 01:20:02		  irc.server_default.notify = ""
+2014-12-15 01:20:02		  irc.server_default.password = ""
+2014-12-15 01:20:02		  irc.server_default.proxy = ""
+2014-12-15 01:20:02		  irc.server_default.realname = ""
+2014-12-15 01:20:02		  irc.server_default.sasl_mechanism = plain
+2014-12-15 01:20:02		  irc.server_default.sasl_password = ""
+2014-12-15 01:20:02		  irc.server_default.sasl_timeout = 15
+2014-12-15 01:20:02		  irc.server_default.sasl_username = ""
+2014-12-15 01:20:02		  irc.server_default.ssl = off
+2014-12-15 01:20:02		  irc.server_default.ssl_cert = ""
+2014-12-15 01:20:02		  irc.server_default.ssl_dhkey_size = 2048
+2014-12-15 01:20:02		  irc.server_default.ssl_fingerprint = ""
+2014-12-15 01:20:02		  irc.server_default.ssl_priorities = "NORMAL"
+2014-12-15 01:20:02		  irc.server_default.ssl_verify = on
+2014-12-15 01:20:02		  irc.server_default.username = "kim"  (default: "")
+2014-12-15 01:20:02		[server] (irc.conf)
+2014-12-15 01:20:02		  irc.server.freenode.addresses = "chat.freenode.net/6667"  (default: (undefined))
+2014-12-15 01:20:02		  irc.server.freenode.anti_flood_prio_high
+2014-12-15 01:20:02		  irc.server.freenode.anti_flood_prio_low
+2014-12-15 01:20:02		  irc.server.freenode.autoconnect
+2014-12-15 01:20:02		  irc.server.freenode.autojoin
+2014-12-15 01:20:02		  irc.server.freenode.autoreconnect
+2014-12-15 01:20:02		  irc.server.freenode.autoreconnect_delay
+2014-12-15 01:20:02		  irc.server.freenode.autorejoin
+2014-12-15 01:20:02		  irc.server.freenode.autorejoin_delay
+2014-12-15 01:20:02		  irc.server.freenode.away_check
+2014-12-15 01:20:02		  irc.server.freenode.away_check_max_nicks
+2014-12-15 01:20:02		  irc.server.freenode.capabilities
+2014-12-15 01:20:02		  irc.server.freenode.command
+2014-12-15 01:20:02		  irc.server.freenode.command_delay
+2014-12-15 01:20:02		  irc.server.freenode.connection_timeout
+2014-12-15 01:20:02		  irc.server.freenode.default_msg_kick
+2014-12-15 01:20:02		  irc.server.freenode.default_msg_part
+2014-12-15 01:20:02		  irc.server.freenode.default_msg_quit
+2014-12-15 01:20:02		  irc.server.freenode.ipv6
+2014-12-15 01:20:02		  irc.server.freenode.local_hostname
+2014-12-15 01:20:02		  irc.server.freenode.nicks
+2014-12-15 01:20:02		  irc.server.freenode.notify
+2014-12-15 01:20:02		  irc.server.freenode.password
+2014-12-15 01:20:02		  irc.server.freenode.proxy
+2014-12-15 01:20:02		  irc.server.freenode.realname
+2014-12-15 01:20:02		  irc.server.freenode.sasl_mechanism
+2014-12-15 01:20:02		  irc.server.freenode.sasl_password
+2014-12-15 01:20:02		  irc.server.freenode.sasl_timeout
+2014-12-15 01:20:02		  irc.server.freenode.sasl_username
+2014-12-15 01:20:02		  irc.server.freenode.ssl
+2014-12-15 01:20:02		  irc.server.freenode.ssl_cert
+2014-12-15 01:20:02		  irc.server.freenode.ssl_dhkey_size
+2014-12-15 01:20:02		  irc.server.freenode.ssl_fingerprint
+2014-12-15 01:20:02		  irc.server.freenode.ssl_priorities
+2014-12-15 01:20:02		  irc.server.freenode.ssl_verify
+2014-12-15 01:20:02		  irc.server.freenode.username
+2014-12-15 01:20:02		861 options
+2014-12-15 01:24:06	 !!! 	Error: WeeChat main buffer can't be closed
+2014-12-15 01:24:30		[irc]  /server  list|listfull [<server>]
+2014-12-15 01:24:30		                add <server> <hostname>[/<port>] [-temp] [-<option>[=<value>]] [-no<option>]
+2014-12-15 01:24:30		                copy|rename <server> <new_name>
+2014-12-15 01:24:30		                del|keep <server>
+2014-12-15 01:24:30		                deloutq|jump|raw
+2014-12-15 01:24:30		list, add or remove IRC servers
+2014-12-15 01:24:30		    list: list servers (without argument, this list is displayed)
+2014-12-15 01:24:30		listfull: list servers with detailed info for each server
+2014-12-15 01:24:30		     add: create a new server
+2014-12-15 01:24:30		  server: server name, for internal and display use
+2014-12-15 01:24:30		hostname: name or IP address of server, with optional port (default: 6667), many addresses can be separated by a comma
+2014-12-15 01:24:30		    temp: create temporary server (not saved)
+2014-12-15 01:24:30		  option: set option for server (for boolean option, value can be omitted)
+2014-12-15 01:24:30		nooption: set boolean option to 'off' (for example: -nossl)
+2014-12-15 01:24:30		    copy: duplicate a server
+2014-12-15 01:24:30		  rename: rename a server
+2014-12-15 01:24:30		    keep: keep server in config file (for temporary servers only)
+2014-12-15 01:24:30		     del: delete a server
+2014-12-15 01:24:30		 deloutq: delete messages out queue for all servers (all messages WeeChat is currently sending)
+2014-12-15 01:24:30		    jump: jump to server buffer
+2014-12-15 01:24:30		     raw: open buffer with raw IRC data
+2014-12-15 01:24:30		Examples:
+2014-12-15 01:24:30		  /server listfull
+2014-12-15 01:24:30		  /server add oftc irc.oftc.net/6697 -ssl -autoconnect
+2014-12-15 01:24:30		  /server add oftc6 irc6.oftc.net/6697 -ipv6 -ssl
+2014-12-15 01:24:30		  /server add freenode2 chat.eu.freenode.net/6667,chat.us.freenode.net/6667
+2014-12-15 01:24:30		  /server add freenode3 irc.freenode.net -password=mypass
+2014-12-15 01:24:30		  /server copy oftc oftcbis
+2014-12-15 01:24:30		  /server rename oftc newoftc
+2014-12-15 01:24:30		  /server del freenode
+2014-12-15 01:24:30		  /server deloutq
+2014-12-15 01:24:39	 !!! 	Error with command "/server lsit" (help on command: /help server)
+2014-12-15 01:24:42		All servers:
+2014-12-15 01:24:42		   freenode
+2014-12-15 01:26:06		irc: server rizon created
+2014-12-15 01:26:25	 !!! 	Error with command "/nick" (help on command: /help nick)
+2014-12-15 01:26:29	 !!! 	No help available, "nickj" is not a command or an option
+2014-12-15 01:26:30		[irc]  /nick  [-all] <nick>
+2014-12-15 01:26:30		change current nick
+2014-12-15 01:26:30		-all: set new nick for all connected servers
+2014-12-15 01:26:30		nick: new nick
+2014-12-15 01:26:40	 !!! 	Error with command "/nick aland-kun -all" (help on command: /help nick)
+2014-12-15 01:30:55		Option changed: irc.server.rizon.autoconnect = on  (default: (undefined))
+2014-12-15 01:32:53		Option changed: irc.server.rizon.nicks = "aland-kun,aland,aland2,aland3,aland4"  (default: (undefined))
+2014-12-15 01:33:16		Option changed: irc.server.rizon.command = "/msg nickserv identify ayylmao420"  (default: (undefined))
+2014-12-15 01:33:43		Option changed: irc.server.rizon.autojoin = "#svp,#svtsp"  (default: (undefined))
+2014-12-15 01:34:11		script: downloading list of scripts...
+2014-12-15 01:34:11		script: 279 scripts for WeeChat 1.0.1
+2014-12-15 01:36:16		[core]
+2014-12-15 01:36:16		  away     buffer   command  debug    filter   history  key      mouse    plugin   proxy    reload   save     set      upgrade  version  window 
+2014-12-15 01:36:16		  bar      color    cursor   eval     help     input    layout   mute     print    quit     repeat   secure   unset    uptime   wait   
+2014-12-15 01:36:16		[logger]
+2014-12-15 01:36:16		  logger
+2014-12-15 01:36:16		[lua]
+2014-12-15 01:36:16		  lua
+2014-12-15 01:36:16		[script]
+2014-12-15 01:36:16		  script
+2014-12-15 01:36:16		[aspell]
+2014-12-15 01:36:16		  aspell
+2014-12-15 01:36:16		[ruby]
+2014-12-15 01:36:16		  ruby
+2014-12-15 01:36:16		[exec]
+2014-12-15 01:36:16		  exec
+2014-12-15 01:36:16		[alias]
+2014-12-15 01:36:16		  AAWAY    AME      ANICK    BYE      CHAT     CLOSE    IG       K        LEAVE    MSGBUF   N        REDRAW   SIGNOFF  UB       unalias  W        WI       WW     
+2014-12-15 01:36:16		  alias    AMSG     BEEP     C        CL       EXIT     J        KB       M        MUB      Q        SAY      T        UMODE    V        WC       WII    
+2014-12-15 01:36:16		[perl]
+2014-12-15 01:36:16		  perl
+2014-12-15 01:36:16		[python]
+2014-12-15 01:36:16		  python
+2014-12-15 01:36:16		[xfer]
+2014-12-15 01:36:16		  me  xfer
+2014-12-15 01:36:16		[trigger]
+2014-12-15 01:36:16		  trigger
+2014-12-15 01:36:16		[relay]
+2014-12-15 01:36:16		  relay
+2014-12-15 01:36:16		[charset]
+2014-12-15 01:36:16		  charset
+2014-12-15 01:36:16		[irc]
+2014-12-15 01:36:16		  admin       connect     deop        ignore      kick        lusers      msg         op          query       remove      sapart      squery      topic       users       who       
+2014-12-15 01:36:16		  allchan     ctcp        devoice     info        kickban     map         names       oper        quiet       restart     saquit      squit       trace       version     whois     
+2014-12-15 01:36:16		  allpv       cycle       die         invite      kill        me          nick        part        quote       sajoin      server      stats       unban       voice       whowas    
+2014-12-15 01:36:16		  allserv     dcc         disconnect  ison        links       mode        notice      ping        reconnect   samode      service     summon      unquiet     wallchops 
+2014-12-15 01:36:16		  ban         dehalfop    halfop      join        list        motd        notify      pong        rehash      sanick      servlist    time        userhost    wallops   
+2014-12-15 01:36:16		[guile]
+2014-12-15 01:36:16		  guile
+2014-12-15 01:36:30		[irc]  /time  [<target>]
+2014-12-15 01:36:30		query local time from server
+2014-12-15 01:36:30		target: query time from specified server
+2014-12-15 01:47:40		List of bars:
+2014-12-15 01:47:40		  input: root, bottom, height: 1
+2014-12-15 01:47:40		  nicklist: (hidden) root, right, width: 13
+2014-12-15 01:47:40		  title: (hidden) root, top, height: 1
+2014-12-15 01:47:40		  buffers: (hidden) root, top, height: auto
+2014-12-15 01:47:40		  buddylist: (hidden) root, left, width: auto
+2014-12-15 01:47:47		[core]  /bar  list|listfull|listitems
+2014-12-15 01:47:47		              add <name> <type>[,<condition>] <position> <size> <separator> <item1>[,<item2>...]
+2014-12-15 01:47:47		              default [input|title|status|nicklist]
+2014-12-15 01:47:47		              del <name>|-all
+2014-12-15 01:47:47		              set <name> <option> <value>
+2014-12-15 01:47:47		              hide|show|toggle <name>
+2014-12-15 01:47:47		              scroll <name> <window> <scroll_value>
+2014-12-15 01:47:47		manage bars
+2014-12-15 01:47:47		         list: list all bars
+2014-12-15 01:47:47		     listfull: list all bars (verbose)
+2014-12-15 01:47:47		    listitems: list all bar items
+2014-12-15 01:47:47		          add: add a new bar
+2014-12-15 01:47:47		         name: name of bar (must be unique)
+2014-12-15 01:47:47		         type:   root: outside windows,
+2014-12-15 01:47:47		               window: inside windows, with optional conditions (see below)
+2014-12-15 01:47:47		    condition: condition(s) for displaying bar (only for type "window"):
+2014-12-15 01:47:47		                 active: on active window
+2014-12-15 01:47:47		               inactive: on inactive windows
+2014-12-15 01:47:47		               nicklist: on windows with nicklist
+2014-12-15 01:47:47		               other condition: see /help weechat.bar.xxx.conditions and /help eval
+2014-12-15 01:47:47		               without condition, the bar is always displayed
+2014-12-15 01:47:47		     position: bottom, top, left or right
+2014-12-15 01:47:47		         size: size of bar (in chars)
+2014-12-15 01:47:47		    separator: 1 for using separator (line), 0 or nothing means no separator
+2014-12-15 01:47:47		    item1,...: items for this bar (items can be separated by comma (space between items) or "+" (glued items))
+2014-12-15 01:47:47		      default: create a default bar (all default bars if no bar name is given)
+2014-12-15 01:47:47		          del: delete a bar (or all bars with -all)
+2014-12-15 01:47:47		          set: set a value for a bar property
+2014-12-15 01:47:47		       option: option to change (for options list, look at /set weechat.bar.<barname>.*)
+2014-12-15 01:47:47		        value: new value for option
+2014-12-15 01:47:47		         hide: hide a bar
+2014-12-15 01:47:47		         show: show an hidden bar
+2014-12-15 01:47:47		       toggle: hide/show a bar
+2014-12-15 01:47:47		       scroll: scroll bar
+2014-12-15 01:47:47		       window: window number (use '*' for current window or for root bars)
+2014-12-15 01:47:47		 scroll_value: value for scroll: 'x' or 'y' (optional), followed by '+', '-', 'b' (beginning) or 'e' (end), value (for +/-), and optional % (to scroll by % of width/height, otherwise value is number of chars)
+2014-12-15 01:47:47		Examples:
+2014-12-15 01:47:47		  create a bar with time, buffer number + name, and completion:
+2014-12-15 01:47:47		    /bar add mybar root bottom 1 0 [time],buffer_number+:+buffer_name,completion
+2014-12-15 01:47:47		  hide a bar:
+2014-12-15 01:47:47		    /bar hide mybar
+2014-12-15 01:47:47		  scroll nicklist 10 lines down on current buffer:
+2014-12-15 01:47:47		    /bar scroll nicklist * y+10
+2014-12-15 01:47:47		  scroll to end of nicklist on current buffer:
+2014-12-15 01:47:47		    /bar scroll nicklist * ye
+2014-12-15 01:47:52	 !!! 	Error: unknown command "/clear" (type /help for help)
+2014-12-15 01:47:56		[core]
+2014-12-15 01:47:56		  away     buffer   command  debug    filter   history  key      mouse    plugin   proxy    reload   save     set      upgrade  version  window 
+2014-12-15 01:47:56		  bar      color    cursor   eval     help     input    layout   mute     print    quit     repeat   secure   unset    uptime   wait   
+2014-12-15 01:47:56		[logger]
+2014-12-15 01:47:56		  logger
+2014-12-15 01:47:56		[lua]
+2014-12-15 01:47:56		  lua
+2014-12-15 01:47:56		[script]
+2014-12-15 01:47:56		  script
+2014-12-15 01:47:56		[aspell]
+2014-12-15 01:47:56		  aspell
+2014-12-15 01:47:56		[ruby]
+2014-12-15 01:47:56		  ruby
+2014-12-15 01:47:56		[exec]
+2014-12-15 01:47:56		  exec
+2014-12-15 01:47:56		[alias]
+2014-12-15 01:47:56		  AAWAY    AME      ANICK    BYE      CHAT     CLOSE    IG       K        LEAVE    MSGBUF   N        REDRAW   SIGNOFF  UB       unalias  W        WI       WW     
+2014-12-15 01:47:56		  alias    AMSG     BEEP     C        CL       EXIT     J        KB       M        MUB      Q        SAY      T        UMODE    V        WC       WII    
+2014-12-15 01:47:56		[perl]
+2014-12-15 01:47:56		  perl
+2014-12-15 01:47:56		[python]
+2014-12-15 01:47:56		  python
+2014-12-15 01:47:56		[xfer]
+2014-12-15 01:47:56		  me  xfer
+2014-12-15 01:47:56		[trigger]
+2014-12-15 01:47:56		  trigger
+2014-12-15 01:47:56		[relay]
+2014-12-15 01:47:56		  relay
+2014-12-15 01:47:56		[charset]
+2014-12-15 01:47:56		  charset
+2014-12-15 01:47:56		[irc]
+2014-12-15 01:47:56		  admin       connect     deop        ignore      kick        lusers      msg         op          query       remove      sapart      squery      topic       users       who       
+2014-12-15 01:47:56		  allchan     ctcp        devoice     info        kickban     map         names       oper        quiet       restart     saquit      squit       trace       version     whois     
+2014-12-15 01:47:56		  allpv       cycle       die         invite      kill        me          nick        part        quote       sajoin      server      stats       unban       voice       whowas    
+2014-12-15 01:47:56		  allserv     dcc         disconnect  ison        links       mode        notice      ping        reconnect   samode      service     summon      unquiet     wallchops 
+2014-12-15 01:47:56		  ban         dehalfop    halfop      join        list        motd        notify      pong        rehash      sanick      servlist    time        userhost    wallops   
+2014-12-15 01:47:56		[guile]
+2014-12-15 01:47:56		  guile
+2014-12-15 01:48:15		[core]  /bar  list|listfull|listitems
+2014-12-15 01:48:15		              add <name> <type>[,<condition>] <position> <size> <separator> <item1>[,<item2>...]
+2014-12-15 01:48:15		              default [input|title|status|nicklist]
+2014-12-15 01:48:15		              del <name>|-all
+2014-12-15 01:48:15		              set <name> <option> <value>
+2014-12-15 01:48:15		              hide|show|toggle <name>
+2014-12-15 01:48:15		              scroll <name> <window> <scroll_value>
+2014-12-15 01:48:15		manage bars
+2014-12-15 01:48:15		         list: list all bars
+2014-12-15 01:48:15		     listfull: list all bars (verbose)
+2014-12-15 01:48:15		    listitems: list all bar items
+2014-12-15 01:48:15		          add: add a new bar
+2014-12-15 01:48:15		         name: name of bar (must be unique)
+2014-12-15 01:48:15		         type:   root: outside windows,
+2014-12-15 01:48:15		               window: inside windows, with optional conditions (see below)
+2014-12-15 01:48:15		    condition: condition(s) for displaying bar (only for type "window"):
+2014-12-15 01:48:15		                 active: on active window
+2014-12-15 01:48:15		               inactive: on inactive windows
+2014-12-15 01:48:15		               nicklist: on windows with nicklist
+2014-12-15 01:48:15		               other condition: see /help weechat.bar.xxx.conditions and /help eval
+2014-12-15 01:48:15		               without condition, the bar is always displayed
+2014-12-15 01:48:15		     position: bottom, top, left or right
+2014-12-15 01:48:15		         size: size of bar (in chars)
+2014-12-15 01:48:15		    separator: 1 for using separator (line), 0 or nothing means no separator
+2014-12-15 01:48:15		    item1,...: items for this bar (items can be separated by comma (space between items) or "+" (glued items))
+2014-12-15 01:48:15		      default: create a default bar (all default bars if no bar name is given)
+2014-12-15 01:48:15		          del: delete a bar (or all bars with -all)
+2014-12-15 01:48:15		          set: set a value for a bar property
+2014-12-15 01:48:15		       option: option to change (for options list, look at /set weechat.bar.<barname>.*)
+2014-12-15 01:48:15		        value: new value for option
+2014-12-15 01:48:15		         hide: hide a bar
+2014-12-15 01:48:15		         show: show an hidden bar
+2014-12-15 01:48:15		       toggle: hide/show a bar
+2014-12-15 01:48:15		       scroll: scroll bar
+2014-12-15 01:48:15		       window: window number (use '*' for current window or for root bars)
+2014-12-15 01:48:15		 scroll_value: value for scroll: 'x' or 'y' (optional), followed by '+', '-', 'b' (beginning) or 'e' (end), value (for +/-), and optional % (to scroll by % of width/height, otherwise value is number of chars)
+2014-12-15 01:48:15		Examples:
+2014-12-15 01:48:15		  create a bar with time, buffer number + name, and completion:
+2014-12-15 01:48:15		    /bar add mybar root bottom 1 0 [time],buffer_number+:+buffer_name,completion
+2014-12-15 01:48:15		  hide a bar:
+2014-12-15 01:48:15		    /bar hide mybar
+2014-12-15 01:48:15		  scroll nicklist 10 lines down on current buffer:
+2014-12-15 01:48:15		    /bar scroll nicklist * y+10
+2014-12-15 01:48:15		  scroll to end of nicklist on current buffer:
+2014-12-15 01:48:15		    /bar scroll nicklist * ye
+2014-12-15 01:48:47		fifo: pipe closed
+2014-12-15 01:49:12		script: 279 scripts for WeeChat 1.0.1
+2014-12-15 01:49:12	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-15 01:49:12	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-15 01:49:12		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-15 01:51:39		fifo: pipe closed
+2014-12-15 01:54:31		script: 279 scripts for WeeChat 1.0.1
+2014-12-15 01:54:31	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-15 01:54:31	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-15 01:54:31		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-15 01:54:52		fifo: pipe closed
+2014-12-15 01:55:31		script: 279 scripts for WeeChat 1.0.1
+2014-12-15 01:55:31	 !!! 	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-15 01:55:31	 !!! 	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-15 01:55:31		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-15 01:56:32		[core]
+2014-12-15 01:56:32		  away     buffer   command  debug    filter   history  key      mouse    plugin   proxy    reload   save     set      upgrade  version  window 
+2014-12-15 01:56:32		  bar      color    cursor   eval     help     input    layout   mute     print    quit     repeat   secure   unset    uptime   wait   
+2014-12-15 01:56:32		[logger]
+2014-12-15 01:56:32		  logger
+2014-12-15 01:56:32		[lua]
+2014-12-15 01:56:32		  lua
+2014-12-15 01:56:32		[script]
+2014-12-15 01:56:32		  script
+2014-12-15 01:56:32		[aspell]
+2014-12-15 01:56:32		  aspell
+2014-12-15 01:56:32		[ruby]
+2014-12-15 01:56:32		  ruby
+2014-12-15 01:56:32		[exec]
+2014-12-15 01:56:32		  exec
+2014-12-15 01:56:32		[alias]
+2014-12-15 01:56:32		  AAWAY    AME      ANICK    BYE      CHAT     CLOSE    IG       K        LEAVE    MSGBUF   N        REDRAW   SIGNOFF  UB       unalias  W        WI       WW     
+2014-12-15 01:56:32		  alias    AMSG     BEEP     C        CL       EXIT     J        KB       M        MUB      Q        SAY      T        UMODE    V        WC       WII    
+2014-12-15 01:56:32		[perl]
+2014-12-15 01:56:32		  perl
+2014-12-15 01:56:32		[python]
+2014-12-15 01:56:32		  python
+2014-12-15 01:56:32		[xfer]
+2014-12-15 01:56:32		  me  xfer
+2014-12-15 01:56:32		[trigger]
+2014-12-15 01:56:32		  trigger
+2014-12-15 01:56:32		[relay]
+2014-12-15 01:56:32		  relay
+2014-12-15 01:56:32		[charset]
+2014-12-15 01:56:32		  charset
+2014-12-15 01:56:32		[irc]
+2014-12-15 01:56:32		  admin       connect     deop        ignore      kick        lusers      msg         op          query       remove      sapart      squery      topic       users       who       
+2014-12-15 01:56:32		  allchan     ctcp        devoice     info        kickban     map         names       oper        quiet       restart     saquit      squit       trace       version     whois     
+2014-12-15 01:56:32		  allpv       cycle       die         invite      kill        me          nick        part        quote       sajoin      server      stats       unban       voice       whowas    
+2014-12-15 01:56:32		  allserv     dcc         disconnect  ison        links       mode        notice      ping        reconnect   samode      service     summon      unquiet     wallchops 
+2014-12-15 01:56:32		  ban         dehalfop    halfop      join        list        motd        notify      pong        rehash      sanick      servlist    time        userhost    wallops   
+2014-12-15 01:56:32		[guile]
+2014-12-15 01:56:32		  guile
+2014-12-15 01:56:43		[irc]  /names  [<channel>[,<channel>...]]
+2014-12-15 01:56:43		list nicks on channels
+2014-12-15 01:56:43		channel: channel name
+2014-12-15 01:56:50		[irc]  /nick  [-all] <nick>
+2014-12-15 01:56:50		change current nick
+2014-12-15 01:56:50		-all: set new nick for all connected servers
+2014-12-15 01:56:50		nick: new nick
+2014-12-15 01:57:00		[irc]  /userhost  <nick> [<nick>...]
+2014-12-15 01:57:00		return a list of information about nicks
+2014-12-15 01:57:00		nick: nick
+2014-12-15 02:18:33		fifo: pipe closed
+2014-12-15 23:12:31		script: 279 scripts for WeeChat 1.0.1
+2014-12-15 23:12:32	 !!! 	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-15 23:12:32	 !!! 	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-15 23:12:32		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-15 23:12:32		fifo: pipe closed
+2014-12-15 23:13:23		script: 279 scripts for WeeChat 1.0.1
+2014-12-15 23:13:23	 !!! 	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-15 23:13:23	 !!! 	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-15 23:13:23		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-15 23:14:34		Option changed: irc.server.rizon.autoconnect = off  (default: (undefined))
+2014-12-15 23:14:59		fifo: pipe closed
+2014-12-15 23:18:10		script: 279 scripts for WeeChat 1.0.1
+2014-12-15 23:18:10	 !!! 	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-15 23:18:10	 !!! 	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-15 23:18:10		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-15 23:19:06		Option changed: irc.server.rizon.username = "aland-kun"  (default: (undefined))
+2014-12-15 23:19:15		Option changed: irc.server.rizon.realname = "realname"  (default: (undefined))
+2014-12-15 23:19:47	 !!! 	irc: command "join" must be executed on irc buffer (server or channel)
+2014-12-15 23:20:57		fifo: pipe closed
+2014-12-15 23:24:35		script: 279 scripts for WeeChat 1.0.1
+2014-12-15 23:24:35	 !!! 	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-15 23:24:35	 !!! 	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-15 23:24:35		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-15 23:24:44		Option changed: weechat.look.mouse = on  (default: off)
+2014-12-15 23:25:19		Option changed: weechat.bar.nicklist.position = right
+2014-12-15 23:25:59		[server] (irc.conf)
+2014-12-15 23:25:59		  irc.server.rizon.autojoin = "#svp,#svtsp"  (default: (undefined))
+2014-12-15 23:25:59		1 option (matching with "irc.server.rizon.autojoin")
+2014-12-15 23:26:07		Option changed: irc.server.rizon.autojoin = "undefined"  (default: (undefined))
+2014-12-15 23:26:17		Option changed: irc.server.rizon.autojoin = ""  (default: (undefined))
+2014-12-15 23:29:21		Option changed: weechat.bar.nicklist.position = right
+2014-12-15 23:32:43		fifo: pipe closed
+2014-12-15 23:33:04		script: 279 scripts for WeeChat 1.0.1
+2014-12-15 23:33:05	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-15 23:33:05	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-15 23:33:05		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-15 23:33:37		fifo: pipe closed
+2014-12-15 23:34:20		script: 279 scripts for WeeChat 1.0.1
+2014-12-15 23:34:20	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-15 23:34:20	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-15 23:34:20		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-15 23:36:19		fifo: pipe closed
+2014-12-15 23:36:20		script: 279 scripts for WeeChat 1.0.1
+2014-12-15 23:36:20	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-15 23:36:20	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-15 23:36:20		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-15 23:40:47		fifo: pipe closed
+2014-12-15 23:40:50		script: 279 scripts for WeeChat 1.0.1
+2014-12-15 23:40:50	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-15 23:40:50	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-15 23:40:50		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-15 23:41:08		fifo: pipe closed
+2014-12-15 23:42:30		script: 279 scripts for WeeChat 1.0.1
+2014-12-15 23:42:30	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-15 23:42:30	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-15 23:42:30		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-15 23:42:52		fifo: pipe closed
+2014-12-15 23:45:11		script: 279 scripts for WeeChat 1.0.1
+2014-12-15 23:45:11	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-15 23:45:11	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-15 23:45:11		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-15 23:45:41		fifo: pipe closed
+2014-12-15 23:46:00		script: 279 scripts for WeeChat 1.0.1
+2014-12-15 23:46:00	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-15 23:46:00	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-15 23:46:00		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-15 23:46:22		fifo: pipe closed
+2014-12-15 23:46:41		script: 279 scripts for WeeChat 1.0.1
+2014-12-15 23:46:41	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-15 23:46:41	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-15 23:46:41		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-15 23:50:18		fifo: pipe closed
+2014-12-15 23:50:36		script: 279 scripts for WeeChat 1.0.1
+2014-12-15 23:50:36	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-15 23:50:36	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-15 23:50:36		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-15 23:51:36		fifo: pipe closed
+2014-12-15 23:52:41		script: 279 scripts for WeeChat 1.0.1
+2014-12-15 23:52:41	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-15 23:52:41	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-15 23:52:41		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-15 23:53:56		fifo: pipe closed
+2014-12-15 23:53:58		script: 279 scripts for WeeChat 1.0.1
+2014-12-15 23:53:58	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-15 23:53:58	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-15 23:53:58		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-15 23:54:41		fifo: pipe closed
+2014-12-15 23:54:42		script: 279 scripts for WeeChat 1.0.1
+2014-12-15 23:54:42	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-15 23:54:42	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-15 23:54:42		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-15 23:54:48		fifo: pipe closed
+2014-12-15 23:55:38		script: 279 scripts for WeeChat 1.0.1
+2014-12-15 23:55:38	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-15 23:55:38	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-15 23:55:38		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-15 23:55:50		fifo: pipe closed
+2014-12-15 23:57:12		script: 279 scripts for WeeChat 1.0.1
+2014-12-15 23:57:12	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-15 23:57:12	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-15 23:57:12		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-15 23:59:34		fifo: pipe closed
+2014-12-15 23:59:36		script: 279 scripts for WeeChat 1.0.1
+2014-12-15 23:59:36	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-15 23:59:36	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-15 23:59:36		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-16 00:00:21		fifo: pipe closed
+2014-12-16 00:00:28		script: 279 scripts for WeeChat 1.0.1
+2014-12-16 00:00:28	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-16 00:00:28	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-16 00:00:28		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-16 00:00:50		Option changed: weechat.bar.status.color_fg = red  (default: blue)
+2014-12-16 00:01:19		Option changed: weechat.bar.status.color_delim = green  (default: blue)
+2014-12-16 00:01:27		Option changed: weechat.bar.status.color_delim = white  (default: blue)
+2014-12-16 00:03:16		[bar] (weechat.conf)
+2014-12-16 00:03:16		  weechat.bar.buffers.color_fg = default
+2014-12-16 00:03:16		1 option (matching with "weechat.bar.buffers.color_fg")
+2014-12-16 00:03:21		[bar] (weechat.conf)
+2014-12-16 00:03:21		  weechat.bar.buffers.color_delim = default
+2014-12-16 00:03:21		1 option (matching with "weechat.bar.buffers.color_delim")
+2014-12-16 00:03:26		Option changed: weechat.bar.buffers.color_delim = red  (default: default)
+2014-12-16 00:03:39		[bar] (weechat.conf)
+2014-12-16 00:03:39		  weechat.bar.buffers.color_fg = default
+2014-12-16 00:03:39		1 option (matching with "weechat.bar.buffers.color_fg")
+2014-12-16 00:03:41		Option changed: weechat.bar.buffers.color_fg = red  (default: default)
+2014-12-16 00:05:28		fifo: pipe closed
+2014-12-16 00:05:51		script: 279 scripts for WeeChat 1.0.1
+2014-12-16 00:05:51	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-16 00:05:51	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-16 00:05:51		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-16 00:06:37		fifo: pipe closed
+2014-12-16 00:08:51		script: 279 scripts for WeeChat 1.0.1
+2014-12-16 00:08:51	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-16 00:08:51	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-16 00:08:51		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-16 00:09:04		fifo: pipe closed
+2014-12-16 00:09:38		script: 279 scripts for WeeChat 1.0.1
+2014-12-16 00:09:38	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-16 00:09:38	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-16 00:09:38		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-16 00:11:17		fifo: pipe closed
+2014-12-16 00:11:18		script: 279 scripts for WeeChat 1.0.1
+2014-12-16 00:11:18	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-16 00:11:18	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-16 00:11:18		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-16 00:11:34		fifo: pipe closed
+2014-12-16 00:12:40		script: 279 scripts for WeeChat 1.0.1
+2014-12-16 00:12:40	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-16 00:12:40	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-16 00:12:40		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-16 00:13:26		fifo: pipe closed
+2014-12-16 00:31:30		script: 279 scripts for WeeChat 1.0.1
+2014-12-16 00:31:30	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-16 00:31:30	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-16 00:31:30		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-16 00:32:04		fifo: pipe closed
+2014-12-16 00:32:53		script: 279 scripts for WeeChat 1.0.1
+2014-12-16 00:32:53	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-16 00:32:53	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-16 00:32:53		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-16 00:33:30		fifo: pipe closed
+2014-12-16 13:55:19		script: downloading list of scripts...
+2014-12-16 13:55:20	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-16 13:55:20	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-16 13:55:20		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-16 13:55:20		script: 279 scripts for WeeChat 1.0.1
+2014-12-16 13:55:35		Option changed: irc.server.rizon.autoconnect = on  (default: (undefined))
+2014-12-16 13:55:40		[server] (irc.conf)
+2014-12-16 13:55:40		  irc.server.rizon.autojoin = ""  (default: (undefined))
+2014-12-16 13:55:40		1 option (matching with "irc.server.rizon.autojoin")
+2014-12-16 13:55:50		Option changed: irc.server.rizon.autojoin = "#svp,#svtsp"  (default: (undefined))
+2014-12-16 13:56:03		fifo: pipe closed
+2014-12-16 13:56:04		script: 279 scripts for WeeChat 1.0.1
+2014-12-16 13:56:04	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-16 13:56:04	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-16 13:56:05		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-16 15:28:21		fifo: pipe closed
+2014-12-20 15:27:46		script: downloading list of scripts...
+2014-12-20 15:27:46	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-20 15:27:46	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-20 15:27:47		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-20 15:27:47		script: 279 scripts for WeeChat 1.0.1
+2014-12-20 21:57:10		fifo: pipe closed
+2014-12-20 23:23:02		script: 279 scripts for WeeChat 1.0.1
+2014-12-20 23:23:03	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-20 23:23:03	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-20 23:23:03		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-20 23:23:51		fifo: pipe closed
+2014-12-21 12:44:41		script: 279 scripts for WeeChat 1.0.1
+2014-12-21 12:44:42	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-21 12:44:42	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-21 12:44:43		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-21 14:56:33		fifo: pipe closed
+2014-12-21 14:56:34		script: 279 scripts for WeeChat 1.0.1
+2014-12-21 14:56:35	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-21 14:56:35	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-21 14:56:35		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-21 20:17:19		fifo: pipe closed
+2014-12-21 20:18:24		script: downloading list of scripts...
+2014-12-21 20:18:24	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-21 20:18:24	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-21 20:18:24		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-21 20:18:24		script: 279 scripts for WeeChat 1.0.1
+2014-12-21 21:18:54		fifo: pipe closed
+2014-12-21 21:27:31		script: 279 scripts for WeeChat 1.0.1
+2014-12-21 21:27:31	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-21 21:27:31	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-21 21:27:31		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-22 01:06:47		fifo: pipe closed
+2014-12-22 01:08:16		script: 279 scripts for WeeChat 1.0.1
+2014-12-22 01:08:16	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-22 01:08:16	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-22 01:08:16		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-22 02:31:31		fifo: pipe closed
+2014-12-22 10:48:36		script: 279 scripts for WeeChat 1.0.1
+2014-12-22 10:48:36	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-22 10:48:36	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-22 10:48:37		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-22 11:52:17		fifo: pipe closed
+2014-12-22 11:52:22		script: 279 scripts for WeeChat 1.0.1
+2014-12-22 11:52:22	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-22 11:52:22	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-22 11:52:22		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-22 14:07:35		fifo: pipe closed
+2014-12-22 14:07:37		script: 279 scripts for WeeChat 1.0.1
+2014-12-22 14:07:37	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-22 14:07:37	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-22 14:07:37		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-22 16:13:02		fifo: pipe closed
+2014-12-22 16:13:08		script: 279 scripts for WeeChat 1.0.1
+2014-12-22 16:13:08	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-22 16:13:08	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-22 16:13:08		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-22 17:37:09		fifo: pipe closed
+2014-12-22 17:37:18		script: 279 scripts for WeeChat 1.0.1
+2014-12-22 17:37:18	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-22 17:37:18	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-22 17:37:18		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-22 20:03:17		fifo: pipe closed
+2014-12-22 20:03:25		script: 279 scripts for WeeChat 1.0.1
+2014-12-22 20:03:25	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-22 20:03:25	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-22 20:03:25		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-22 20:07:46		fifo: pipe closed
+2014-12-22 20:07:51		script: 279 scripts for WeeChat 1.0.1
+2014-12-22 20:07:51	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-22 20:07:51	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-22 20:07:51		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-22 23:56:49		fifo: pipe closed
+2014-12-22 23:56:51		script: downloading list of scripts...
+2014-12-22 23:56:52	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-22 23:56:52	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-22 23:56:52		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-22 23:56:52	=!=	script: list of scripts is empty (repository file is broken, or download has failed)
+2014-12-22 23:58:14		[irc]  /whois  [<server>] [<nick>[,<nick>...]]
+2014-12-22 23:58:14		query information about user(s)
+2014-12-22 23:58:14		server: server name
+2014-12-22 23:58:14		  nick: nick (may be a mask)
+2014-12-22 23:58:14		Without argument, this command will do a whois on:
+2014-12-22 23:58:14		- your own nick if buffer is a server/channel
+2014-12-22 23:58:14		- remote nick if buffer is a private.
+2014-12-22 23:58:14		If option irc.network.whois_double_nick is enabled, two nicks are sent (if only one nick is given), to get idle time in answer.
+2014-12-23 02:17:01		fifo: pipe closed
+2014-12-23 16:01:33		script: downloading list of scripts...
+2014-12-23 16:01:33	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-23 16:01:33	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-23 16:01:34		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-23 16:01:34		script: 279 scripts for WeeChat 1.0.1
+2014-12-23 16:23:27		fifo: pipe closed
+2014-12-23 16:23:35		script: 279 scripts for WeeChat 1.0.1
+2014-12-23 16:23:35	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-23 16:23:35	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-23 16:23:35		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-23 16:24:57		fifo: pipe closed
+2014-12-23 16:25:02		script: 279 scripts for WeeChat 1.0.1
+2014-12-23 16:25:03	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-23 16:25:03	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-23 16:25:03		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-23 17:49:37		fifo: pipe closed
+2014-12-23 17:49:38		script: 279 scripts for WeeChat 1.0.1
+2014-12-23 17:49:38	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-23 17:49:38	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-23 17:49:38		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-23 19:48:06		fifo: pipe closed
+2014-12-23 19:49:39		script: 279 scripts for WeeChat 1.0.1
+2014-12-23 19:49:39	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-23 19:49:39	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-23 19:49:40		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-24 02:07:08		fifo: pipe closed
+2014-12-24 11:56:37		script: 279 scripts for WeeChat 1.0.1
+2014-12-24 11:56:38	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-24 11:56:38	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-24 11:56:39		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-24 15:08:05		fifo: pipe closed
+2014-12-24 21:47:05		script: downloading list of scripts...
+2014-12-24 21:47:06	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-24 21:47:06	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-24 21:47:07		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-24 21:47:07		script: 279 scripts for WeeChat 1.0.1
+2014-12-25 01:26:48		fifo: pipe closed
+2014-12-25 01:26:50		script: 279 scripts for WeeChat 1.0.1
+2014-12-25 01:26:50	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-25 01:26:50	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-25 01:26:50		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-25 02:47:10		fifo: pipe closed
+2014-12-25 13:51:29		script: 279 scripts for WeeChat 1.0.1
+2014-12-25 13:51:30	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-25 13:51:30	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-25 13:51:30		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-25 16:19:39		fifo: pipe closed
+2014-12-25 20:45:45		script: 279 scripts for WeeChat 1.0.1
+2014-12-25 20:45:45	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-25 20:45:45	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-25 20:45:46		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-26 01:08:27		fifo: pipe closed
+2014-12-26 11:45:31		script: downloading list of scripts...
+2014-12-26 11:45:31	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-26 11:45:31	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-26 11:45:32		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-26 11:45:32		script: 279 scripts for WeeChat 1.0.1
+2014-12-26 12:11:11		fifo: pipe closed
+2014-12-26 12:13:54		script: 279 scripts for WeeChat 1.0.1
+2014-12-26 12:13:54	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-26 12:13:54	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-26 12:13:55		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-26 13:19:50		fifo: pipe closed
+2014-12-26 13:21:02		script: 279 scripts for WeeChat 1.0.1
+2014-12-26 13:21:03	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-26 13:21:03	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-26 13:21:05		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-26 13:21:05		fifo: pipe closed
+2014-12-26 13:21:10		script: 279 scripts for WeeChat 1.0.1
+2014-12-26 13:21:10	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-26 13:21:10	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-26 13:21:10		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-26 13:22:12		fifo: pipe closed
+2014-12-26 13:22:15		script: 279 scripts for WeeChat 1.0.1
+2014-12-26 13:22:15	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-26 13:22:15	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-26 13:22:15		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-26 15:19:30		fifo: pipe closed
+2014-12-26 22:29:50		script: 279 scripts for WeeChat 1.0.1
+2014-12-26 22:29:51	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-26 22:29:51	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-26 22:29:51		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-26 22:40:32		fifo: pipe closed
+2014-12-27 12:00:42		script: downloading list of scripts...
+2014-12-27 12:00:43	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-27 12:00:43	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-27 12:00:43		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-27 12:00:43		script: 279 scripts for WeeChat 1.0.1
+2014-12-27 12:04:51		fifo: pipe closed
+2014-12-27 12:06:27		script: 279 scripts for WeeChat 1.0.1
+2014-12-27 12:06:28	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-27 12:06:28	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-27 12:06:29		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-27 16:08:25		fifo: pipe closed
+2014-12-27 18:26:35		script: 279 scripts for WeeChat 1.0.1
+2014-12-27 18:26:36	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-27 18:26:36	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-27 18:26:37		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-27 22:37:56		fifo: pipe closed
+2014-12-28 12:21:39		script: downloading list of scripts...
+2014-12-28 12:21:39	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-28 12:21:39	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-28 12:21:40		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-28 12:21:40		script: 279 scripts for WeeChat 1.0.1
+2014-12-28 12:24:33		fifo: pipe closed
+2014-12-28 20:18:16		script: 279 scripts for WeeChat 1.0.1
+2014-12-28 20:18:17	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-28 20:18:17	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-28 20:18:18		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-28 21:27:29		fifo: pipe closed
+2014-12-28 23:41:17		script: 279 scripts for WeeChat 1.0.1
+2014-12-28 23:41:18	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-28 23:41:18	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-28 23:41:18		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-29 02:12:31		fifo: pipe closed
+2014-12-29 12:38:40		script: downloading list of scripts...
+2014-12-29 12:38:41	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-29 12:38:41	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-29 12:38:42		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-29 12:38:42		script: 279 scripts for WeeChat 1.0.1
+2014-12-29 23:39:09		script: 279 scripts for WeeChat 1.0.1
+2014-12-29 23:39:09	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-29 23:39:09	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-29 23:39:10		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-30 02:16:09		fifo: pipe closed
+2014-12-30 14:44:51		script: downloading list of scripts...
+2014-12-30 14:44:51	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-30 14:44:51	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-30 14:44:52		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-30 14:44:52		script: 279 scripts for WeeChat 1.0.1
+2014-12-30 14:48:37	=!=	Option "help" not found (tip: you can use wildcard "*" in option to see a sublist)
+2014-12-30 14:48:40		[core]  /set  [<option> [<value>]]
+2014-12-30 14:48:40		              diff [<option> [<option>...]]
+2014-12-30 14:48:40		              env [<variable> [<value>]]
+2014-12-30 14:48:40		set config options and environment variables
+2014-12-30 14:48:40		option: name of an option (wildcard "*" is allowed)
+2014-12-30 14:48:40		 value: new value for option, according to type:
+2014-12-30 14:48:40		          boolean: on, off or toggle
+2014-12-30 14:48:40		          integer: number, ++number or --number
+2014-12-30 14:48:40		           string: any string ("" for empty string)
+2014-12-30 14:48:40		            color: color name, ++number or --number
+2014-12-30 14:48:40		        Note: for all types, you can use null to remove option value (undefined value). This works only for some special plugin variables.
+2014-12-30 14:48:40		  diff: display only changed options
+2014-12-30 14:48:40		   env: display or set an environment variable (use value "" to unset a variable)
+2014-12-30 14:48:40		Examples:
+2014-12-30 14:48:40		  display options about highlight:
+2014-12-30 14:48:40		    /set *highlight*
+2014-12-30 14:48:40		  add a word to highlight:
+2014-12-30 14:48:40		    /set weechat.look.highlight "word"
+2014-12-30 14:48:40		  display changed options:
+2014-12-30 14:48:40		    /set diff
+2014-12-30 14:48:40		  display changed options in irc plugin:
+2014-12-30 14:48:40		    /set diff irc.*
+2014-12-30 14:48:40		  display value of environment variable LANG:
+2014-12-30 14:48:40		    /set env LANG
+2014-12-30 14:48:40		  set environment variable LANG and use it:
+2014-12-30 14:48:40		    /set env LANG fr_FR.UTF-8
+2014-12-30 14:48:40		    /upgrade
+2014-12-30 14:48:40		  unset environment variable ABC:
+2014-12-30 14:48:40		    /set env ABC ""
+2014-12-30 14:48:49		[irc]  /whois  [<server>] [<nick>[,<nick>...]]
+2014-12-30 14:48:49		query information about user(s)
+2014-12-30 14:48:49		server: server name
+2014-12-30 14:48:49		  nick: nick (may be a mask)
+2014-12-30 14:48:49		Without argument, this command will do a whois on:
+2014-12-30 14:48:49		- your own nick if buffer is a server/channel
+2014-12-30 14:48:49		- remote nick if buffer is a private.
+2014-12-30 14:48:49		If option irc.network.whois_double_nick is enabled, two nicks are sent (if only one nick is given), to get idle time in answer.
+2014-12-30 22:13:23		fifo: pipe closed
+2014-12-30 22:13:26		script: 279 scripts for WeeChat 1.0.1
+2014-12-30 22:13:27	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-12-30 22:13:27	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-12-30 22:13:27		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-12-31 01:33:31		fifo: pipe closed
+2015-01-01 21:33:55		script: downloading list of scripts...
+2015-01-01 21:33:55	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-01-01 21:33:55	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-01-01 21:33:56		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-01-01 21:33:56		script: 279 scripts for WeeChat 1.0.1
+2015-01-02 01:08:59		fifo: pipe closed
+2015-01-02 12:12:59		script: 279 scripts for WeeChat 1.0.1
+2015-01-02 12:13:00	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-01-02 12:13:00	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-01-02 12:13:02		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-01-02 13:20:28		fifo: pipe closed
+2015-01-03 11:33:50		script: downloading list of scripts...
+2015-01-03 11:33:51	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-01-03 11:33:51	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-01-03 11:33:51		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-01-03 11:33:51		script: 279 scripts for WeeChat 1.0.1
+2015-01-03 19:24:51		fifo: pipe closed
+2015-01-03 19:25:45		script: 279 scripts for WeeChat 1.0.1
+2015-01-03 19:25:45	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-01-03 19:25:45	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-01-03 19:25:46		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-01-03 19:32:15		fifo: pipe closed
+2015-01-03 19:32:16		script: 279 scripts for WeeChat 1.0.1
+2015-01-03 19:32:16	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-01-03 19:32:16	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-01-03 19:32:16		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-01-03 20:11:49		fifo: pipe closed
+2015-01-04 00:13:43		script: 279 scripts for WeeChat 1.0.1
+2015-01-04 00:13:44	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-01-04 00:13:44	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-01-04 00:13:44		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-01-04 02:31:33		fifo: pipe closed
+2015-01-04 12:04:09		script: downloading list of scripts...
+2015-01-04 12:04:09	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-01-04 12:04:09	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-01-04 12:04:10		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-01-04 12:04:10		script: 279 scripts for WeeChat 1.0.1
+2015-01-05 00:01:49		fifo: pipe closed
+2015-01-06 14:29:53		script: downloading list of scripts...
+2015-01-06 14:29:53	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-01-06 14:29:53	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-01-06 14:29:54		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-01-06 14:30:01		script: 279 scripts for WeeChat 1.0.1
+2015-01-06 19:29:22		fifo: pipe closed
+2015-01-07 12:35:38		script: 279 scripts for WeeChat 1.0.1
+2015-01-07 12:35:38	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-01-07 12:35:38	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-01-07 12:35:40		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-01-07 13:32:33		fifo: pipe closed
+2015-01-07 13:32:35		script: 279 scripts for WeeChat 1.0.1
+2015-01-07 13:32:35	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-01-07 13:32:35	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-01-07 13:32:35		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-01-07 14:40:30		fifo: pipe closed
+2015-01-20 13:11:09		script: downloading list of scripts...
+2015-01-20 13:11:10	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-01-20 13:11:10	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-01-20 13:11:10		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-01-20 13:11:10		script: 279 scripts for WeeChat 1.1
+2015-01-20 13:11:38		fifo: pipe closed
+2015-01-20 13:12:23		script: 279 scripts for WeeChat 1.1
+2015-01-20 13:12:23	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-01-20 13:12:23	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-01-20 13:12:23		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-01-20 13:18:37		fifo: pipe closed
+2015-01-20 14:22:44		script: 279 scripts for WeeChat 1.1
+2015-01-20 14:22:44	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-01-20 14:22:44	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-01-20 14:22:45		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-01-20 14:22:54		fifo: pipe closed
+2015-01-26 11:11:44		script: downloading list of scripts...
+2015-01-26 11:11:45	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-01-26 11:11:45	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-01-26 11:11:46		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-01-26 11:11:46		script: 279 scripts for WeeChat 1.1
+2015-01-26 12:12:43		fifo: pipe closed
+2015-01-27 12:23:56		script: downloading list of scripts...
+2015-01-27 12:23:56	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-01-27 12:23:56	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-01-27 12:23:57		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-01-27 12:23:57		script: 279 scripts for WeeChat 1.1
+2015-01-27 12:26:12		fifo: pipe closed
+2015-01-27 12:26:45		script: 279 scripts for WeeChat 1.1
+2015-01-27 12:26:45	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-01-27 12:26:45	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-01-27 12:26:45		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-01-27 13:19:37		fifo: pipe closed
+2015-01-27 13:19:39		script: 279 scripts for WeeChat 1.1
+2015-01-27 13:19:39	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-01-27 13:19:39	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-01-27 13:19:39		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-01-27 13:28:22		fifo: pipe closed
+2015-01-27 13:28:24		script: 279 scripts for WeeChat 1.1
+2015-01-27 13:28:24	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-01-27 13:28:24	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-01-27 13:28:24		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-01-27 14:47:16		fifo: pipe closed
+2015-01-30 01:01:54		script: downloading list of scripts...
+2015-01-30 01:01:56	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-01-30 01:01:56	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-01-30 01:01:57		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-01-30 01:02:00		script: 279 scripts for WeeChat 1.1.1
+2015-01-30 02:37:31		fifo: pipe closed
+2015-01-31 13:04:03		script: downloading list of scripts...
+2015-01-31 13:04:03	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-01-31 13:04:03	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-01-31 13:04:04		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-01-31 13:04:09		script: 279 scripts for WeeChat 1.1.1
+2015-01-31 23:46:16		fifo: pipe closed
+2015-01-31 23:46:59		script: 279 scripts for WeeChat 1.1.1
+2015-01-31 23:46:59	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-01-31 23:46:59	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-01-31 23:47:00		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-01-31 23:49:44		fifo: pipe closed
+2015-02-01 01:05:30		script: 279 scripts for WeeChat 1.1.1
+2015-02-01 01:05:31	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-02-01 01:05:31	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-02-01 01:05:31		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-02-01 01:05:45		fifo: pipe closed
+2015-02-01 01:13:57		script: 279 scripts for WeeChat 1.1.1
+2015-02-01 01:13:57	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-02-01 01:13:57	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-02-01 01:13:57		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-02-01 01:14:17	=!=	Too few arguments for command "/msg" (help on command: /help msg)
+2015-02-01 01:14:22		[irc]  /msg  [-server <server>] <target>[,<target>...] <text>
+2015-02-01 01:14:22		send message to a nick or channel
+2015-02-01 01:14:22		server: send to this server (internal name)
+2015-02-01 01:14:22		target: nick or channel (may be mask, '*' = current channel)
+2015-02-01 01:14:22		  text: text to send
+2015-02-01 01:17:45	=!=	Too few arguments for command "/msg" (help on command: /help msg)
+2015-02-01 01:19:24	=!=	Too few arguments for command "/query" (help on command: /help query)
+2015-02-01 01:58:53		[irc]  /query  [-server <server>] <nick>[,<nick>...] [<text>]
+2015-02-01 01:58:53		send a private message to a nick
+2015-02-01 01:58:53		server: send to this server (internal name)
+2015-02-01 01:58:53		  nick: nick
+2015-02-01 01:58:53		  text: text to send
+2015-02-01 01:59:09		[alias]  /CLOSE  
+2015-02-01 01:59:09		buffer close
+2015-02-01 02:56:26		fifo: pipe closed
+2015-02-01 13:57:34		script: downloading list of scripts...
+2015-02-01 13:57:35	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-02-01 13:57:35	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-02-01 13:57:35		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-02-01 13:57:35		script: 279 scripts for WeeChat 1.1.1
+2015-02-01 14:04:54		fifo: pipe closed
+2015-02-01 14:07:01		script: 279 scripts for WeeChat 1.1.1
+2015-02-01 14:07:01	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-02-01 14:07:01	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-02-01 14:07:01		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-02-01 14:59:52		[script]  /script  list [-o|-i]
+2015-02-01 14:59:52		                   search <text>
+2015-02-01 14:59:52		                   show <script>
+2015-02-01 14:59:52		                   load|unload|reload <script> [<script>...]
+2015-02-01 14:59:52		                   autoload|noautoload|toggleautoload <script> [<script>...]
+2015-02-01 14:59:52		                   install|remove|installremove|hold [-q] <script> [<script>...]
+2015-02-01 14:59:52		                   upgrade
+2015-02-01 14:59:52		                   update
+2015-02-01 14:59:52		WeeChat scripts manager
+2015-02-01 14:59:52		          list: list loaded scripts (all languages)
+2015-02-01 14:59:52		            -o: send list of loaded scripts to buffer
+2015-02-01 14:59:52		            -i: copy list of loaded scripts in command line (for sending to buffer)
+2015-02-01 14:59:52		        search: search scripts by tags or text and display result on scripts buffer
+2015-02-01 14:59:52		          show: show detailed info about a script
+2015-02-01 14:59:52		          load: load script(s)
+2015-02-01 14:59:52		        unload: unload script(s)
+2015-02-01 14:59:52		        reload: reload script(s)
+2015-02-01 14:59:52		      autoload: autoload the script
+2015-02-01 14:59:52		    noautoload: do not autoload the script
+2015-02-01 14:59:52		toggleautoload: toggle autoload
+2015-02-01 14:59:52		       install: install/upgrade script(s)
+2015-02-01 14:59:52		        remove: remove script(s)
+2015-02-01 14:59:52		 installremove: install or remove script(s), depending on current state
+2015-02-01 14:59:52		          hold: hold/unhold script(s) (a script held will not be upgraded any more and cannot be removed)
+2015-02-01 14:59:52		            -q: quiet mode: do not display messages
+2015-02-01 14:59:52		       upgrade: upgrade all installed scripts which are obsolete (new version available)
+2015-02-01 14:59:52		        update: update local scripts cache
+2015-02-01 14:59:52		Without argument, this command opens a buffer with list of scripts.
+2015-02-01 14:59:52		On script buffer, the possible status for each script are:
+2015-02-01 14:59:52		  * i a H r N
+2015-02-01 14:59:52		  | | | | | |
+2015-02-01 14:59:52		  | | | | | obsolete (new version available)
+2015-02-01 14:59:52		  | | | | running (loaded)
+2015-02-01 14:59:52		  | | | held
+2015-02-01 14:59:52		  | | autoloaded
+2015-02-01 14:59:52		  | installed
+2015-02-01 14:59:52		  popular script
+2015-02-01 14:59:52		Keys on script buffer:
+2015-02-01 14:59:52		  alt+i  install script
+2015-02-01 14:59:52		  alt+r  remove script
+2015-02-01 14:59:52		  alt+l  load script
+2015-02-01 14:59:52		  alt+L  reload script
+2015-02-01 14:59:52		  alt+u  unload script
+2015-02-01 14:59:52		  alt+A  autoload script
+2015-02-01 14:59:52		  alt+h  (un)hold script
+2015-02-01 14:59:52		  alt+v  view script
+2015-02-01 14:59:52		Input allowed on script buffer:
+2015-02-01 14:59:52		  i/r/l/L/u/h  action on script (same as keys above)
+2015-02-01 14:59:52		  q            close buffer
+2015-02-01 14:59:52		  $            refresh buffer
+2015-02-01 14:59:52		  s:x,y        sort buffer using keys x and y (see /help script.look.sort)
+2015-02-01 14:59:52		  s:           reset sort (use default sort)
+2015-02-01 14:59:52		  word(s)      filter scripts: search word(s) in scripts (description, tags, ...)
+2015-02-01 14:59:52		  *            remove filter
+2015-02-01 14:59:52		Mouse actions on script buffer:
+2015-02-01 14:59:52		  wheel         scroll list
+2015-02-01 14:59:52		  left button   select script
+2015-02-01 14:59:52		  right button  install/remove script
+2015-02-01 14:59:52		Examples:
+2015-02-01 14:59:52		  /script search url
+2015-02-01 14:59:52		  /script install iset.pl buffers.pl
+2015-02-01 14:59:52		  /script remove iset.pl
+2015-02-01 14:59:52		  /script hold urlserver.py
+2015-02-01 14:59:52		  /script reload urlserver
+2015-02-01 14:59:52		  /script upgrade
+2015-02-01 14:59:58		Scripts loaded:
+2015-02-01 14:59:58		  (none)
+2015-02-01 15:02:49	=!=	perl: script "beep.pl" not found
+2015-02-01 15:03:00		script: script "beep.pl" is already installed and up-to-date
+2015-02-01 15:03:03		script: script "beep.pl" is already installed and up-to-date
+2015-02-01 15:03:03		script: script "beep.pl" is already installed and up-to-date
+2015-02-01 15:03:04		script: script "beep.pl" is already installed and up-to-date
+2015-02-01 15:06:43	=!=	perl: unable to register script "beep" (another script already exists with this name)
+2015-02-01 15:06:43	=!=	perl: unable to call function "info_get", script is not initialized (script: -)
+2015-02-01 15:06:43	=!=	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2015-02-01 15:06:43	=!=	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2015-02-01 15:06:43	=!=	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2015-02-01 15:06:43	=!=	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2015-02-01 15:06:43	=!=	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2015-02-01 15:06:43	=!=	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2015-02-01 15:06:43	=!=	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2015-02-01 15:06:43	=!=	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2015-02-01 15:06:43	=!=	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2015-02-01 15:06:43	=!=	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2015-02-01 15:06:43	=!=	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2015-02-01 15:06:43	=!=	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2015-02-01 15:06:43	=!=	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2015-02-01 15:06:43	=!=	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2015-02-01 15:06:43	=!=	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2015-02-01 15:06:43	=!=	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2015-02-01 15:06:43	=!=	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2015-02-01 15:06:43	=!=	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2015-02-01 15:06:43	=!=	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2015-02-01 15:06:43	=!=	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2015-02-01 15:06:43	=!=	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2015-02-01 15:06:43	=!=	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2015-02-01 15:06:43	=!=	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2015-02-01 15:06:43	=!=	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2015-02-01 15:06:43	=!=	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2015-02-01 15:06:43	=!=	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2015-02-01 15:06:43	=!=	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2015-02-01 15:06:43	=!=	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2015-02-01 15:06:43	=!=	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2015-02-01 15:06:43	=!=	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2015-02-01 15:06:43	=!=	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2015-02-01 15:06:43	=!=	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2015-02-01 15:06:43	=!=	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2015-02-01 15:06:43	=!=	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2015-02-01 15:06:43	=!=	perl: unable to call function "hook_config", script is not initialized (script: -)
+2015-02-01 15:06:43	=!=	perl: unable to call function "hook_print", script is not initialized (script: -)
+2015-02-01 15:06:43	=!=	perl: unable to call function "hook_signal", script is not initialized (script: -)
+2015-02-01 15:06:43	=!=	perl: function "register" not found (or failed) in file "/home/kim/.weechat/perl/autoload/beep.pl"
+2015-02-01 15:07:15	=!=	perl: unable to register script "beep" (another script already exists with this name)
+2015-02-01 15:07:15	=!=	perl: unable to call function "info_get", script is not initialized (script: -)
+2015-02-01 15:07:15	=!=	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2015-02-01 15:07:15	=!=	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2015-02-01 15:07:15	=!=	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2015-02-01 15:07:15	=!=	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2015-02-01 15:07:15	=!=	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2015-02-01 15:07:15	=!=	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2015-02-01 15:07:15	=!=	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2015-02-01 15:07:15	=!=	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2015-02-01 15:07:15	=!=	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2015-02-01 15:07:15	=!=	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2015-02-01 15:07:15	=!=	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2015-02-01 15:07:15	=!=	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2015-02-01 15:07:15	=!=	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2015-02-01 15:07:15	=!=	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2015-02-01 15:07:15	=!=	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2015-02-01 15:07:15	=!=	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2015-02-01 15:07:15	=!=	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2015-02-01 15:07:15	=!=	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2015-02-01 15:07:15	=!=	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2015-02-01 15:07:15	=!=	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2015-02-01 15:07:15	=!=	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2015-02-01 15:07:15	=!=	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2015-02-01 15:07:15	=!=	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2015-02-01 15:07:15	=!=	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2015-02-01 15:07:15	=!=	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2015-02-01 15:07:15	=!=	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2015-02-01 15:07:15	=!=	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2015-02-01 15:07:15	=!=	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2015-02-01 15:07:15	=!=	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2015-02-01 15:07:15	=!=	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2015-02-01 15:07:15	=!=	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2015-02-01 15:07:15	=!=	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2015-02-01 15:07:15	=!=	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2015-02-01 15:07:15	=!=	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2015-02-01 15:07:15	=!=	perl: unable to call function "hook_config", script is not initialized (script: -)
+2015-02-01 15:07:15	=!=	perl: unable to call function "hook_print", script is not initialized (script: -)
+2015-02-01 15:07:15	=!=	perl: unable to call function "hook_signal", script is not initialized (script: -)
+2015-02-01 15:07:15	=!=	perl: function "register" not found (or failed) in file "/home/kim/.weechat/perl/autoload/beep.pl"
+2015-02-01 15:07:20	=!=	Error: unknown command "/clear" (type /help for help)
+2015-02-01 15:07:22		[core]
+2015-02-01 15:07:22		  away     buffer   command  debug    filter   history  key      mouse    plugin   proxy    reload   save     set      upgrade  version  window 
+2015-02-01 15:07:22		  bar      color    cursor   eval     help     input    layout   mute     print    quit     repeat   secure   unset    uptime   wait   
+2015-02-01 15:07:22		[logger]
+2015-02-01 15:07:22		  logger
+2015-02-01 15:07:22		[lua]
+2015-02-01 15:07:22		  lua
+2015-02-01 15:07:22		[script]
+2015-02-01 15:07:22		  script
+2015-02-01 15:07:22		[aspell]
+2015-02-01 15:07:22		  aspell
+2015-02-01 15:07:22		[ruby]
+2015-02-01 15:07:22		  ruby
+2015-02-01 15:07:22		[exec]
+2015-02-01 15:07:22		  exec
+2015-02-01 15:07:22		[alias]
+2015-02-01 15:07:22		  AAWAY    AME      ANICK    BYE      CHAT     CLOSE    IG       K        LEAVE    MSGBUF   N        REDRAW   SIGNOFF  UB       unalias  W        WI       WW     
+2015-02-01 15:07:22		  alias    AMSG     BEEP     C        CL       EXIT     J        KB       M        MUB      Q        SAY      T        UMODE    V        WC       WII    
+2015-02-01 15:07:22		[perl]
+2015-02-01 15:07:22		  perl
+2015-02-01 15:07:22		[python]
+2015-02-01 15:07:22		  python
+2015-02-01 15:07:22		[xfer]
+2015-02-01 15:07:22		  me  xfer
+2015-02-01 15:07:22		[trigger]
+2015-02-01 15:07:22		  trigger
+2015-02-01 15:07:22		[relay]
+2015-02-01 15:07:22		  relay
+2015-02-01 15:07:22		[charset]
+2015-02-01 15:07:22		  charset
+2015-02-01 15:07:22		[irc]
+2015-02-01 15:07:22		  admin       connect     deop        ignore      kick        lusers      msg         op          query       remove      sapart      squery      topic       users       who       
+2015-02-01 15:07:22		  allchan     ctcp        devoice     info        kickban     map         names       oper        quiet       restart     saquit      squit       trace       version     whois     
+2015-02-01 15:07:22		  allpv       cycle       die         invite      kill        me          nick        part        quote       sajoin      server      stats       unban       voice       whowas    
+2015-02-01 15:07:22		  allserv     dcc         disconnect  ison        links       mode        notice      ping        reconnect   samode      service     summon      unquiet     wallchops 
+2015-02-01 15:07:22		  ban         dehalfop    halfop      join        list        motd        notify      pong        rehash      sanick      servlist    time        userhost    wallops   
+2015-02-01 15:07:22		[guile]
+2015-02-01 15:07:22		  guile
+2015-02-01 15:07:28		[core]  /buffer  list
+2015-02-01 15:07:28		                 clear [<number>|<name>|-merged|-all [<number>|<name>...]]
+2015-02-01 15:07:28		                 move <number>|-|+
+2015-02-01 15:07:28		                 swap <number1>|<name1> [<number2>|<name2>]
+2015-02-01 15:07:28		                 merge <number>
+2015-02-01 15:07:28		                 unmerge [<number>|-all]
+2015-02-01 15:07:28		                 hide [<number>|<name>|-all [<number>|<name>...]]
+2015-02-01 15:07:28		                 unhide [<number>|<name>|-all [<number>|<name>...]]
+2015-02-01 15:07:28		                 renumber [<number1> [<number2> [<start>]]]
+2015-02-01 15:07:28		                 close [<n1>[-<n2>]|<name>]
+2015-02-01 15:07:28		                 notify <level>
+2015-02-01 15:07:28		                 localvar
+2015-02-01 15:07:28		                 set <property> <value>
+2015-02-01 15:07:28		                 get <property>
+2015-02-01 15:07:28		                 <number>|-|+|<name>
+2015-02-01 15:07:28		manage buffers
+2015-02-01 15:07:28		    list: list buffers (without argument, this list is displayed)
+2015-02-01 15:07:28		   clear: clear buffer content (number for a buffer, -merged for merged buffers, -all for all buffers, or nothing for current buffer)
+2015-02-01 15:07:28		    move: move buffer in the list (may be relative, for example -1); "-" = move to first buffer number, "+" = move to last buffer number + 1
+2015-02-01 15:07:28		    swap: swap two buffers (swap with current buffer if only one number/name given)
+2015-02-01 15:07:28		   merge: merge current buffer to another buffer (chat area will be mix of both buffers)
+2015-02-01 15:07:28		          (by default ctrl-x switches between merged buffers)
+2015-02-01 15:07:28		 unmerge: unmerge buffer from other buffers which have same number
+2015-02-01 15:07:28		    hide: hide the buffer
+2015-02-01 15:07:28		  unhide: unhide the buffer
+2015-02-01 15:07:28		renumber: renumber buffers (works only if option weechat.look.buffer_auto_renumber is off)
+2015-02-01 15:07:28		   close: close buffer (number/range or name is optional)
+2015-02-01 15:07:28		  notify: set notify level for current buffer: this level determines whether buffer will be added to hotlist or not:
+2015-02-01 15:07:28		               none: never
+2015-02-01 15:07:28		          highlight: for highlights only
+2015-02-01 15:07:28		            message: for messages from users + highlights
+2015-02-01 15:07:28		                all: all messages
+2015-02-01 15:07:28		              reset: reset to default value (all)
+2015-02-01 15:07:28		localvar: display local variables for current buffer
+2015-02-01 15:07:28		     set: set a property for current buffer
+2015-02-01 15:07:28		     get: display a property of current buffer
+2015-02-01 15:07:28		  number: jump to buffer by number, possible prefix:
+2015-02-01 15:07:28		          '+': relative jump, add number to current
+2015-02-01 15:07:28		          '-': relative jump, sub number to current
+2015-02-01 15:07:28		          '*': jump to number, using option "weechat.look.jump_current_to_previous_buffer"
+2015-02-01 15:07:28		       -: jump to first buffer number
+2015-02-01 15:07:28		       +: jump to last buffer number
+2015-02-01 15:07:28		    name: jump to buffer by (partial) name
+2015-02-01 15:07:28		Examples:
+2015-02-01 15:07:28		  clear current buffer:
+2015-02-01 15:07:28		    /buffer clear
+2015-02-01 15:07:28		  move buffer to number 5:
+2015-02-01 15:07:28		    /buffer move 5
+2015-02-01 15:07:28		  swap buffer 1 with 3:
+2015-02-01 15:07:28		    /buffer swap 1 3
+2015-02-01 15:07:28		  swap buffer #weechat with current buffer:
+2015-02-01 15:07:28		    /buffer swap #weechat
+2015-02-01 15:07:28		  merge with core buffer:
+2015-02-01 15:07:28		    /buffer merge 1
+2015-02-01 15:07:28		  unmerge buffer:
+2015-02-01 15:07:28		    /buffer unmerge
+2015-02-01 15:07:28		  close current buffer:
+2015-02-01 15:07:28		    /buffer close
+2015-02-01 15:07:28		  close buffers 5 to 7:
+2015-02-01 15:07:28		    /buffer close 5-7
+2015-02-01 15:07:28		  jump to #weechat:
+2015-02-01 15:07:28		    /buffer #weechat
+2015-02-01 15:07:28		  jump to next buffer:
+2015-02-01 15:07:28		    /buffer +1
+2015-02-01 15:07:28		  jump to last buffer number:
+2015-02-01 15:07:28		    /buffer +
+2015-02-01 17:20:22		fifo: pipe closed
+2015-02-01 17:20:22		perl: scripts unloaded
+2015-02-01 19:49:22		script: 279 scripts for WeeChat 1.1.1
+2015-02-01 19:49:23	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-02-01 19:49:23	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-02-01 19:49:23		perl scripts loaded: beep
+2015-02-01 19:49:23		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-02-01 22:35:37		fifo: pipe closed
+2015-02-01 22:35:37		perl: scripts unloaded
+2015-02-01 22:35:39		script: 279 scripts for WeeChat 1.1.1
+2015-02-01 22:35:39	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-02-01 22:35:39	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-02-01 22:35:39		perl scripts loaded: beep
+2015-02-01 22:35:39		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-02-01 22:44:03		fifo: pipe closed
+2015-02-01 22:44:03		perl: scripts unloaded
+2015-02-02 13:25:37		script: 279 scripts for WeeChat 1.1.1
+2015-02-02 13:25:38	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-02-02 13:25:38	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-02-02 13:25:38		perl scripts loaded: beep
+2015-02-02 13:25:38		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-02-02 13:26:10	=!=	irc: command "quiet" must be executed on irc buffer (server or channel)
+2015-02-02 13:26:12		fifo: pipe closed
+2015-02-02 13:26:12		perl: scripts unloaded
+2015-02-02 13:27:01		script: 279 scripts for WeeChat 1.1.1
+2015-02-02 13:27:01	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-02-02 13:27:01	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-02-02 13:27:01		perl scripts loaded: beep
+2015-02-02 13:27:01		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-02-02 16:08:56		fifo: pipe closed
+2015-02-02 16:08:56		perl: scripts unloaded
+2015-02-02 16:59:43		script: downloading list of scripts...
+2015-02-02 16:59:43	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-02-02 16:59:43	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-02-02 16:59:43		perl scripts loaded: beep
+2015-02-02 16:59:43		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-02-02 16:59:44		script: 279 scripts for WeeChat 1.1.1
+2015-02-03 01:22:16		fifo: pipe closed
+2015-02-03 01:22:16		perl: scripts unloaded
+2015-02-03 13:21:32		script: 279 scripts for WeeChat 1.1.1
+2015-02-03 13:21:32	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-02-03 13:21:32	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-02-03 13:21:32		perl scripts loaded: beep
+2015-02-03 13:21:33		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-02-03 13:26:54		fifo: pipe closed
+2015-02-03 13:26:54		perl: scripts unloaded
+2015-02-03 15:03:33		script: 279 scripts for WeeChat 1.1.1
+2015-02-03 15:03:34	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-02-03 15:03:34	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-02-03 15:03:34		perl scripts loaded: beep
+2015-02-03 15:03:34		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-02-03 15:26:07		fifo: pipe closed
+2015-02-03 15:26:07		perl: scripts unloaded
+2015-02-03 16:12:08		script: 279 scripts for WeeChat 1.1.1
+2015-02-03 16:12:08	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-02-03 16:12:08	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-02-03 16:12:08		perl scripts loaded: beep
+2015-02-03 16:12:09		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-02-04 01:00:35		fifo: pipe closed
+2015-02-04 01:00:35		perl: scripts unloaded
+2015-02-04 11:38:26		script: downloading list of scripts...
+2015-02-04 11:38:27	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-02-04 11:38:27	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-02-04 11:38:27		perl scripts loaded: beep
+2015-02-04 11:38:27		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-02-04 11:38:27		script: 279 scripts for WeeChat 1.1.1
+2015-02-04 11:42:42		fifo: pipe closed
+2015-02-04 11:42:42		perl: scripts unloaded
+2015-02-04 13:53:35		script: 279 scripts for WeeChat 1.1.1
+2015-02-04 13:53:35	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-02-04 13:53:35	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-02-04 13:53:35		perl scripts loaded: beep
+2015-02-04 13:53:36		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-02-04 14:54:33		fifo: pipe closed
+2015-02-04 14:54:33		perl: scripts unloaded
+2015-02-04 17:16:53		script: 279 scripts for WeeChat 1.1.1
+2015-02-04 17:16:53	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-02-04 17:16:53	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-02-04 17:16:53		perl scripts loaded: beep
+2015-02-04 17:16:53		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-02-04 18:05:07		fifo: pipe closed
+2015-02-04 18:05:07		perl: scripts unloaded
+2015-02-04 19:00:04		script: 279 scripts for WeeChat 1.1.1
+2015-02-04 19:00:04	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-02-04 19:00:04	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-02-04 19:00:04		perl scripts loaded: beep
+2015-02-04 19:00:04		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-02-05 01:09:15		fifo: pipe closed
+2015-02-05 01:09:15		perl: scripts unloaded
+2015-02-05 14:37:32		script: downloading list of scripts...
+2015-02-05 14:37:33	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-02-05 14:37:33	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-02-05 14:37:33		perl scripts loaded: beep
+2015-02-05 14:37:33		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-02-05 14:37:34		script: 279 scripts for WeeChat 1.1.1
+2015-02-05 14:46:04		[irc]  /server  list|listfull [<server>]
+2015-02-05 14:46:04		                add <server> <hostname>[/<port>] [-temp] [-<option>[=<value>]] [-no<option>]
+2015-02-05 14:46:04		                copy|rename <server> <new_name>
+2015-02-05 14:46:04		                reorder <server> [<server>...]
+2015-02-05 14:46:04		                del|keep <server>
+2015-02-05 14:46:04		                deloutq|jump|raw
+2015-02-05 14:46:04		list, add or remove IRC servers
+2015-02-05 14:46:04		    list: list servers (without argument, this list is displayed)
+2015-02-05 14:46:04		listfull: list servers with detailed info for each server
+2015-02-05 14:46:04		     add: create a new server
+2015-02-05 14:46:04		  server: server name, for internal and display use
+2015-02-05 14:46:04		hostname: name or IP address of server, with optional port (default: 6667), many addresses can be separated by a comma
+2015-02-05 14:46:04		    temp: create temporary server (not saved)
+2015-02-05 14:46:04		  option: set option for server (for boolean option, value can be omitted)
+2015-02-05 14:46:04		nooption: set boolean option to 'off' (for example: -nossl)
+2015-02-05 14:46:04		    copy: duplicate a server
+2015-02-05 14:46:04		  rename: rename a server
+2015-02-05 14:46:04		 reorder: reorder list of servers
+2015-02-05 14:46:04		    keep: keep server in config file (for temporary servers only)
+2015-02-05 14:46:04		     del: delete a server
+2015-02-05 14:46:04		 deloutq: delete messages out queue for all servers (all messages WeeChat is currently sending)
+2015-02-05 14:46:04		    jump: jump to server buffer
+2015-02-05 14:46:04		     raw: open buffer with raw IRC data
+2015-02-05 14:46:04		Examples:
+2015-02-05 14:46:04		  /server listfull
+2015-02-05 14:46:04		  /server add oftc irc.oftc.net/6697 -ssl -autoconnect
+2015-02-05 14:46:04		  /server add oftc6 irc6.oftc.net/6697 -ipv6 -ssl
+2015-02-05 14:46:04		  /server add freenode2 chat.eu.freenode.net/6667,chat.us.freenode.net/6667
+2015-02-05 14:46:04		  /server add freenode3 chat.freenode.net -password=mypass
+2015-02-05 14:46:04		  /server copy oftc oftcbis
+2015-02-05 14:46:04		  /server rename oftc newoftc
+2015-02-05 14:46:04		  /server reorder oftc freenode
+2015-02-05 14:46:04		  /server del freenode
+2015-02-05 14:46:04		  /server deloutq
+2015-02-05 15:20:59		fifo: pipe closed
+2015-02-05 15:20:59		perl: scripts unloaded
+2015-02-05 18:28:49		script: 279 scripts for WeeChat 1.1.1
+2015-02-05 18:28:50	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-02-05 18:28:50	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-02-05 18:28:50		perl scripts loaded: beep
+2015-02-05 18:28:51		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-02-06 01:50:57		fifo: pipe closed
+2015-02-06 01:50:57		perl: scripts unloaded
+2015-02-07 11:47:43		script: downloading list of scripts...
+2015-02-07 11:47:44	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-02-07 11:47:44	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-02-07 11:47:44		perl scripts loaded: beep
+2015-02-07 11:47:45		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-02-07 11:47:46		script: 279 scripts for WeeChat 1.1.1
+2015-02-07 13:57:15		fifo: pipe closed
+2015-02-07 13:57:15		perl: scripts unloaded
+2015-02-07 13:58:35		script: 279 scripts for WeeChat 1.1.1
+2015-02-07 13:58:36	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-02-07 13:58:36	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-02-07 13:58:36		perl scripts loaded: beep
+2015-02-07 13:58:36		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-02-07 14:12:40		script: 279 scripts for WeeChat 1.1.1
+2015-02-07 14:12:41	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-02-07 14:12:41	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-02-07 14:12:41		perl scripts loaded: beep
+2015-02-07 14:12:41		fifo: removing old fifo pipe "/home/kim/.weechat/weechat_fifo_1469"
+2015-02-07 14:12:41		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-02-07 14:32:28		fifo: pipe closed
+2015-02-07 14:32:28		perl: scripts unloaded
+2015-02-08 01:34:42		script: 279 scripts for WeeChat 1.1.1
+2015-02-08 01:34:42	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-02-08 01:34:42	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-02-08 01:34:42		perl scripts loaded: beep
+2015-02-08 01:34:43		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-02-08 02:19:10	=!=	Error: unknown command "/nickserv" (type /help for help)
+2015-02-08 02:19:36	=!=	Error: unknown command "/nickserv" (type /help for help)
+2015-02-08 03:40:17		fifo: pipe closed
+2015-02-08 03:40:17		perl: scripts unloaded
+2015-02-08 12:14:41		script: downloading list of scripts...
+2015-02-08 12:14:41	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-02-08 12:14:41	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-02-08 12:14:41		perl scripts loaded: beep
+2015-02-08 12:14:42		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-02-08 12:14:42		script: 279 scripts for WeeChat 1.1.1
+2015-02-08 16:39:53		fifo: pipe closed
+2015-02-08 16:39:53		perl: scripts unloaded
+2015-02-09 00:17:52		script: 279 scripts for WeeChat 1.1.1
+2015-02-09 00:17:52	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-02-09 00:17:52	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-02-09 00:17:52		perl scripts loaded: beep
+2015-02-09 00:17:53		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-02-09 02:55:27		fifo: pipe closed
+2015-02-09 02:55:27		perl: scripts unloaded
+2015-02-09 16:04:42		script: downloading list of scripts...
+2015-02-09 16:04:43	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-02-09 16:04:43	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-02-09 16:04:43		perl scripts loaded: beep
+2015-02-09 16:04:44		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-02-09 16:04:44		script: 279 scripts for WeeChat 1.1.1
+2015-02-09 16:50:27		fifo: pipe closed
+2015-02-09 16:50:27		perl: scripts unloaded
+2015-02-09 16:55:41		script: 279 scripts for WeeChat 1.1.1
+2015-02-09 16:55:41	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-02-09 16:55:41	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-02-09 16:55:41		perl scripts loaded: beep
+2015-02-09 16:55:42		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-02-09 17:24:00		New key binding (context "default"): meta-l => /window bare
+2015-02-10 02:15:47		fifo: pipe closed
+2015-02-10 02:15:47		perl: scripts unloaded
+2015-02-10 11:49:51		script: 279 scripts for WeeChat 1.1.1
+2015-02-10 11:49:51	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-02-10 11:49:51	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-02-10 11:49:51		perl scripts loaded: beep
+2015-02-10 11:49:52		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-02-10 12:02:41		fifo: pipe closed
+2015-02-10 12:02:41		perl: scripts unloaded
+2015-02-10 16:57:54		script: downloading list of scripts...
+2015-02-10 16:57:55	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-02-10 16:57:55	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-02-10 16:57:55		perl scripts loaded: beep
+2015-02-10 16:57:58		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-02-10 16:57:58		script: 279 scripts for WeeChat 1.1.1
+2015-02-10 17:58:49		fifo: pipe closed
+2015-02-10 17:58:49		perl: scripts unloaded
+2015-02-11 11:41:22		script: 279 scripts for WeeChat 1.1.1
+2015-02-11 11:41:22	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-02-11 11:41:22	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-02-11 11:41:22		perl scripts loaded: beep
+2015-02-11 11:41:23		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-02-11 14:09:22		fifo: pipe closed
+2015-02-11 14:09:22		perl: scripts unloaded
+2015-02-11 15:17:39		script: 279 scripts for WeeChat 1.1.1
+2015-02-11 15:17:40	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-02-11 15:17:40	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-02-11 15:17:40		perl scripts loaded: beep
+2015-02-11 15:17:40		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-02-11 19:31:01		fifo: pipe closed
+2015-02-11 19:31:01		perl: scripts unloaded
+2015-02-11 19:33:19		script: downloading list of scripts...
+2015-02-11 19:33:19	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-02-11 19:33:19	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-02-11 19:33:19		perl scripts loaded: beep
+2015-02-11 19:33:19		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-02-11 19:33:20		script: 279 scripts for WeeChat 1.1.1
+2015-02-11 23:57:46		[core]
+2015-02-11 23:57:46		  away     command  filter   key      plugin   reload   set      version
+2015-02-11 23:57:46		  bar      cursor   help     layout   print    repeat   unset    wait   
+2015-02-11 23:57:46		  buffer   debug    history  mouse    proxy    save     upgrade  window 
+2015-02-11 23:57:46		  color    eval     input    mute     quit     secure   uptime 
+2015-02-11 23:57:46		[logger]
+2015-02-11 23:57:46		  logger
+2015-02-11 23:57:46		[lua]
+2015-02-11 23:57:46		  lua
+2015-02-11 23:57:46		[script]
+2015-02-11 23:57:46		  script
+2015-02-11 23:57:46		[aspell]
+2015-02-11 23:57:46		  aspell
+2015-02-11 23:57:46		[ruby]
+2015-02-11 23:57:46		  ruby
+2015-02-11 23:57:46		[exec]
+2015-02-11 23:57:46		  exec
+2015-02-11 23:57:46		[alias]
+2015-02-11 23:57:46		  AAWAY    BEEP     CLOSE    KB       N        T        W      
+2015-02-11 23:57:46		  alias    BYE      EXIT     LEAVE    Q        UB       WC     
+2015-02-11 23:57:46		  AME      C        IG       M        REDRAW   UMODE    WI     
+2015-02-11 23:57:46		  AMSG     CHAT     J        MSGBUF   SAY      unalias  WII    
+2015-02-11 23:57:46		  ANICK    CL       K        MUB      SIGNOFF  V        WW     
+2015-02-11 23:57:46		[perl]
+2015-02-11 23:57:46		  perl
+2015-02-11 23:57:46		[python]
+2015-02-11 23:57:46		  python
+2015-02-11 23:57:46		[xfer]
+2015-02-11 23:57:46		  me  xfer
+2015-02-11 23:57:46		[trigger]
+2015-02-11 23:57:46		  trigger
+2015-02-11 23:57:46		[relay]
+2015-02-11 23:57:46		  relay
+2015-02-11 23:57:46		[charset]
+2015-02-11 23:57:46		  charset
+2015-02-11 23:57:46		[irc]
+2015-02-11 23:57:46		  admin       disconnect  map         pong        server      users     
+2015-02-11 23:57:46		  allchan     halfop      me          query       service     version   
+2015-02-11 23:57:46		  allpv       ignore      mode        quiet       servlist    voice     
+2015-02-11 23:57:46		  allserv     info        motd        quote       squery      wallchops 
+2015-02-11 23:57:46		  ban         invite      msg         reconnect   squit       wallops   
+2015-02-11 23:57:46		  connect     ison        names       rehash      stats       who       
+2015-02-11 23:57:46		  ctcp        join        nick        remove      summon      whois     
+2015-02-11 23:57:46		  cycle       kick        notice      restart     time        whowas    
+2015-02-11 23:57:46		  dcc         kickban     notify      sajoin      topic     
+2015-02-11 23:57:46		  dehalfop    kill        op          samode      trace     
+2015-02-11 23:57:46		  deop        links       oper        sanick      unban     
+2015-02-11 23:57:46		  devoice     list        part        sapart      unquiet   
+2015-02-11 23:57:46		  die         lusers      ping        saquit      userhost  
+2015-02-11 23:57:46		[guile]
+2015-02-11 23:57:46		  guile
+2015-02-11 23:57:54		[irc]  /users  [<target>]
+2015-02-11 23:57:54		list of users logged into the server
+2015-02-11 23:57:54		target: server name
+2015-02-11 23:58:33		[irc]  /nick  [-all] <nick>
+2015-02-11 23:58:33		change current nick
+2015-02-11 23:58:33		-all: set new nick for all connected servers
+2015-02-11 23:58:33		nick: new nick
+2015-02-11 23:59:25		Option changed: irc.server.rizon.username = "al"  (default: (undefined))
+2015-02-11 23:59:52		fifo: pipe closed
+2015-02-11 23:59:52		perl: scripts unloaded
+2015-02-11 23:59:58		script: 279 scripts for WeeChat 1.1.1
+2015-02-11 23:59:58	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-02-11 23:59:58	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-02-11 23:59:58		perl scripts loaded: beep
+2015-02-11 23:59:58		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-02-12 00:02:28		fifo: pipe closed
+2015-02-12 00:02:28		perl: scripts unloaded
+2015-02-12 00:02:30		script: 279 scripts for WeeChat 1.1.1
+2015-02-12 00:02:30	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-02-12 00:02:30	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-02-12 00:02:30		perl scripts loaded: beep
+2015-02-12 00:02:30		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-02-12 01:17:55		fifo: pipe closed
+2015-02-12 01:17:55		perl: scripts unloaded
+2015-02-12 13:45:08		script: 279 scripts for WeeChat 1.1.1
+2015-02-12 13:45:09	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-02-12 13:45:09	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-02-12 13:45:09		perl scripts loaded: beep
+2015-02-12 13:45:10		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-02-12 17:14:59		fifo: pipe closed
+2015-02-12 17:14:59		perl: scripts unloaded
