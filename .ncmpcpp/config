@@ -14,7 +14,7 @@ mouse_list_scroll_whole_page = "no"
 #song_list_format = "{$8$9}{[%l] >> }{%t }$R{%a - %b}"
 #song_list_format = " $5%l $1║{$7 %a $1│$2 %t$1 $R $3%b$1 }|{$6 %f $1}"
 #song_list_format = " $8%l $1│{$7 %a $1│$6 %t }|{$6 %f }$1 $R $1%b$1"
-song_list_format = "{$8%a $9|}{$2%t}$R$3%b"
+song_list_format = "{$8%l   $8%a  }{ $2%t}$R$3%b"
 #
 song_library_format = "{%n > }{%t}|{%f}"
 #

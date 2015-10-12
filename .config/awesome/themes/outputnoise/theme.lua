@@ -8,7 +8,7 @@ theme                               = {}
 
 themes_dir                          = os.getenv("HOME") .. "/.config/awesome/themes/outputnoise"
 -- theme.wallpaper                     = "/home/kim/Pictures/wallpapers/1418862243872.jpg"
-theme.wallpaper 					= "/home/kim/Pictures/4chan related/waifu/lavren/1372595384349.jpg"
+theme.wallpaper 					= "/home/kim/Pictures/4chan/waifu/lavren/1372595384349.jpg"
 
 theme.font          = "Lemon 12"
 

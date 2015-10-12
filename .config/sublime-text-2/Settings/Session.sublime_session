@@ -205,8 +205,76 @@
 				"selected_items":
 				[
 					[
+						"s",
+						"s"
+					],
+					[
+						"Fath",
+						"Father"
+					],
+					[
+						"mo",
+						"Mother1"
+					],
+					[
+						"a",
+						"a"
+					],
+					[
+						"fr",
+						"front"
+					],
+					[
+						"fro",
+						"front"
+					],
+					[
+						"Int",
+						"Integer"
+					],
+					[
+						"re",
+						"rest1"
+					],
+					[
+						"front",
+						"front1"
+					],
+					[
+						"fron",
+						"front1"
+					],
+					[
+						"rest",
+						"rest2"
+					],
+					[
+						"In",
+						"Integer"
+					],
+					[
 						"c",
-						"case"
+						"checkFrac"
+					],
+					[
+						"arm",
+						"arm-none-eabi"
+					],
+					[
+						"g",
+						"gcc-arm-none-eabi-4_9-2014q4"
+					],
+					[
+						"P",
+						"PES_ex6"
+					],
+					[
+						"dD",
+						"Downloads"
+					],
+					[
+						"back",
+						"background-size"
 					],
 					[
 						"wa",
@@ -233,26 +301,35 @@
 			"buffers":
 			[
 				{
-					"file": "/home/kim/.config/awesome/rc.lua",
+					"file": "/home/kim/Documents/merge.hs",
 					"settings":
 					{
-						"buffer_size": 24622,
+						"buffer_size": 184,
+						"line_ending": "Unix",
+						"name": "merge :: ([Int], [Int]) -> [Int]"
+					}
+				},
+				{
+					"file": "/home/kim/.weechat/weechat.conf",
+					"settings":
+					{
+						"buffer_size": 17591,
 						"line_ending": "Unix"
 					}
 				},
 				{
-					"file": "/home/kim/Documents/C practice/switch.c",
+					"file": "/home/kim/Documents/ISR2015/isr.tex",
 					"settings":
 					{
-						"buffer_size": 604,
+						"buffer_size": 13933,
 						"line_ending": "Unix"
 					}
 				},
 				{
-					"file": "/home/kim/.Xresources",
+					"file": "/home/kim/.zshrc",
 					"settings":
 					{
-						"buffer_size": 2187,
+						"buffer_size": 1140,
 						"line_ending": "Unix"
 					}
 				},
@@ -260,23 +337,15 @@
 					"file": "/home/kim/.xinitrc",
 					"settings":
 					{
-						"buffer_size": 845,
+						"buffer_size": 1002,
 						"line_ending": "Unix"
 					}
 				},
 				{
-					"file": "/home/kim/Documents/opsys/file.c",
+					"file": "/home/kim/.Xresources",
 					"settings":
 					{
-						"buffer_size": 538,
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/home/kim/Documents/opsys/test.c",
-					"settings":
-					{
-						"buffer_size": 685,
+						"buffer_size": 1265,
 						"line_ending": "Unix"
 					}
 				},
@@ -284,7 +353,31 @@
 					"file": "/home/kim/.ncmpcpp/config",
 					"settings":
 					{
-						"buffer_size": 1701,
+						"buffer_size": 1707,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/kim/.config/awesome/rc.lua",
+					"settings":
+					{
+						"buffer_size": 24603,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/kim/Documents/PES/mxwebsrvr_ex3.c",
+					"settings":
+					{
+						"buffer_size": 2272,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/kim/Documents/PES/ledinput.h",
+					"settings":
+					{
+						"buffer_size": 732,
 						"line_ending": "Unix"
 					}
 				}
@@ -321,11 +414,81 @@
 			},
 			"file_history":
 			[
-				"/home/kim/pkglist.txt",
-				"/home/kim/.config/awesome/themes/outputnoise/theme.lua",
-				"/home/kim/Downloads/pipes.sh/pipes.sh",
+				"/home/kim/Downloads/jpeg_encoder/README.txt",
+				"/home/kim/README.md",
+				"/run/user/1000/gvfs/mtp:host=%5Busb%3A004%2C005%5D/Internminne/miniclipId.txt",
+				"/home/kim/Documents/Code optimization/exercise1_1b.c",
+				"/home/kim/Documents/homepage/konbanwa.html",
+				"/home/kim/Downloads/rö1.hs",
+				"/home/kim/Downloads/INSTALL",
+				"/home/kim/.zprofile",
+				"/home/kim/.bash_profile",
+				"/home/kim/.bashrc",
+				"/home/kim/.zshrc",
+				"/home/kim/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+				"/home/kim/.config/sublime-text-2/Packages/Theme - Brogrammer/Brogrammer.sublime-theme",
+				"/home/kim/Documents/Grundkurs i signalbehandling/uppgift1.m",
+				"/home/kim/Documents/homepage1/untitled.html",
+				"/home/kim/Documents/homepage1/firefox1.css",
+				"/home/kim/Downloads/Reddit-CSS/README.md",
+				"/home/kim/Documents/dela.hs",
+				"/tmp/mul.s",
+				"/home/kim/Downloads/Mulholland Drive (2001) 1080p 5.1 Blu-ray/info.txt",
+				"/home/kim/Documents/Programmeringsparadigmer/5_6.pl",
+				"/home/kim/Documents/Programmeringsparadigmer/5_5.pl",
+				"/home/kim/Documents/Programmeringsparadigmer/5_4.pl",
+				"/home/kim/Documents/Programmeringsparadigmer/5_3-1.pl",
+				"/home/kim/Documents/Programmeringsparadigmer/5_2.pl",
+				"/home/kim/Documents/Programmeringsparadigmer/5_1.pl",
+				"/home/kim/Documents/Programmeringsparadigmer/4_3.pl",
+				"/home/kim/Documents/Programmeringsparadigmer/4_1.pl",
+				"/run/media/kim/4ED7FCDB028EB0D0/Programmeringsparadigmer/uppg1.hs",
+				"/home/kim/Documents/Programmeringsparadigmer/5_3-2.pl",
+				"/home/kim/Downloads/5/5_1.pl",
+				"/home/kim/Downloads/5/5_7_1.pl",
+				"/home/kim/Downloads/5/5_6.pl",
+				"/tmp/cartesian.pl",
+				"/home/kim/Documents/Programmeringsparadigmer/4_4.pl",
+				"/home/kim/Documents/Programmeringsparadigmer/uppg2.hs",
+				"/home/kim/Documents/Programmeringsparadigmer/uppg1.hs",
+				"/home/kim/Documents/Programmeringsparadigmer/3_2-4.pl",
+				"/home/kim/Documents/Programmeringsparadigmer/3_4.pl",
+				"/home/kim/Downloads/uppgift2/2_4.hs",
+				"/home/kim/Downloads/uppgift2/2_3.hs",
+				"/home/kim/Downloads/uppgift2/2_5.hs",
+				"/home/kim/Downloads/uppgift2/2_1.hs",
+				"/home/kim/Downloads/uppgift2/2_2.hs",
+				"/home/kim/Documents/C practice/switch.c",
+				"/home/kim/.xprofile",
+				"/usr/share/gnome-shell/theme/gnome-shell.css",
+				"/usr/share/gdm/gdb-cmd",
+				"/home/kim/Documents/opsys/file.c",
+				"/home/kim/Documents/opsys/test.c",
+				"/home/kim/Documents/Programmeringsparadigmer/uppg6.hs",
+				"/home/kim/Downloads/PES_ex6/RaspberryPi-FreeRTOS/Demo/main.c",
+				"/home/kim/Downloads/PES_ex6/RaspberryPi-FreeRTOS/Demo/Drivers/gpio.c",
+				"/home/kim/Downloads/PES_ex6/RaspberryPi-FreeRTOS/Demo/Drivers/gpio.h",
+				"/home/kim/Downloads/PES_ex6/RaspberryPi-FreeRTOS/Demo/Drivers/interrupts.h",
+				"/home/kim/Downloads/PES_ex6/RaspberryPi-FreeRTOS/Demo/Drivers/bcm2835_intc.h",
 				"/home/kim/ayylmao.txt",
+				"/home/kim/Downloads/PES_ex6/RaspberryPi-FreeRTOS/FreeRTOS/Source/tasks.c",
+				"/home/kim/Downloads/PES_ex6/RaspberryPi-FreeRTOS/Demo/Drivers/interrupts.c",
+				"/home/kim/Downloads/PES_ex6/RaspberryPi-FreeRTOS/dbuild.config.mk",
+				"/home/kim/Downloads/PES_ex6/RaspberryPi-FreeRTOS/Makefile",
+				"/home/kim/Documents/ISR2015/isr.tex",
+				"/home/kim/Downloads/ISR/rakneovn_ISR.m",
+				"/home/kim/Documents/TeX/test.tex",
+				"/home/kim/Documents/TeX/hello.tex",
+				"/home/kim/Documents/TeX/hello.log",
+				"/home/kim/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+				"/home/kim/.weechat/weechat.conf",
+				"/home/kim/Documents/vuokrasopimus.txt",
+				"/home/kim/.config/awesome/rc.lua",
+				"/home/kim/.config/awesome/themes/outputnoise/theme.lua",
+				"/home/kim/.xinitrc",
 				"/home/kim/Documents/PES/mxwebsrvr.c",
+				"/home/kim/pkglist.txt",
+				"/home/kim/Downloads/pipes.sh/pipes.sh",
 				"/usr/share/themes/Phosphene-master/gnome-shell/gnome-shell.css",
 				"/usr/share/themes/Phosphene-master/firefox.css",
 				"/home/kim/Documents/mxwebsrvr.c",
@@ -339,10 +502,8 @@
 				"/home/kim/.config/mpd/mpd.conf",
 				"/home/kim/bin",
 				"/home/kim/.conkyrc",
-				"/home/kim/.weechat/weechat.conf",
 				"/home/kim/.mpdscribble/mpdscribble.conf",
 				"/home/kim/.config/sublime-text-2/Packages/Theme - Soda/Soda Dark.sublime-theme",
-				"/home/kim/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
 				"/home/kim/.config/sublime-text-2/Packages/User/Package Control.sublime-settings",
 				"/home/kim/Documents/test.c",
 				"/home/kim/Documents/opsys/18.txt",
@@ -366,8 +527,6 @@
 				"/home/kim/.config/sublime-text-2/Packages/Theme - Spacegray/base16-ocean.dark.tmTheme",
 				"/home/kim/.config/fontconfig/fonts.conf",
 				"/home/kim/.Xresources",
-				"/home/kim/.xinitrc",
-				"/home/kim/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
 				"/home/kim/Downloads/builds/ttf-win7-fonts/PKGBUILD"
 			],
 			"find":
@@ -386,6 +545,15 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"lc",
+					"propor",
+					"uppg4",
+					"upgg4",
+					"eqnarray",
+					"normal",
+					"$",
+					"U_steg",
+					"autojoin",
 					"color0 = #666661\ncolor8 = #7F7F7a",
 					"bat_no",
 					"bat_noti",
@@ -415,57 +583,29 @@
 			"groups":
 			[
 				{
-					"selected": 1,
+					"selected": 0,
 					"sheets":
 					[
 						{
 							"buffer": 0,
-							"file": "/home/kim/.config/awesome/rc.lua",
+							"file": "/home/kim/Documents/merge.hs",
 							"settings":
 							{
-								"buffer_size": 24622,
+								"buffer_size": 184,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										4654,
-										4654
+										184,
+										184
 									]
 								],
 								"settings":
 								{
-									"syntax": "Packages/Lua/Lua.tmLanguage",
-									"tab_size": 4,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 88.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 1,
-							"file": "/home/kim/Documents/C practice/switch.c",
-							"settings":
-							{
-								"buffer_size": 604,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										602,
-										602
-									]
-								],
-								"settings":
-								{
-									"auto_name": "",
-									"syntax": "Packages/C++/C.tmLanguage"
+									"auto_name": "merge :: ([Int], [Int]) -> [Int]",
+									"syntax": "Packages/Haskell/Haskell.tmLanguage"
 								},
 								"translation.x": 0.0,
 								"translation.y": 0.0,
@@ -474,39 +614,11 @@
 							"type": "text"
 						},
 						{
-							"buffer": 2,
-							"file": "/home/kim/.Xresources",
+							"buffer": 1,
+							"file": "/home/kim/.weechat/weechat.conf",
 							"settings":
 							{
-								"buffer_size": 2187,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										1736,
-										1736
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/Text/Plain text.tmLanguage",
-									"tab_size": 3,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 48.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 3,
-							"file": "/home/kim/.xinitrc",
-							"settings":
-							{
-								"buffer_size": 845,
+								"buffer_size": 17591,
 								"regions":
 								{
 								},
@@ -515,6 +627,85 @@
 									[
 										0,
 										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 144.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "/home/kim/Documents/ISR2015/isr.tex",
+							"settings":
+							{
+								"buffer_size": 13933,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										3607,
+										3607
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 1328.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 3,
+							"file": "/home/kim/.zshrc",
+							"settings":
+							{
+								"buffer_size": 1140,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 144.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 4,
+							"file": "/home/kim/.xinitrc",
+							"settings":
+							{
+								"buffer_size": 1002,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										201,
+										201
 									]
 								],
 								"settings":
@@ -528,52 +719,26 @@
 							"type": "text"
 						},
 						{
-							"buffer": 4,
-							"file": "/home/kim/Documents/opsys/file.c",
-							"settings":
-							{
-								"buffer_size": 538,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										0,
-										0
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/C++/C.tmLanguage",
-									"translate_tabs_to_spaces": false
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
 							"buffer": 5,
-							"file": "/home/kim/Documents/opsys/test.c",
+							"file": "/home/kim/.Xresources",
 							"settings":
 							{
-								"buffer_size": 685,
+								"buffer_size": 1265,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										18,
-										18
+										492,
+										492
 									]
 								],
 								"settings":
 								{
-									"syntax": "Packages/C++/C.tmLanguage",
-									"translate_tabs_to_spaces": false
+									"syntax": "Packages/Text/Plain text.tmLanguage",
+									"tab_size": 3,
+									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
 								"translation.y": 0.0,
@@ -586,20 +751,101 @@
 							"file": "/home/kim/.ncmpcpp/config",
 							"settings":
 							{
-								"buffer_size": 1701,
+								"buffer_size": 1707,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										612,
-										612
+										1421,
+										1421
 									]
 								],
 								"settings":
 								{
 									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 7,
+							"file": "/home/kim/.config/awesome/rc.lua",
+							"settings":
+							{
+								"buffer_size": 24603,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										2523,
+										2523
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Lua/Lua.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 8,
+							"file": "/home/kim/Documents/PES/mxwebsrvr_ex3.c",
+							"settings":
+							{
+								"buffer_size": 2272,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										2272,
+										2272
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/C++/C.tmLanguage",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 9,
+							"file": "/home/kim/Documents/PES/ledinput.h",
+							"settings":
+							{
+								"buffer_size": 732,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										463,
+										463
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/C++/C++.tmLanguage"
 								},
 								"translation.x": 0.0,
 								"translation.y": 0.0,

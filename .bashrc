@@ -7,5 +7,5 @@
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-shopt -s autocd
+#shopt -s autocd
 PS1='[\u@\h \W]\$ '

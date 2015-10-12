@@ -69,7 +69,7 @@ editor_cmd = terminal .. " -e " .. editor
 -- user defined
 browser    = "firefox"
 browser2   = "iron"
-gui_editor = "emacs"
+gui_editor = "sublime"
 graphics   = "gimp"
 
 -- lain
@@ -92,8 +92,8 @@ theme.useless_gap_width = 25
 
 -- {{{ Tags
 tags = {
-   names = { "web", "term", "music", "media", "code"},
-   layout = { layouts[1], layouts[3], layouts[4], layouts[1], layouts[4] }
+   names = { "web", "term", "media", "code"},
+   layout = { layouts[1], layouts[3], layouts[1], layouts[4] }
 }
 for s = 1, screen.count() do
    tags[s] = awful.tag(tags.names, s, tags.layout)
