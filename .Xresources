@@ -45,9 +45,7 @@ URxvt*cursorColor2:       #151515
 URxvt.scrollBar: false
 
 !font
-URxvt.font: xft:monaco:size=10
-
-!url
+URxvt.font: xft:Monaco\ for\ Powerline:size=11
 URxvt.perl-ext-common: default,matcher
 URxvt.url-launcher: /usr/bin/firefox
 URxvt.matcher.button: 1
