@@ -20,6 +20,9 @@ set number
 set numberwidth=3 
 set laststatus=2
 
+" wraps text at 80 characters
+set textwidth=80
+
 " Sets <TAB> to use 4 spaces 
 set tabstop=4
 set softtabstop=4
