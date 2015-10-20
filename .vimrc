@@ -10,7 +10,6 @@ let g:molokai_original = 1
 let g:rehash256 = 1
 
 let mapleader=","
-inoremap jk <esc>
 syntax enable
 
 " switch buffers without saving
@@ -22,12 +21,15 @@ set laststatus=2
 
 " wraps text at 80 characters
 set textwidth=80
+set colorcolumn=80
+set formatoptions+=t
 
 " Sets <TAB> to use 4 spaces 
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set expandtab
+set cindent
 
 set cursorline
 set noundofile

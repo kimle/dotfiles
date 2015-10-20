@@ -1,10 +1,14 @@
 ! vim: set filetype=xdefaults :
 ! terminal colours
-*foreground:#a0a0a0
-*background:#1b1d1e
+! celorscheme: Relic Dark
+*background: #1D2426
+!*foreground: #8FA388
 
-!molokai inspired colors
+*cursorColor: #BE5E1E
 
+!! molokai 
+*foreground:#a0a0a0 
+!*background:#1b1d1e
 !black
 *color0:    #1b1d1e
 *color8:    #505354
@@ -30,15 +34,13 @@
 *color7:    #ccccc6
 *color15:   #f8f8f2
 
-!URxvt.background:               #1b1b1b
-!URxvt.foreground:               #FFFFFF
 URxvt.colorBD:                  #CFCFCF
 URxvt.colorUL:                  #969696
 URxvt.colorIT:                  #686868
 
 URxvt*borderColor:        #151515
 URxvt*colorBD:            #ffffff
-URxvt*cursorColor:        #66ff66
+!URxvt*cursorColor:        #66ff66
 URxvt*cursorColor2:       #151515
 
 !scrollbar
@@ -47,7 +49,7 @@ URxvt.scrollBar: false
 !font
 URxvt.font: xft:Monaco\ for\ Powerline:size=11
 URxvt.perl-ext-common: default,matcher
-URxvt.url-launcher: /usr/bin/firefox
+URxvt.url-launcher: /usr/bin/chromium
 URxvt.matcher.button: 1
 
 !colored man-pages
