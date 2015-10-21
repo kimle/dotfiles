@@ -14,8 +14,8 @@ alias grep='grep --color=auto'
 
 autoload -U colors && colors 
 PROMPT="%{$fg_bold[green]%}%n%{$reset_color%}@%{$fg_bold[red]%}%m %{$fg_bold[magenta]%}% → %{$fg_bold[green]%}%1~ "
-# RPROMPT="[%{$fg_no_bold[yellow]%}%?%{$reset_color%}]"
-
+#RPROMPT="[%{$fg_no_bold[yellow]%}%?%{$reset_color%}]"
+#
 autoload -U compinit
 compinit
 # End of lines added by compinstall
@@ -26,6 +26,8 @@ promptinit
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # source /usr/share/tmux/site-contrib/powerline.zsh
+
+export VISUAL=vim
 
 
 DIRSTACKFILE="$HOME/.cache/zsh/dirs"

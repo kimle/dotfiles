@@ -1,14 +1,15 @@
 ! vim: set filetype=xdefaults :
 ! terminal colours
-! celorscheme: Relic Dark
-*background: #1D2426
+! colorscheme: Relic Dark
+!*background: #1D2426
 !*foreground: #8FA388
 
-*cursorColor: #BE5E1E
+!*cursorColor: #BE5E1E
 
-!! molokai 
+
+!molokai 
 *foreground:#a0a0a0 
-!*background:#1b1d1e
+*background:#1b1d1e
 !black
 *color0:    #1b1d1e
 *color8:    #505354
@@ -18,7 +19,7 @@
 !green
 *color2:    #82b414
 *color10:   #b6e354
-!yellow
+!!yellow
 *color3:    #fd971f
 *color11:   #feed6c
 !blue
@@ -40,14 +41,24 @@ URxvt.colorIT:                  #686868
 
 URxvt*borderColor:        #151515
 URxvt*colorBD:            #ffffff
-!URxvt*cursorColor:        #66ff66
+URxvt*cursorColor:        #66ff66
 URxvt*cursorColor2:       #151515
 
 !scrollbar
 URxvt.scrollBar: false
 
+Xft.autohint:	false
+Xft.lcdfilter:	lcddefault
+Xft.hintstyle:	hintslight
+Xft.hinting:	true
+Xft.antialias:	true
+Xft.rgba:	rgb
+
 !font
-URxvt.font: xft:Monaco\ for\ Powerline:size=11
+URxvt.font: xft:Meslo\ LG\ S\ for\ Powerline:size=11
+!URxvt.font: xft:Monaco\ for\ Powerline:size=11
+
+URxvt.letterSpace: -1
 URxvt.perl-ext-common: default,matcher
 URxvt.url-launcher: /usr/bin/chromium
 URxvt.matcher.button: 1
@@ -59,10 +70,3 @@ URxvt.matcher.button: 1
 
 !tabs
 !URxvt.perl-ext-common: ...,tabbed,...
-
-Xft.autohint:	0
-Xft.lcdfilter:	lcddefault
-Xft.hintstyle:	hintslight
-Xft.hinting:	1
-Xft.antialias:	1
-Xft.rgba:	rgb
