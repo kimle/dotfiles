@@ -12,12 +12,13 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 # PS1='[\u@\h \W]\$ '
 
+autoload -U promptinit
+promptinit
+
 autoload -U colors && colors 
-PROMPT="%{$fg_bold[green]%}%n%{$reset_color%}@%{$fg_bold[red]%}%m %{$fg_bold[magenta]%}% → %{$fg_bold[green]%}%1~ "
+PROMPT="%{$fg_bold[green]%}%n%{$reset_color%}@%{$fg_bold[red]%}%m %{$fg_bold[magenta]%}% → %{$fg_bold[yellow]%}%1~ "
 #RPROMPT="[%{$fg_no_bold[yellow]%}%?%{$reset_color%}]"
-#
-autoload -U compinit
-compinit
+
 # End of lines added by compinstall
 
 autoload -U promptinit
@@ -29,7 +30,6 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 
 export VISUAL=vim
 
-
 DIRSTACKFILE="$HOME/.cache/zsh/dirs"
 if [[ -f $DIRSTACKFILE ]] && [[ $#dirstack -eq 0 ]]; then
   dirstack=( ${(f)"$(< $DIRSTACKFILE)"} )
@@ -38,6 +38,10 @@ fi
 #chpwd() {
 #  print -l $PWD ${(u)dirstack} >$DIRSTACKFILE
 #}
+
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
 
 DIRSTACKSIZE=20
 
