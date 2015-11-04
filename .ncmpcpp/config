@@ -57,4 +57,4 @@ follow_now_playing_lyrics = "yes"
 user_interface = "alternative" (classic/alternative)
 display_bitrate = "yes"
 ignore_leading_the = "yes"
-
+playlist_disable_highlight_delay = "3"
