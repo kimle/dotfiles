@@ -111,6 +111,10 @@ nmap <F9> :TagbarToggle<CR>
 let g:tagbar_autofocus = 1
 let g:tagbar_autoclose = 1
 
+" eclim settings
+let g:EclimBrowser = 'chromium'
+let g:EclimCompletionMethod = 'omnifunc'
+
 " allows cursor change in tmux mode
 if exists('$TMUX')
     let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"

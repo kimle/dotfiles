@@ -42,6 +42,7 @@ URxvt*cursorColor2:       #151515
 URxvt.scrollBar: false
 
 !Xft.autohint:	false
+Xft.dpi:        96
 Xft.lcdfilter:	lcddefault
 Xft.hinting:	true
 Xft.hintstyle:	hintslight
@@ -49,8 +50,8 @@ Xft.antialias:	true
 Xft.rgba:	rgb
 
 !font
-!URxvt.font: xft:Meslo\ LG\ S\ for\ Powerline:size=11
-URxvt.font: xft:Monaco\ for\ Powerline:size=11
+URxvt.font: xft:Meslo\ LG\ S\ for\ Powerline:size=11
+!URxvt.font: xft:Monaco\ for\ Powerline:size=11
 
 URxvt.letterSpace: -1
 
