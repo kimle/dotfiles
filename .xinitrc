@@ -34,5 +34,3 @@ exec gnome-session
 # ...or the Window Manager of your choice
 # exec awesome
 # exec i3
-
-exec eclimd
