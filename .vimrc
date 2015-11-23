@@ -17,6 +17,7 @@ set hidden
 set number
 set numberwidth=3 
 set laststatus=2
+set relativenumber 
 
 " wraps text at 80 characters
 set textwidth=80
@@ -53,7 +54,7 @@ nnoremap <space> za
 " move vertically by visual line "
 nnoremap j gj
 nnoremap k gk
-"
+
 " move to beginning/end of line "
 nnoremap B ^
 nnoremap E $
