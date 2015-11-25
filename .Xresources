@@ -2,32 +2,34 @@
 ! terminal colours
 
 !!molokai 
-*foreground:#a0a0a0 
-*background:#1b1d1e
-!black
-*color0:    #1b1d1e
-*color8:    #505354
-!red
-*color1:    #f92672
-*color9:    #ff5995
-!green
-*color2:    #82b414
-*color10:   #b6e354
-!!yellow
-*color3:    #fd971f
-*color11:   #feed6c
-!blue
-*color4:    #56c2d6
-*color12:   #8cedff
-!magenta
-*color5:    #8c54fe
-*color13:   #9e6ffe
-!cyan
-*color6:    #465457
-*color14:   #899ca1
-!white
-*color7:    #ccccc6
-*color15:   #f8f8f2
+!*foreground:#a0a0a0 
+!*background:#1b1d1e
+*foreground:#fbf1c7
+*background:#32302f
+!!black
+!*color0:    #1b1d1e
+!*color8:    #505354
+!!red
+!*color1:    #f92672
+!*color9:    #ff5995
+!!green
+!*color2:    #82b414
+!*color10:   #b6e354
+!!!yellow
+!*color3:    #fd971f
+!*color11:   #feed6c
+!!blue
+!*color4:    #56c2d6
+!*color12:   #8cedff
+!!magenta
+!*color5:    #8c54fe
+!*color13:   #9e6ffe
+!!cyan
+!*color6:    #465457
+!*color14:   #899ca1
+!!white
+!*color7:    #ccccc6
+!*color15:   #f8f8f2
 
 URxvt.colorBD:                  #CFCFCF
 URxvt.colorUL:                  #969696
@@ -35,8 +37,8 @@ URxvt.colorIT:                  #686868
 
 URxvt*borderColor:        #151515
 URxvt*colorBD:            #ffffff
-URxvt*cursorColor:        #66ff66
-URxvt*cursorColor2:       #151515
+URxvt*cursorColor:        #d65d0e
+URxvt*cursorColor2:       #fe8019
 
 !scrollbar
 URxvt.scrollBar: false
@@ -93,3 +95,28 @@ URxvt.matcher.button: 1
 !*color7:    #b0b0b0
 !*color15:   #f7f7f7
 
+!gruvbox
+!black
+*color0:    #32302f
+*color8:    #928374
+!red
+*color1:    #cc241d
+*color9:    #fb4934
+!green
+*color2:    #98971a
+*color10:   #b8bb26
+!!yellow
+*color3:    #d79921
+*color11:   #fabd2f
+!blue
+*color4:    #458588
+*color12:   #83a598
+!magenta
+*color5:    #b16286
+*color13:   #d3869b
+!cyan
+*color6:    #689d6a
+*color14:   #8ec07c
+!white
+*color7:    #a89984
+*color15:   #fbf1c7

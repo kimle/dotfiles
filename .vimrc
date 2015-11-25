@@ -4,12 +4,15 @@ let Tlist_Close_On_Select = 1
 nnoremap <C-1> :TlistToggle<CR>
 runtime! vimrc_example.vim
 
+" color settings
 set t_Co=256
-colorscheme molokai
-let g:molokai_original = 1
+set background=dark
+let g:gruvbox_contrast_dark="soft"
+let g:gruvbox_termcolors=256
+" let g:molokai_original=1
 let g:rehash256 = 1
 let mapleader=","
-syntax enable
+syntax on
 
 " switch buffers without saving
 set hidden
@@ -141,5 +144,8 @@ Plug 'scrooloose/syntastic/'
 Plug 'majutsushi/tagbar/'
 Plug 'tpope/vim-surround/'
 Plug 'tpope/vim-fugitive/'
+Plug 'morhetz/gruvbox'
 
 call plug#end()
+
+colorscheme gruvbox

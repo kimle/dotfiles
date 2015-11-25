@@ -16,7 +16,7 @@ autoload -U promptinit
 promptinit
 
 autoload -U colors && colors 
-PROMPT="%{$fg_bold[green]%}%n%{$reset_color%}@%{$fg_bold[red]%}%m %{$fg_bold[magenta]%}% → %{$fg_bold[yellow]%}%1~ "
+PROMPT="%{$fg_bold[green]%}%n%{$reset_color%}@%{$fg_bold[red]%}%m %{$fg_bold[magenta]%}% → %{$fg_bold[cyan]%}%1~ "
 #RPROMPT="[%{$fg_no_bold[yellow]%}%?%{$reset_color%}]"
 
 # End of lines added by compinstall
