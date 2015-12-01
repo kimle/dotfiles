@@ -10,7 +10,12 @@ zstyle :compinstall filename '/home/kim/.zshrc'
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
+alias vim='nvim'
 # PS1='[\u@\h \W]\$ '
+
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
 
 autoload -U promptinit
 promptinit
@@ -20,9 +25,6 @@ PROMPT="%{$fg_bold[green]%}%n%{$reset_color%}@%{$fg_bold[red]%}%m %{$fg_bold[mag
 #RPROMPT="[%{$fg_no_bold[yellow]%}%?%{$reset_color%}]"
 
 # End of lines added by compinstall
-
-autoload -U promptinit
-promptinit
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
@@ -39,9 +41,9 @@ fi
 #  print -l $PWD ${(u)dirstack} >$DIRSTACKFILE
 #}
 
-if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
-  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
-fi
+#if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+#  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+#fi
 
 DIRSTACKSIZE=20
 
