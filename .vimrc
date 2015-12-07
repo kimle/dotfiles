@@ -169,9 +169,9 @@ let g:neomake_airline=1
 set errorformat=%f:%l:%m
 
 " LaTeX-Box settings
-augroup latexsettings
-    autocmd FileType tex set spell spell
-augroup END
+"augroup latexsettings
+"    autocmd FileType tex set spell
+"augroup END
 let g:LatexBox_Folding=1
 
 " allows cursor change in tmux mode
