@@ -3,6 +3,8 @@ let Tlist_GainFocus_On_ToggleOpen=1
 let Tlist_Close_On_Select=1
 nnoremap <C-1> :TlistToggle<CR>
 runtime! vimrc_example.vim
+let mapleader=","
+syntax on
 
 " color settings
 set t_Co=256
@@ -12,12 +14,11 @@ let g:gruvbox_termcolors=256
 " let g:molokai_original=1
 let g:rehash256 = 1
 
-let mapleader=","
-syntax on
 
 " switch buffers without saving
 set hidden
 
+" general settings
 set number
 set numberwidth=3 
 set laststatus=2
@@ -34,7 +35,7 @@ set softtabstop=4
 set shiftwidth=4
 set expandtab
 set cindent
-        
+    
 set cursorline
 set noundofile
 set wildmenu
@@ -51,7 +52,7 @@ set foldenable
 set foldlevelstart=10
 set foldnestmax=10
 set foldmethod=indent
-                        
+                    
 " space open/closes folds 
 nnoremap <space> za
 
@@ -99,16 +100,15 @@ if has('nvim')
     let g:python_host_prog='/usr/bin/python2.7'
     let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
     set clipboard=unnamedplus
-
     set title
 endif
 
 filetype plugin indent on
 set grepprg=grep\ -nH\ $*
-let g:tex_flavor='latex'
+" let g:tex_flavor='latex'
 set backupdir=~/Documents/.vimtmp
 set directory=~/Documents/.vimtmp
-let $PYTHONPATH='/usr/lib/python2.7/site-packages'
+let $PYTHONPATH='/usr/lib/python3.5/site-packages'
 set runtimepath=~/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,~/.vim/after'
 
 map <C-n> :NERDTreeToggle<CR>
@@ -130,16 +130,16 @@ let g:airline_theme='gruvbox'
 " autoclose YCM window after insertion
 let g:ycm_autoclose_preview_window_after_completion=1
 let g:ycm_autoclose_preview_window_after_insertion=1
+let g:ycm_global_ycm_extra_conf = '~/Documents/.ycm_extra_conf.py'
 
 " syntastic settings
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list=1
-let g:syntastic_auto_loc_list=1
-let g:syntastic_check_on_open=1
-let g:syntastic_check_on_wq=0
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
+"let g:syntastic_always_populate_loc_list=1
+"let g:syntastic_auto_loc_list=1
+"let g:syntastic_check_on_open=1
+"let g:syntastic_check_on_wq=0
 
 " tagbar settings
 nmap <F9> :TagbarToggle<CR>
@@ -150,12 +150,28 @@ let g:tagbar_autoclose=1
 let g:EclimBrowser='chromium'
 let g:EclimCompletionMethod='omnifunc'
 
-" vim-indent settings
-let g:indent_guides_guide_size=1
+" F5 bindings for different filetypes 
+autocmd FileType python nmap <silent> <buffer> <F5> :!python % <CR>
+autocmd FileType java nmap <buffer> <F5> :Java % <CR>
+autocmd FileType c nmap <buffer> <F5> :!gcc -Wall % -o %< && ./%< <CR>
+autocmd FileType cpp nmap <buffer> <F5> :!g++ -Wall % -o %< && ./%< <CR>
+
+" makeprg settings
+autocmd FileType python set makeprg=python\ %
+autocmd FileType java set makeprg=javac\ %
+autocmd FileType c set makeprg=gcc\ -Wall\ %\ -o\ %<
+autocmd FileType cpp set makeprg=g++\ %
 
 " neomake settings
-"autocmd! BufWritePost,BufEnter * Neomake
-"let g:neomake_verbose=2
+autocmd! BufWritePost * Neomake
+let g:neomake_enabled_makers=['makeprg']
+let g:neomake_airline=1
+set errorformat=%f:%l:%m
+
+" LaTeX-Box settings
+augroup latexsettings
+    autocmd FileType tex set spell spell
+augroup END
 
 " allows cursor change in tmux mode
 if exists('$TMUX')
@@ -172,19 +188,21 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
-    Plug 'bling/vim-airline'
+    Plug 'bling/vim-airline/'
     Plug 'bling/vim-bufferline/'
     Plug 'scrooloose/nerdtree/', { 'on': 'NERDTreeToggle' }
     Plug 'Valloric/YouCompleteMe/'
     Plug 'kien/ctrlp.vim/'
     Plug 'sjl/gundo.vim/'
-    Plug 'scrooloose/syntastic/'
+    "Plug 'scrooloose/syntastic/'
     Plug 'majutsushi/tagbar/'
     Plug 'tpope/vim-surround/'
     Plug 'tpope/vim-fugitive/'
-    Plug 'morhetz/gruvbox'
-    Plug 'nathanaelkane/vim-indent-guides'
-    "Plug 'benekastah/neomake'
+    Plug 'tpope/vim-commentary/'
+    Plug 'morhetz/gruvbox/'
+    Plug 'nathanaelkane/vim-indent-guides/'
+    Plug 'benekastah/neomake'
+    Plug 'LaTeX-Box-Team/LaTeX-Box'
 
 call plug#end()
 
