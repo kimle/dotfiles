@@ -173,6 +173,10 @@ set errorformat=%f:%l:%m
 "    autocmd FileType tex set spell
 "augroup END
 let g:LatexBox_Folding=1
+let g:LatexBox_completion_close_braces=1
+let g:LatexBox_latexmk_async=1
+nnoremap <leader>ll :Latexmk <CR>
+nnoremap <leader>lv :LatexView <CR>
 
 " allows cursor change in tmux mode
 if exists('$TMUX')
