@@ -54,3 +54,5 @@ setopt pushdignoredups
 
 ## This reverts the +/- operators.
 setopt pushdminus
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

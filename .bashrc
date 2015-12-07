@@ -9,3 +9,5 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 #shopt -s autocd
 PS1='[\u@\h \W]\$ '
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

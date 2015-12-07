@@ -172,6 +172,7 @@ set errorformat=%f:%l:%m
 augroup latexsettings
     autocmd FileType tex set spell spell
 augroup END
+let g:LatexBox_Folding=1
 
 " allows cursor change in tmux mode
 if exists('$TMUX')
