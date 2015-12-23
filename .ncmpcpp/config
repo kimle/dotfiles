@@ -3,7 +3,7 @@ mpd_host = "localhost"
 mpd_port = "6600"
  
 # Playlist
-song_columns_list_format = "$L(9)[white]{l} (25)[white]{a} (30)[red]{t}$R(20)[green]{b}"
+song_columns_list_format = "$L(9)[255]{l} (25)[255]{a} (30)[10]{t}$R(20)[155]{b}"
 now_playing_prefix = "$3»"
 #now_playing_subfix = "/$b"
 playlist_display_mode = "columns" (classic/columns)

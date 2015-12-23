@@ -157,15 +157,20 @@ autocmd FileType c nmap <buffer> <F5> :!gcc -Wall % -o %< && ./%< <CR>
 autocmd FileType cpp nmap <buffer> <F5> :!g++ -Wall % -o %< && ./%< <CR>
 
 " makeprg settings
-autocmd FileType python set makeprg=python\ %
-autocmd FileType java set makeprg=javac\ %
-autocmd FileType c set makeprg=gcc\ -Wall\ %\ -o\ %<
-autocmd FileType cpp set makeprg=g++\ %
+"autocmd FileType python set makeprg=python\ %
+"autocmd FileType java set makeprg=javac\ %
 
 " neomake settings
 autocmd! BufWritePost * Neomake
-let g:neomake_enabled_makers=['makeprg']
+"let g:neomake_enabled_makers=['makeprg']
+let g:neomake_python_enabled_makers=['pep8']
+let g:neomake_haskell_enabled_makers=['hlint']
+let g:neomake_c_enabled_makers=['gcc']
+let g:neomake_cpp_enabled_makers=['gcc']
+let g:neomake_sh_enabled_makers=['shellsheck']
+let g:neomake_tex_enabled_makers=['chktex']
 let g:neomake_airline=1
+let g:neomake_open_list=2
 set errorformat=%f:%l:%m
 
 " LaTeX-Box settings
