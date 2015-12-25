@@ -156,10 +156,6 @@ autocmd FileType java nmap <buffer> <F5> :Java % <CR>
 autocmd FileType c nmap <buffer> <F5> :!gcc -Wall % -o %< && ./%< <CR>
 autocmd FileType cpp nmap <buffer> <F5> :!g++ -Wall % -o %< && ./%< <CR>
 
-" makeprg settings
-"autocmd FileType python set makeprg=python\ %
-"autocmd FileType java set makeprg=javac\ %
-
 " neomake settings
 autocmd! BufWritePost * Neomake
 "let g:neomake_enabled_makers=['makeprg']
