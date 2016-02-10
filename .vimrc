@@ -161,8 +161,8 @@ autocmd! BufWritePost * Neomake
 "let g:neomake_enabled_makers=['makeprg']
 let g:neomake_python_enabled_makers=['pep8']
 let g:neomake_haskell_enabled_makers=['hlint']
-let g:neomake_c_enabled_makers=['gcc']
-let g:neomake_cpp_enabled_makers=['gcc']
+let g:neomake_c_enabled_makers=['clang']
+let g:neomake_cpp_enabled_makers=['clang']
 let g:neomake_sh_enabled_makers=['shellsheck']
 let g:neomake_tex_enabled_makers=['chktex']
 let g:neomake_airline=1
