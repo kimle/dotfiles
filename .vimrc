@@ -11,7 +11,7 @@ set t_Co=256
 set background=dark
 let g:gruvbox_contrast_dark='soft'
 let g:gruvbox_termcolors=256
-" let g:molokai_original=1
+"let g:molokai_original=1
 let g:rehash256 = 1
 
 
@@ -85,6 +85,7 @@ vnoremap <leader>P "+P
 nnoremap <leader>p "+p
 nnoremap <leader>P "+P
 
+
 if has('nvim')
     " neovim terminal settings
     tnoremap <Esc> <C-\><C-n>
@@ -97,10 +98,13 @@ if has('nvim')
     nnoremap <A-k> <C-w>k
     nnoremap <A-l> <C-w>l
 
-    let g:python_host_prog='/usr/bin/python2.7'
+    let g:python2_host_prog='/usr/bin/python2.7'
+    let g:python3_host_prog='/usr/bin/python3'
     let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
     set clipboard=unnamedplus
     set title
+
+
 endif
 
 filetype plugin indent on
@@ -127,10 +131,13 @@ let g:airline#extensions#tabline#enabled=1
 let g:airline_powerline_fonts=1
 let g:airline_theme='gruvbox'
 
+" enable deoplete at startup
+let g:deoplete#enable_at_startup=1
+
 " autoclose YCM window after insertion
-let g:ycm_autoclose_preview_window_after_completion=1
-let g:ycm_autoclose_preview_window_after_insertion=1
-let g:ycm_global_ycm_extra_conf = '~/Documents/.ycm_extra_conf.py'
+"let g:ycm_autoclose_preview_window_after_completion=1
+"let g:ycm_autoclose_preview_window_after_insertion=1
+"let g:ycm_global_ycm_extra_conf = '~/Documents/.ycm_extra_conf.py'
 
 " syntastic settings
 "set statusline+=%#warningmsg#
@@ -159,11 +166,11 @@ autocmd FileType cpp nmap <buffer> <F5> :!g++ -Wall % -o %< && ./%< <CR>
 " neomake settings
 autocmd! BufWritePost * Neomake
 "let g:neomake_enabled_makers=['makeprg']
-let g:neomake_python_enabled_makers=['pep8']
+let g:neomake_python_enabled_makers=['python']
 let g:neomake_haskell_enabled_makers=['hlint']
 let g:neomake_c_enabled_makers=['clang']
 let g:neomake_cpp_enabled_makers=['clang']
-let g:neomake_sh_enabled_makers=['shellsheck']
+" let g:neomake_sh_enabled_makers=['shellcheck']
 let g:neomake_tex_enabled_makers=['chktex']
 let g:neomake_airline=1
 let g:neomake_open_list=2
@@ -178,6 +185,7 @@ let g:LatexBox_completion_close_braces=1
 let g:LatexBox_latexmk_async=1
 nnoremap <leader>ll :Latexmk <CR>
 nnoremap <leader>lv :LatexView <CR>
+
 
 " allows cursor change in tmux mode
 if exists('$TMUX')
@@ -197,7 +205,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'bling/vim-airline/'
     Plug 'bling/vim-bufferline/'
     Plug 'scrooloose/nerdtree/', { 'on': 'NERDTreeToggle' }
-    Plug 'Valloric/YouCompleteMe/'
+    " Plug 'Valloric/YouCompleteMe/'
     Plug 'kien/ctrlp.vim/'
     Plug 'sjl/gundo.vim/'
     "Plug 'scrooloose/syntastic/'
@@ -209,7 +217,10 @@ call plug#begin('~/.vim/plugged')
     Plug 'nathanaelkane/vim-indent-guides/'
     Plug 'benekastah/neomake'
     Plug 'LaTeX-Box-Team/LaTeX-Box'
-
+    Plug 'metakirby5/codi.vim'
+    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+    Plug 'zchee/deoplete-jedi'
+    Plug 'ervandew/supertab'
+     
 call plug#end()
-
 colorscheme gruvbox
