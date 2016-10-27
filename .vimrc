@@ -47,6 +47,8 @@ set hlsearch
 
 nnoremap <leader><space> :nohlsearch<CR>
 
+imap jk <esc> 
+
 " Folding
 set foldenable
 set foldlevelstart=10
@@ -84,7 +86,6 @@ vnoremap <leader>p "+p
 vnoremap <leader>P "+P
 nnoremap <leader>p "+p
 nnoremap <leader>P "+P
-
 
 if has('nvim')
     " neovim terminal settings

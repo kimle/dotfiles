@@ -81,4 +81,8 @@ if ($status eq 'Discharging') {
 	}
 }
 
+if ($status eq 'Charging' || $status eq 'Unknown' || $status eq 'Full') {
+    print "#b6e354\n";
+}
+
 exit(0);
