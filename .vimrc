@@ -11,9 +11,8 @@ set t_Co=256
 set background=dark
 let g:gruvbox_contrast_dark='soft'
 let g:gruvbox_termcolors=256
-"let g:molokai_original=1
+" let g:molokai_original=1
 let g:rehash256 = 1
-
 
 " switch buffers without saving
 set hidden
@@ -26,7 +25,7 @@ set relativenumber
 
 " wraps text at 80 characters
 set textwidth=80
-" set colorcolumn=80
+set colorcolumn=80
 set formatoptions+=t
 
 " Sets <TAB> to use 4 spaces 
@@ -47,7 +46,7 @@ set hlsearch
 
 nnoremap <leader><space> :nohlsearch<CR>
 
-imap jk <esc> 
+inoremap jk <esc> 
 
 " Folding
 set foldenable
@@ -104,8 +103,6 @@ if has('nvim')
     let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
     set clipboard=unnamedplus
     set title
-
-
 endif
 
 filetype plugin indent on
@@ -135,20 +132,6 @@ let g:airline_theme='gruvbox'
 " enable deoplete at startup
 let g:deoplete#enable_at_startup=1
 
-" autoclose YCM window after insertion
-"let g:ycm_autoclose_preview_window_after_completion=1
-"let g:ycm_autoclose_preview_window_after_insertion=1
-"let g:ycm_global_ycm_extra_conf = '~/Documents/.ycm_extra_conf.py'
-
-" syntastic settings
-"set statusline+=%#warningmsg#
-"set statusline+=%{SyntasticStatuslineFlag()}
-"set statusline+=%*
-"let g:syntastic_always_populate_loc_list=1
-"let g:syntastic_auto_loc_list=1
-"let g:syntastic_check_on_open=1
-"let g:syntastic_check_on_wq=0
-
 " tagbar settings
 nmap <F9> :TagbarToggle<CR>
 let g:tagbar_autofocus=1
@@ -158,14 +141,20 @@ let g:tagbar_autoclose=1
 let g:EclimBrowser='chromium'
 let g:EclimCompletionMethod='omnifunc'
 
-" F5 bindings for different filetypes 
-autocmd FileType python nmap <silent> <buffer> <F5> :!python % <CR>
-autocmd FileType java nmap <buffer> <F5> :Java % <CR>
-autocmd FileType c nmap <buffer> <F5> :!gcc -Wall % -o %< && ./%< <CR>
-autocmd FileType cpp nmap <buffer> <F5> :!g++ -Wall % -o %< && ./%< <CR>
+augroup myvimrc
+    " close preview window on leaving the insert mode
+    autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 
-" neomake settings
-autocmd! BufWritePost * Neomake
+    " F5 bindings for different filetypes 
+    autocmd FileType python nmap <silent> <buffer> <F5> :!python % <CR>
+    autocmd FileType java nmap <buffer> <F5> :Java % <CR>
+    autocmd FileType c nmap <buffer> <F5> :!gcc -Wall % -o %< && ./%< <CR>
+    autocmd FileType cpp nmap <buffer> <F5> :!g++ -Wall % -o %< && ./%< <CR>
+
+    " neomake settings
+    autocmd! BufWritePost * Neomake
+augroup END
+
 "let g:neomake_enabled_makers=['makeprg']
 let g:neomake_python_enabled_makers=['python']
 let g:neomake_haskell_enabled_makers=['hlint']
@@ -187,6 +176,7 @@ let g:LatexBox_latexmk_async=1
 nnoremap <leader>ll :Latexmk <CR>
 nnoremap <leader>lv :LatexView <CR>
 
+let g:indent_guides_start_level=2
 
 " allows cursor change in tmux mode
 if exists('$TMUX')
@@ -206,10 +196,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'bling/vim-airline/'
     Plug 'bling/vim-bufferline/'
     Plug 'scrooloose/nerdtree/', { 'on': 'NERDTreeToggle' }
-    " Plug 'Valloric/YouCompleteMe/'
     Plug 'kien/ctrlp.vim/'
     Plug 'sjl/gundo.vim/'
-    "Plug 'scrooloose/syntastic/'
     Plug 'majutsushi/tagbar/'
     Plug 'tpope/vim-surround/'
     Plug 'tpope/vim-fugitive/'
@@ -218,10 +206,11 @@ call plug#begin('~/.vim/plugged')
     Plug 'nathanaelkane/vim-indent-guides/'
     Plug 'benekastah/neomake'
     Plug 'LaTeX-Box-Team/LaTeX-Box'
-    Plug 'metakirby5/codi.vim'
     Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
     Plug 'zchee/deoplete-jedi'
     Plug 'ervandew/supertab'
+    Plug 'mattn/emmet-vim'
+    Plug 'vim-airline/vim-airline-themes'
      
 call plug#end()
 colorscheme gruvbox
