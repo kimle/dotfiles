@@ -1,10 +1,4 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
-let g:netrw_dirhist_1='/home/kim/Documents/DEWAS2016/yaas_project/yaas_project'
-let g:netrw_dirhist_2='/home/kim/Documents/DEWAS2016/yaas_project/yaas_project/yaas'
-let g:netrw_dirhist_3='/home/kim/Documents/DEWAS2016/myproject/src/templates'
-let g:netrw_dirhist_4='/home/kim/Documents/DEWAS2016/myproject/src/yaas'
-let g:netrw_dirhist_5='/home/kim/Documents/DEWAS2016/myproject/src'
-let g:netrw_dirhist_6='/home/kim/Documents/DEWAS2016/myproject/src/templates'
-let g:netrw_dirhist_7='/home/kim/Documents/DEWAS2016/myproject/src'
-let g:netrw_dirhist_8='/home/kim/Documents/DEWAS2016/myproject/src/yaas'
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/home/kim'
+let g:netrw_dirhist_2='/home/kim/.zprezto'

@@ -3,7 +3,7 @@ HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1500
 unsetopt beep
-bindkey -e
+# bindkey -e
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/kim/.zshrc'
@@ -48,6 +48,10 @@ fi
 #fi
 
 DIRSTACKSIZE=20
+
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Documents
+# source /usr/bin/virtualenvwrapper.sh
 
 setopt autopushd pushdsilent pushdtohome
 

@@ -32,9 +32,9 @@ xset fp rehash
 
 # sh ~/.fehbg &
 
-# exec gnome-session
+exec gnome-session
 # exec startkde
 # exec startxfce4
 # ...or the Window Manager of your choice
 # exec awesome
-exec i3
+# exec i3

@@ -11,7 +11,6 @@ set t_Co=256
 set background=dark
 let g:gruvbox_contrast_dark='soft'
 let g:gruvbox_termcolors=256
-" let g:molokai_original=1
 let g:rehash256 = 1
 
 " switch buffers without saving
@@ -25,7 +24,6 @@ set relativenumber
 
 " wraps text at 80 characters
 set textwidth=80
-set colorcolumn=80
 set formatoptions+=t
 
 " Sets <TAB> to use 4 spaces 
@@ -86,6 +84,9 @@ vnoremap <leader>P "+P
 nnoremap <leader>p "+p
 nnoremap <leader>P "+P
 
+nnoremap <leader>w :w<CR>
+nnoremap <leader><leader> V
+
 if has('nvim')
     " neovim terminal settings
     tnoremap <Esc> <C-\><C-n>
@@ -99,13 +100,15 @@ if has('nvim')
     nnoremap <A-l> <C-w>l
 
     let g:python2_host_prog='/usr/bin/python2.7'
-    let g:python3_host_prog='/usr/bin/python3'
+    let g:python3_host_prog='/usr/bin/python3.6'
     let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
     set clipboard=unnamedplus
     set title
+    if exists('&inccommand')
+      set inccommand=split
+    endif
 endif
 
-filetype plugin indent on
 set grepprg=grep\ -nH\ $*
 " let g:tex_flavor='latex'
 set backupdir=~/Documents/.vimtmp
@@ -151,25 +154,26 @@ augroup myvimrc
     autocmd FileType c nmap <buffer> <F5> :!gcc -Wall % -o %< && ./%< <CR>
     autocmd FileType cpp nmap <buffer> <F5> :!g++ -Wall % -o %< && ./%< <CR>
 
-    " neomake settings
-    autocmd! BufWritePost * Neomake
+    " " neomake settings
+    " autocmd! BufWritePost * Neomake
 augroup END
 
-"let g:neomake_enabled_makers=['makeprg']
-let g:neomake_python_enabled_makers=['python']
-let g:neomake_haskell_enabled_makers=['hlint']
-let g:neomake_c_enabled_makers=['clang']
-let g:neomake_cpp_enabled_makers=['clang']
+" let g:neomake_enabled_makers=['makeprg']
+" let g:neomake_python_enabled_makers=['python']
+" let g:neomake_haskell_enabled_makers=['hlint']
+" let g:neomake_c_enabled_makers=['clang']
+" let g:neomake_cpp_enabled_makers=['clang']
 " let g:neomake_sh_enabled_makers=['shellcheck']
-let g:neomake_tex_enabled_makers=['chktex']
-let g:neomake_airline=1
-let g:neomake_open_list=2
-set errorformat=%f:%l:%m
+" let g:neomake_tex_enabled_makers=['chktex']
+" let g:neomake_airline=1
+" let g:neomake_open_list=2
+" set errorformat=%f:%l:%m
 
 " LaTeX-Box settings
 "augroup latexsettings
 "    autocmd FileType tex set spell
 "augroup END
+
 let g:LatexBox_Folding=1
 let g:LatexBox_completion_close_braces=1
 let g:LatexBox_latexmk_async=1
@@ -179,6 +183,7 @@ nnoremap <leader>lv :LatexView <CR>
 let g:indent_guides_start_level=2
 
 " allows cursor change in tmux mode
+
 if exists('$TMUX')
     let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
     let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
@@ -186,6 +191,19 @@ else
     let &t_SI = "\<Esc>]50;CursorShape=1\x7"
     let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 endif
+
+" ALE settings
+
+let g:ale_linters = {
+\   'javascript': ['eslint'],
+\   'python': ['flake8'],
+\   'c': ['clang'],
+\   'latex': ['chktex'],
+\}
+let g:ale_sign_column_always = 1
+let g:ale_sign_error = '>>'
+let g:ale_sign_warning = '--'
+let g:ale_statusline_format = ['⨉ %d', '⚠ %d', '⬥ ok']
 
 "python from powerline.vim import setup as powerline_setup
 "python powerline_setup()
@@ -204,13 +222,17 @@ call plug#begin('~/.vim/plugged')
     Plug 'tpope/vim-commentary/'
     Plug 'morhetz/gruvbox/'
     Plug 'nathanaelkane/vim-indent-guides/'
-    Plug 'benekastah/neomake'
+    " Plug 'benekastah/neomake'
     Plug 'LaTeX-Box-Team/LaTeX-Box'
     Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+    Plug 'Shougo/neosnippet'
+    Plug 'Shougo/neosnippet-snippets'
     Plug 'zchee/deoplete-jedi'
     Plug 'ervandew/supertab'
     Plug 'mattn/emmet-vim'
     Plug 'vim-airline/vim-airline-themes'
+    Plug 'w0rp/ale'
      
 call plug#end()
+
 colorscheme gruvbox
