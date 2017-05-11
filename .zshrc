@@ -10,7 +10,7 @@ zstyle :compinstall filename '/home/kim/.zshrc'
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-alias vim='nvim'
+# alias vim='nvim'
 alias neofetch='neofetch --image ascii'
 
 # PS1='[\u@\h \W]\$ '

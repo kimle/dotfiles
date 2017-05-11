@@ -1,7 +1,3 @@
-let Tlist_Compact_Format=1
-let Tlist_GainFocus_On_ToggleOpen=1
-let Tlist_Close_On_Select=1
-nnoremap <C-1> :TlistToggle<CR>
 runtime! vimrc_example.vim
 let mapleader=","
 syntax on
@@ -116,11 +112,13 @@ set directory=~/Documents/.vimtmp
 let $PYTHONPATH='/usr/lib/python3.5/site-packages'
 set runtimepath=~/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,~/.vim/after'
 
-map <C-n> :NERDTreeToggle<CR>
 nnoremap <leader>u :GundoToggle<CR>
 
-" save session
-nnoremap <leader>s :'mksession'<CR>
+let g:indent_guides_start_level=2
+
+" let g:netrw_list_hide='^\./$'
+let g:netrw_list_hide='\(^\|\s\s\)\zs\.\S\+'
+let g:netrw_hide=1
 
 " Ctrl-P settings
 let g:ctrlp_match_window='bottom,order:ttb'
@@ -132,8 +130,19 @@ let g:airline#extensions#tabline#enabled=1
 let g:airline_powerline_fonts=1
 let g:airline_theme='gruvbox'
 
-" enable deoplete at startup
-let g:deoplete#enable_at_startup=1
+" neocomplete settings
+let g:acp_enable_AtStartup=0
+let g:neocomplete#enable_at_startup=1
+" let g:neocomplete#sources#dictionary#dictionaries = {
+"     \ 'default' : '',
+"     \ 'vimshell' : $HOME.'/.vimshell_hist',
+"     \ 'scheme' : $HOME.'/.gosh_completions'
+"         \ }
+inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
+
+" " enable omni completion
+" autocmd FileType html setlocal omnifunc=htmlcomplete#CompleteTags
+" autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 
 " tagbar settings
 nmap <F9> :TagbarToggle<CR>
@@ -154,33 +163,13 @@ augroup myvimrc
     autocmd FileType c nmap <buffer> <F5> :!gcc -Wall % -o %< && ./%< <CR>
     autocmd FileType cpp nmap <buffer> <F5> :!g++ -Wall % -o %< && ./%< <CR>
 
-    " " neomake settings
-    " autocmd! BufWritePost * Neomake
 augroup END
-
-" let g:neomake_enabled_makers=['makeprg']
-" let g:neomake_python_enabled_makers=['python']
-" let g:neomake_haskell_enabled_makers=['hlint']
-" let g:neomake_c_enabled_makers=['clang']
-" let g:neomake_cpp_enabled_makers=['clang']
-" let g:neomake_sh_enabled_makers=['shellcheck']
-" let g:neomake_tex_enabled_makers=['chktex']
-" let g:neomake_airline=1
-" let g:neomake_open_list=2
-" set errorformat=%f:%l:%m
-
-" LaTeX-Box settings
-"augroup latexsettings
-"    autocmd FileType tex set spell
-"augroup END
 
 let g:LatexBox_Folding=1
 let g:LatexBox_completion_close_braces=1
 let g:LatexBox_latexmk_async=1
 nnoremap <leader>ll :Latexmk <CR>
 nnoremap <leader>lv :LatexView <CR>
-
-let g:indent_guides_start_level=2
 
 " allows cursor change in tmux mode
 
@@ -205,33 +194,29 @@ let g:ale_sign_error = '>>'
 let g:ale_sign_warning = '--'
 let g:ale_statusline_format = ['⨉ %d', '⚠ %d', '⬥ ok']
 
-"python from powerline.vim import setup as powerline_setup
-"python powerline_setup()
-"python del powerline_setup
+" ultisnips settings
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsEditSplit="vertical"
+
 
 call plug#begin('~/.vim/plugged')
 
     Plug 'bling/vim-airline/'
     Plug 'bling/vim-bufferline/'
-    Plug 'scrooloose/nerdtree/', { 'on': 'NERDTreeToggle' }
     Plug 'kien/ctrlp.vim/'
     Plug 'sjl/gundo.vim/'
     Plug 'majutsushi/tagbar/'
     Plug 'tpope/vim-surround/'
-    Plug 'tpope/vim-fugitive/'
     Plug 'tpope/vim-commentary/'
     Plug 'morhetz/gruvbox/'
-    Plug 'nathanaelkane/vim-indent-guides/'
-    " Plug 'benekastah/neomake'
     Plug 'LaTeX-Box-Team/LaTeX-Box'
-    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-    Plug 'Shougo/neosnippet'
-    Plug 'Shougo/neosnippet-snippets'
-    Plug 'zchee/deoplete-jedi'
-    Plug 'ervandew/supertab'
+    Plug 'Shougo/neocomplete.vim'
     Plug 'mattn/emmet-vim'
-    Plug 'vim-airline/vim-airline-themes'
     Plug 'w0rp/ale'
+    Plug 'SirVer/ultisnips'
+    Plug 'honza/vim-snippets'
      
 call plug#end()
 
