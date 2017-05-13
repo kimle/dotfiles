@@ -17,6 +17,8 @@ set number
 set numberwidth=3 
 set laststatus=2
 set relativenumber 
+set backspace=indent,eol,start
+set wildmenu
 
 " wraps text at 80 characters
 set textwidth=80
@@ -27,11 +29,11 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set expandtab
-set cindent
+set smartindent
+" set cindent
     
 set cursorline
 set noundofile
-set wildmenu
 set lazyredraw
 
 " Enables incremental search and highlights results
@@ -204,7 +206,6 @@ let g:UltiSnipsEditSplit="vertical"
 call plug#begin('~/.vim/plugged')
 
     Plug 'bling/vim-airline/'
-    Plug 'bling/vim-bufferline/'
     Plug 'kien/ctrlp.vim/'
     Plug 'sjl/gundo.vim/'
     Plug 'majutsushi/tagbar/'
