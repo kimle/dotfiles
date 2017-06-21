@@ -18,8 +18,19 @@ set noundofile
 set lazyredraw
 set wildmenu
 set wildignore+=*.bmp,*.gif,*.ico,*.jpg,*.png,*.pdf
-set path+=**
+set path& | let &path.="**"
+set backupdir=~/Documents/.vimtmp
+set directory=~/Documents/.vimtmp
 
+" color settings
+set t_Co=256
+set background=dark
+let g:gruvbox_contrast_dark='soft'
+let g:gruvbox_termcolors=256
+let g:rehash256=1
+colorscheme gruvbox
+
+" custom statusline settings
 function! GitBranch()
     return system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")
 endfunction
@@ -29,58 +40,40 @@ function! StatuslineGit()
     return strlen(l:branchname) >0?'  '.l:branchname.' ':''
 endfunction
 
+function! InsertStatuslineColor(mode)
+    if a:mode=='i'
+        hi StatusLine guibg=#282828 ctermfg=6 guifg=#83a598 ctermbg=0
+    elseif a:mode=='r'
+        hi StatusLine guibg=#282828 ctermfg=5 guifg=#8ec07c ctermbg=0
+    else
+        hi StatusLine guibg=#282828 ctermfg=1 guifg=#a89984 ctermbg=0
+    endif
+endfunction
 
-" Define all the different modes
-" let g:currentmode={
-"     \ 'n'  : 'Normal',
-"     \ 'no' : 'N·Operator Pending',
-"     \ 'v'  : 'Visual',
-"     \ 'V'  : 'V·Line',
-"     \ ''   : 'V·Block',
-"     \ 's'  : 'Select',
-"     \ 'S'  : 'S·Line',
-"     \ ''   : 'S·Block',
-"     \ 'i'  : 'Insert',
-"     \ 'R'  : 'Replace',
-"     \ 'Rv' : 'V·Replace',
-"     \ 'c'  : 'Command',
-"     \ 'cv' : 'Vim Ex',
-"     \ 'ce' : 'Ex',
-"     \ 'r'  : 'Prompt',
-"     \ 'rm' : 'More',
-"     \ 'r?' : 'Confirm',
-"     \ '!'  : 'Shell',
-"     \}
+au InsertEnter * call InsertStatuslineColor(v:insertmode)
+au InsertLeave * hi StatusLine guibg=#282828 ctermfg=8 guifg=#a89984 ctermbg=15
 
-" if version >= 700
-"     au InsertEnter * hi StatusLine term=reverse ctermbg=5 gui=undercurl guisp=Magenta
-"     au InsertLeave * hi StatusLine term=reverse ctermfg=0 ctermbg=2 gui=bold,reverse
+" TODO: Detect Visual mode and color the statusline
+" if visualmode()=='V'
+"     hi StatusLine guibg=#282828 ctermfg=6 guifg=#fe8019 ctermbg=0
 " endif
 
-hi StatusLine ctermbg=4 ctermfg=2
+hi StatusLine guibg=#282828 ctermfg=8 guifg=#a89984 ctermbg=15
 
 set statusline=
-set statusline+=%#PmenuSel#
-set statusline+=\[%{mode()}\]
+set statusline+=%{StatuslineGit()}
+" set statusline+=\[%{mode()}\]
 set statusline+=%n: 
 set statusline+=%t
-set statusline+=%h
 set statusline+=%m
 set statusline+=%r
 set statusline+=%=
 set statusline+=%#CursorColumn#
 set statusline+=\ %y
+set statusline+=[%{strlen(&fenc)?&fenc:'none'}]
 set statusline+=\ %p%%
 set statusline+=\ %l:%c
 set statusline+=
-
-" color settings
-set t_Co=256
-set background=dark
-let g:gruvbox_contrast_dark='soft'
-let g:gruvbox_termcolors=256
-let g:rehash256=1
-colorscheme gruvbox
 
 " switch buffers without saving
 set hidden
@@ -166,3 +159,6 @@ nnoremap <leader><leader> V
 
 " utilises say
 nnoremap <silent> <leader>u :<C-u>call system('say ' . expand('<cword>'))<CR>
+
+" find files
+nnoremap <leader>f :find *
