@@ -10,7 +10,7 @@ syntax on
 set number
 set numberwidth=3 
 set laststatus=2
-set relativenumber 
+" set relativenumber 
 set backspace=indent,eol,start
 set ruler
 set cursorline
@@ -162,5 +162,3 @@ nnoremap <silent> <leader>u :<C-u>call system('say ' . expand('<cword>'))<CR>
 
 " find files
 nnoremap <leader>f :find *
-
-""
