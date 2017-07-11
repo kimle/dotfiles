@@ -5,7 +5,6 @@ execute pathogen#infect()
 let mapleader=","
 syntax on
 
-
 " general settings
 set number
 set numberwidth=3 
@@ -31,37 +30,18 @@ let g:rehash256=1
 colorscheme gruvbox
 
 " custom statusline settings
-function! GitBranch()
-    return system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")
-endfunction
+" function! GitBranch()
+"     return system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")
+" endfunction
+" 
+" function! StatuslineGit()
+"     let l:branchname=GitBranch()
+"     return strlen(l:branchname) >0?'  '.l:branchname.' ':''
+" endfunction
 
-function! StatuslineGit()
-    let l:branchname=GitBranch()
-    return strlen(l:branchname) >0?'  '.l:branchname.' ':''
-endfunction
-
-function! InsertStatuslineColor(mode)
-    if a:mode=='i'
-        hi StatusLine guibg=#282828 ctermfg=6 guifg=#83a598 ctermbg=0
-    elseif a:mode=='r'
-        hi StatusLine guibg=#282828 ctermfg=5 guifg=#8ec07c ctermbg=0
-    else
-        hi StatusLine guibg=#282828 ctermfg=1 guifg=#a89984 ctermbg=0
-    endif
-endfunction
-
-au InsertEnter * call InsertStatuslineColor(v:insertmode)
-au InsertLeave * hi StatusLine guibg=#282828 ctermfg=8 guifg=#a89984 ctermbg=15
-
-" TODO: Detect Visual mode and color the statusline
-" if visualmode()=='V'
-"     hi StatusLine guibg=#282828 ctermfg=6 guifg=#fe8019 ctermbg=0
-" endif
-
-hi StatusLine guibg=#282828 ctermfg=8 guifg=#a89984 ctermbg=15
 
 set statusline=
-set statusline+=%{StatuslineGit()}
+" set statusline+=%{StatuslineGit()}
 " set statusline+=\[%{mode()}\]
 set statusline+=%n: 
 set statusline+=%t
@@ -83,9 +63,11 @@ set textwidth=80
 set formatoptions+=t
 
 " Sets <TAB> to use 4 spaces 
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
+autocmd Filetype html setlocal ts=2 sw=2 sts=2 expandtab
+autocmd Filetype javascript setlocal ts=2 sw=2 sts=2 expandtab
+" set tabstop=4
+" set softtabstop=4
+" set shiftwidth=4
 set expandtab
 set smartindent
 
@@ -99,11 +81,30 @@ set foldlevelstart=10
 set foldnestmax=10
 set foldmethod=indent
 
-
 if has('gui_macvim')
     set lines=40
-    set columns=100
+    set columns=85
     set guifont=Monaco:h13
+
+    function! InsertStatuslineColor(mode)
+    if a:mode=='i'
+        hi StatusLine guibg=#282828 ctermfg=6 guifg=#83a598 ctermbg=0
+    elseif a:mode=='r'
+        hi StatusLine guibg=#282828 ctermfg=5 guifg=#8ec07c ctermbg=0
+    else
+        hi StatusLine guibg=#282828 ctermfg=1 guifg=#a89984 ctermbg=0
+    endif
+    endfunction
+
+    au InsertEnter * call InsertStatuslineColor(v:insertmode)
+    au InsertLeave * hi StatusLine guibg=#282828 ctermfg=8 guifg=#a89984 ctermbg=15
+
+    " TODO: Detect Visual mode and color the statusline
+    " if visualmode()=='V'
+    "     hi StatusLine guibg=#282828 ctermfg=6 guifg=#fe8019 ctermbg=0
+    " endif
+
+    hi StatusLine guibg=#282828 ctermfg=8 guifg=#a89984 ctermbg=15
 endif
 
 
@@ -156,9 +157,6 @@ nnoremap <leader>P "+P
 
 nnoremap <leader>w :w<CR>
 nnoremap <leader><leader> V
-
-" utilises say
-nnoremap <silent> <leader>u :<C-u>call system('say ' . expand('<cword>'))<CR>
 
 " find files
 nnoremap <leader>f :find *
