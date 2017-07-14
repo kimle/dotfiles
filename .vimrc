@@ -39,6 +39,19 @@ colorscheme gruvbox
 "     return strlen(l:branchname) >0?'  '.l:branchname.' ':''
 " endfunction
 
+function! LinterStatus() abort
+    let l:counts = ale#statusline#Count(bufnr(''))
+
+    let l:all_errors = l:counts.error + l:counts.style_error
+    let l:all_non_errors = l:counts.total - l:all_errors
+
+    return l:counts.total == 0 ? 'OK' : printf(
+    \   '%dW %dE',
+    \   all_non_errors,
+    \   all_errors
+    \)
+endfunction
+
 
 set statusline=
 " set statusline+=%{StatuslineGit()}
@@ -53,6 +66,8 @@ set statusline+=\ %y
 set statusline+=[%{strlen(&fenc)?&fenc:'none'}]
 set statusline+=\ %p%%
 set statusline+=\ %l:%c
+set statusline+=\  
+set statusline+=%{LinterStatus()}
 set statusline+=
 
 " switch buffers without saving
@@ -65,9 +80,9 @@ set formatoptions+=t
 " Sets <TAB> to use 4 spaces 
 autocmd Filetype html setlocal ts=2 sw=2 sts=2 expandtab
 autocmd Filetype javascript setlocal ts=2 sw=2 sts=2 expandtab
-" set tabstop=4
-" set softtabstop=4
-" set shiftwidth=4
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
 set expandtab
 set smartindent
 
@@ -118,6 +133,14 @@ let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 let g:UltiSnipsEditSplit="vertical"
 
+let g:ale_linters= {
+\   'javascript': ['jshint'],
+\   'latex': ['chktex'],
+\   'c': ['clang'],
+\   'r': ['lintr'],
+\   'vim': ['vint'],
+\   'python': ['flake8'],
+\}
 
 " Mappings
 nnoremap <leader><space> :nohlsearch<CR>
