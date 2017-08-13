@@ -8,54 +8,25 @@ syntax on
 " general settings
 set number
 set numberwidth=3 
+set relativenumber
 set laststatus=2
-" set relativenumber 
 set backspace=indent,eol,start
 set ruler
-set cursorline
 set noundofile
 set lazyredraw
 set wildmenu
-set wildignore+=*.bmp,*.gif,*.ico,*.jpg,*.png,*.pdf
+set wildignore+=*.bmp,*.gif,*.ico,*.jpg,*.png,*.pdf,*/ENV/*
 set path& | let &path.="**"
 set backupdir=~/Documents/.vimtmp
 set directory=~/Documents/.vimtmp
+set tags=./tags;/
 
 " color settings
-set t_Co=256
-set background=dark
-let g:gruvbox_contrast_dark='soft'
-let g:gruvbox_termcolors=256
-let g:rehash256=1
-colorscheme gruvbox
-
-" custom statusline settings
-" function! GitBranch()
-"     return system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")
-" endfunction
-" 
-" function! StatuslineGit()
-"     let l:branchname=GitBranch()
-"     return strlen(l:branchname) >0?'  '.l:branchname.' ':''
-" endfunction
-
-function! LinterStatus() abort
-    let l:counts = ale#statusline#Count(bufnr(''))
-
-    let l:all_errors = l:counts.error + l:counts.style_error
-    let l:all_non_errors = l:counts.total - l:all_errors
-
-    return l:counts.total == 0 ? 'OK' : printf(
-    \   '%dW %dE',
-    \   all_non_errors,
-    \   all_errors
-    \)
-endfunction
-
+" set background=dark
+" let g:gruvbox_contrast_dark='soft'
+colorscheme nord
 
 set statusline=
-" set statusline+=%{StatuslineGit()}
-" set statusline+=\[%{mode()}\]
 set statusline+=%n: 
 set statusline+=%t
 set statusline+=%m
@@ -67,7 +38,6 @@ set statusline+=[%{strlen(&fenc)?&fenc:'none'}]
 set statusline+=\ %p%%
 set statusline+=\ %l:%c
 set statusline+=\  
-set statusline+=%{LinterStatus()}
 set statusline+=
 
 " switch buffers without saving
@@ -133,14 +103,33 @@ let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 let g:UltiSnipsEditSplit="vertical"
 
-let g:ale_linters= {
-\   'javascript': ['jshint'],
-\   'latex': ['chktex'],
-\   'c': ['clang'],
-\   'r': ['lintr'],
-\   'vim': ['vint'],
-\   'python': ['flake8'],
-\}
+" c config
+augroup c
+    autocmd!
+    autocmd FileType c compiler gcc
+    autocmd BufWritePost *.c silent make%< | silent redraw!
+augroup END
+
+" python config
+augroup python
+    autocmd!
+    autocmd FileType python compiler pylint
+    autocmd BufWritePost *.py silent make%< | silent redraw!
+augroup END
+
+" javascript config
+augroup javascript
+    autocmd!
+    autocmd FileType javascript compiler jshint
+    autocmd BufWritePost *.js silent make%< | silent redraw!
+augroup END
+
+" quickfix config
+augroup quickfix
+    autocmd!
+    autocmd QuickFixCmdPost [^l]* cwindow
+    autocmd VimEnter        *     cwindow
+augroup END
 
 " Mappings
 nnoremap <leader><space> :nohlsearch<CR>
