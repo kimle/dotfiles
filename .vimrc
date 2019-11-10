@@ -3,6 +3,7 @@ runtime! vimrc_example.vim
 execute pathogen#infect()
 
 let mapleader=","
+filetype plugin indent on
 syntax on
 
 " general settings
@@ -17,14 +18,9 @@ set lazyredraw
 set wildmenu
 set wildignore+=*.bmp,*.gif,*.ico,*.jpg,*.png,*.pdf,*/ENV/*
 set path& | let &path.="**"
-set backupdir=~/Documents/.vimtmp
-set directory=~/Documents/.vimtmp
+set backupdir=~/.vimtmp
+set directory=~/.vimtmp
 set tags=./tags;/
-
-" color settings
-" set background=dark
-" let g:gruvbox_contrast_dark='soft'
-colorscheme nord
 
 set statusline=
 set statusline+=%n: 
@@ -65,33 +61,6 @@ set foldenable
 set foldlevelstart=10
 set foldnestmax=10
 set foldmethod=indent
-
-if has('gui_macvim')
-    set lines=40
-    set columns=85
-    set guifont=Monaco:h13
-
-    function! InsertStatuslineColor(mode)
-    if a:mode=='i'
-        hi StatusLine guibg=#282828 ctermfg=6 guifg=#83a598 ctermbg=0
-    elseif a:mode=='r'
-        hi StatusLine guibg=#282828 ctermfg=5 guifg=#8ec07c ctermbg=0
-    else
-        hi StatusLine guibg=#282828 ctermfg=1 guifg=#a89984 ctermbg=0
-    endif
-    endfunction
-
-    au InsertEnter * call InsertStatuslineColor(v:insertmode)
-    au InsertLeave * hi StatusLine guibg=#282828 ctermfg=8 guifg=#a89984 ctermbg=15
-
-    " TODO: Detect Visual mode and color the statusline
-    " if visualmode()=='V'
-    "     hi StatusLine guibg=#282828 ctermfg=6 guifg=#fe8019 ctermbg=0
-    " endif
-
-    hi StatusLine guibg=#282828 ctermfg=8 guifg=#a89984 ctermbg=15
-endif
-
 
 " hide dotfiles by default in netrw
 let g:netrw_list_hide='\(^\|\s\s\)\zs\.\S\+'
