@@ -1,7 +1,5 @@
 runtime! vimrc_example.vim
 
-execute pathogen#infect()
-
 let mapleader=","
 filetype plugin indent on
 syntax on
@@ -61,44 +59,6 @@ set foldenable
 set foldlevelstart=10
 set foldnestmax=10
 set foldmethod=indent
-
-" hide dotfiles by default in netrw
-let g:netrw_list_hide='\(^\|\s\s\)\zs\.\S\+'
-let g:netrw_hide=1
-
-" UltiSnips settings
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-let g:UltiSnipsEditSplit="vertical"
-
-" c config
-augroup c
-    autocmd!
-    autocmd FileType c compiler gcc
-    autocmd BufWritePost *.c silent make%< | silent redraw!
-augroup END
-
-" python config
-augroup python
-    autocmd!
-    autocmd FileType python compiler pylint
-    autocmd BufWritePost *.py silent make%< | silent redraw!
-augroup END
-
-" javascript config
-augroup javascript
-    autocmd!
-    autocmd FileType javascript compiler jshint
-    autocmd BufWritePost *.js silent make%< | silent redraw!
-augroup END
-
-" quickfix config
-augroup quickfix
-    autocmd!
-    autocmd QuickFixCmdPost [^l]* cwindow
-    autocmd VimEnter        *     cwindow
-augroup END
 
 " Mappings
 nnoremap <leader><space> :nohlsearch<CR>
