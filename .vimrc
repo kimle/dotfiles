@@ -4,6 +4,8 @@ let mapleader=","
 filetype plugin indent on
 syntax on
 
+colorscheme OceanicNext
+
 " general settings
 set number
 set numberwidth=3 
@@ -101,3 +103,10 @@ nnoremap <leader><leader> V
 
 " find files
 nnoremap <leader>f :find *
+
+" python config
+augroup python
+    autocmd!
+    " python autofmt with black
+    autocmd BufWritePre *.py execute ':Black'
+augroup END
