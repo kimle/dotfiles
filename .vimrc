@@ -4,6 +4,10 @@ let mapleader=","
 filetype plugin indent on
 syntax on
 
+if has("termguicolors")
+    set termguicolors
+endif
+
 colorscheme OceanicNext
 
 " general settings
