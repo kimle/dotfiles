@@ -4,3 +4,6 @@
 [submodule ".vim/pack/plugins/start/vim-surround"]
 	path = .vim/pack/plugins/start/vim-surround
 	url = git@github.com:tpope/vim-surround.git
+[submodule ".config/bat/themes/forest-night-textmate"]
+	path = .config/bat/themes/forest-night-textmate
+	url = git@github.com:mhanberg/forest-night-textmate.git

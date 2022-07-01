@@ -4,7 +4,9 @@ let mapleader=","
 filetype plugin indent on
 syntax on
 
-colorscheme OceanicNext
+set termguicolors
+let g:everforest_background="soft"
+colorscheme everforest
 
 " general settings
 set number
