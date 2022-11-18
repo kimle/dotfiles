@@ -1,0 +1,28 @@
+# Inserts a blank line between shell prompts
+add_newline = true
+
+# Replace the "❯" symbol in the prompt with "➜"
+[character] # The name of the module we are configuring is "character"
+success_symbol = "[➜](bold green)" # The "success_symbol" segment is being set to "➜" with the color "bold green"
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
+
+[git_branch]
+# symbol = "🌱 "
+
+[git_commit]
+commit_hash_length = 4
+tag_symbol = "🔖"
+
+[git_state]
+format = '[\($state( $progress_current of $progress_total)\)]($style) '
+cherry_pick = "[🍒 PICKING](bold red)"
+# ~/.config/starship.toml
+
+[conda]
+# format = "[$symbol$environment](dimmed green) "
+ignore_base = true
+# symbol = "🅒 "
+
