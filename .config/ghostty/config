@@ -1,0 +1,5 @@
+font-family =
+theme = catppuccin-frappe
+gtk-titlebar = false
+window-width = 146
+window-height = 43
