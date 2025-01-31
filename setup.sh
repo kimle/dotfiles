@@ -4,7 +4,7 @@ set -euo pipefail
 
 # Configuration
 declare -A PACKAGES=(
-    [common]="git ripgrep eza fish bat jq gcc delta vim fzf curl"
+    [common]="git ripgrep eza fish bat jq gcc delta vim fzf curl fastfetch"
     [linux]="podman"
     [fedora]="docker-compose-plugin"
     [ubuntu]="docker-compose-v2"
@@ -39,6 +39,8 @@ install_packages() {
             if [[ -f /etc/os-release ]]; then
                 . /etc/os-release
                 case "$ID" in
+                    # remove tsflags=nodocs from /etc/dnf/dnf.conf before
+                    # running
                     fedora)
                         sudo dnf update -y
                         sudo dnf install --skip-unavailable -y ${PACKAGES[common]} ${PACKAGES[linux]} ${PACKAGES[fedora]} \
@@ -69,6 +71,14 @@ install_packages() {
     esac
 }
 
+setup_eza() {
+    mkdir -p "$HOME/.config/eza"
+    curl -fsSL https://raw.githubusercontent.com/eza-community/eza/refs/heads/main/completions/fish/eza.fish \
+        -o "$FISH_COMPLETIONS/eza.fish" || error "Failed to download Eza completions"
+    curl -fsSL https://raw.githubusercontent.com/eza-community/eza-themes/refs/heads/main/themes/catppuccin.yml \
+        -o "$HOME/.config/eza/theme.yml" || error "Failed to download Eza theme"
+}
+
 setup_fish() {
     info "Setting up fish shell..."
     mkdir -p $FISH_COMPLETIONS
@@ -90,6 +100,7 @@ setup_fish() {
         cat <<EOF > $fish_config
 set TERM xterm-256color
 set EDITOR vim
+set EZA_CONFIG_DIR $HOME/.config/eza
 starship init fish | source
 ~/.local/bin/mise activate fish | source
 fzf --fish | source
@@ -147,6 +158,7 @@ main() {
 
     mkdir -p ~/.local/bin
     install_packages "$OS_TYPE"
+    setup_eza
     setup_fish
     setup_starship
     setup_mise
