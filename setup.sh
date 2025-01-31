@@ -4,7 +4,7 @@ set -euo pipefail
 
 # Configuration
 declare -A PACKAGES=(
-    [common]="git ripgrep eza fish bat jq gcc delta vim fzf curl fastfetch"
+    [common]="git ripgrep eza fish bat jq gcc delta vim fzf curl fastfetch tmux"
     [linux]="podman"
     [fedora]="docker-compose-plugin"
     [ubuntu]="docker-compose-v2"
@@ -77,6 +77,17 @@ setup_eza() {
         -o "$FISH_COMPLETIONS/eza.fish" || error "Failed to download Eza completions"
     curl -fsSL https://raw.githubusercontent.com/eza-community/eza-themes/refs/heads/main/themes/catppuccin.yml \
         -o "$HOME/.config/eza/theme.yml" || error "Failed to download Eza theme"
+}
+
+setup_tmux() {
+    touch "$HOME/.tmux.conf"
+    cat <<EOF > "$HOME/.tmux.conf"
+set -g default-terminal "xterm-256color"
+set -g mouse on
+set -g history-limit 10000
+set -g base-index 1
+set -g set-titles on
+EOF
 }
 
 setup_fish() {
@@ -159,6 +170,7 @@ main() {
     mkdir -p ~/.local/bin
     install_packages "$OS_TYPE"
     setup_eza
+    setup_tmux
     setup_fish
     setup_starship
     setup_mise
