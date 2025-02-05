@@ -4,7 +4,7 @@ set -euo pipefail
 
 # Configuration
 declare -A PACKAGES=(
-    [common]="git ripgrep eza bat fish jq gcc delta vim curl fastfetch tmux fd-find"
+    [common]="git ripgrep eza bat fish jq gcc git-delta vim curl fastfetch tmux fd-find"
     [linux]="podman"
     [fedora]="docker-compose-plugin fzf"
     [ubuntu]="docker-compose-v2"
