@@ -102,7 +102,7 @@ setup_bat() {
     local bat_config="$(bat --config-file)"
     touch "$bat_config"
     echo "--theme=\"Catppuccin Frappe\"" >> "$bat_config"
-    fish -c 'set -Ux MANPAGER "sh -c \'sed -u -e \"s/\\x1B\[[0-9;]*m//g; s/.\\x08//g\" | bat -p -lman\'"'
+    fish -c "set -Ux MANPAGER \"sh -c 'sed -u -e \\\"s/\\\\x1B\\\\[[0-9;]*m//g; s/.\\\\x08//g\\\" | bat -p -lman'\""
 }
 
 setup_delta() {
@@ -157,7 +157,7 @@ setup_fish() {
     fi
 
     # install catppuccin theme
-    fisher install catppuccin/fish
+    fish -c 'fisher install catppuccin/fish'
     fish -c 'fish_config theme save "Catppuccin Mocha"'
 
     local fish_config="$HOME/.config/fish/config.fish"
@@ -221,8 +221,9 @@ main() {
     OS_TYPE="$(uname -s | tr '[:upper:]' '[:lower:]')"
     [[ "$OS_TYPE" == "darwin" ]] && export PATH="$HOME/.local/bin:/opt/homebrew/bin:$PATH"
 
-    mkdir -p ~/.local/bin
-    mkdir -p ~/.config
+    mkdir -p $MISE_HOME
+    mkdir -p $FISH_COMPLETIONS
+
     install_packages "$OS_TYPE"
     setup_eza
     setup_fzf
