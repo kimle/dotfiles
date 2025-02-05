@@ -102,6 +102,7 @@ setup_bat() {
     local bat_config="$(bat --config-file)"
     touch "$bat_config"
     echo "--theme=\"Catppuccin Frappe\"" >> "$bat_config"
+    fish -c 'set -Ux MANPAGER "sh -c \'sed -u -e \"s/\\x1B\[[0-9;]*m//g; s/.\\x08//g\" | bat -p -lman\'"'
 }
 
 setup_delta() {
@@ -118,6 +119,24 @@ set -g mouse on
 set -g history-limit 10000
 set -g base-index 1
 set -g set-titles on
+
+set-option -g renumber-windows on
+
+# bind prefix to CTRL-Space
+unbind C-b
+set -g prefix C-Space
+bind C-Space send-prefix
+
+set -g @catppuccin_flavor "mocha"
+set -g @catppuccin_window_status_style "rounded"
+
+run ~/.config/tmux/plugins/catppuccin/tmux/catppuccin.tmux
+
+set -g status-right-length 100
+set -g status-left-length 100
+set -g status-left ""
+set -g status-right "#{E:@catppuccin_status_application}"
+
 EOF
 }
 
@@ -136,6 +155,10 @@ setup_fish() {
             fish -c 'source && fisher install jorgebucaran/fisher' \
             || error "Failed to install Fisher"
     fi
+
+    # install catppuccin theme
+    fisher install catppuccin/fish
+    fish -c 'fish_config theme save "Catppuccin Mocha"'
 
     local fish_config="$HOME/.config/fish/config.fish"
     if [ ! -f "$fish_config" ]; then
