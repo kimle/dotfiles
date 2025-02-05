@@ -4,10 +4,10 @@ set -euo pipefail
 
 # Configuration
 declare -A PACKAGES=(
-    [common]="git ripgrep eza fish jq gcc delta vim curl fastfetch tmux"
+    [common]="git ripgrep eza bat fish jq gcc delta vim curl fastfetch tmux"
     [linux]="podman"
-    [fedora]="docker-compose-plugin fzf bat"
-    [ubuntu]="docker-compose-v2 batcat"
+    [fedora]="docker-compose-plugin fzf"
+    [ubuntu]="docker-compose-v2"
     [macos]=""
 )
 
