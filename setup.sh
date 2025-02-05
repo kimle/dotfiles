@@ -4,7 +4,7 @@ set -euo pipefail
 
 # Configuration
 declare -A PACKAGES=(
-    [common]="git ripgrep eza bat fish jq gcc delta vim curl fastfetch tmux"
+    [common]="git ripgrep eza bat fish jq gcc delta vim curl fastfetch tmux fd-find"
     [linux]="podman"
     [fedora]="docker-compose-plugin fzf"
     [ubuntu]="docker-compose-v2"
@@ -73,10 +73,14 @@ install_packages() {
 
 setup_eza() {
     mkdir -p "$HOME/.config/eza"
-    curl -fsSL https://raw.githubusercontent.com/eza-community/eza/refs/heads/main/completions/fish/eza.fish \
-        -o "$FISH_COMPLETIONS/eza.fish" || error "Failed to download Eza completions"
-    curl -fsSL https://raw.githubusercontent.com/eza-community/eza-themes/refs/heads/main/themes/catppuccin.yml \
-        -o "$HOME/.config/eza/theme.yml" || error "Failed to download Eza theme"
+    if [ ! -f "$FISH_COMPLETIONS/eza.fish" ]; then
+        curl -fsSL https://raw.githubusercontent.com/eza-community/eza/refs/heads/main/completions/fish/eza.fish \
+            -o "$FISH_COMPLETIONS/eza.fish" || error "Failed to download Eza completions"
+    fi
+    if [ ! -f "$HOME/.config/eza/theme.yml" ]; then
+        curl -fsSL https://raw.githubusercontent.com/eza-community/eza-themes/refs/heads/main/themes/catppuccin.yml \
+            -o "$HOME/.config/eza/theme.yml" || error "Failed to download Eza theme"
+    fi
 }
 
 setup_fzf() {
@@ -84,6 +88,8 @@ setup_fzf() {
     if ! command -v fzf > /dev/null; then
         git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
         ~/.fzf/install
+    else
+        info "fzf already installed"
     fi
 }
 
@@ -95,24 +101,49 @@ setup_bat() {
             sudo ln -s "$(which batcat)" ~/.local/bin/bat
         fi
     fi
-    mkdir -p "$(bat --config-dir)/themes"
-    curl -fsSL https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Frappe.tmTheme \
-        -o "$(bat --config-dir)/themes/Catppuccin Frappe.tmTheme"
-    bat cache --build
-    local bat_config="$(bat --config-file)"
-    touch "$bat_config"
-    echo "--theme=\"Catppuccin Frappe\"" >> "$bat_config"
+    if [ ! -d "$(bat --config-dir)/themes" ]; then
+        mkdir -p "$(bat --config-dir)/themes"
+        curl -fsSL https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Frappe.tmTheme \
+            -o "$(bat --config-dir)/themes/Catppuccin Frappe.tmTheme"
+        bat cache --build
+        local bat_config="$(bat --config-file)"
+        touch "$bat_config"
+        echo "--theme=\"Catppuccin Frappe\"" >> "$bat_config"
+    fi
     fish -c "set -Ux MANPAGER \"sh -c 'sed -u -e \\\"s/\\\\x1B\\\\[[0-9;]*m//g; s/.\\\\x08//g\\\" | bat -p -lman'\""
 }
 
+setup_fd() {
+    if ! command -v fd > /dev/null; then
+        if ! command -v fdfind > /dev/null; then
+            info "fd not found, install it manually"
+        else
+            sudo ln -s "$(which fdfind)" ~/.local/bin/fd
+        fi
+    fi
+}
+
 setup_delta() {
-    mkdir -p ~/.config/delta/themes
-    curl -sSfL https://raw.githubusercontent.com/catppuccin/delta/refs/heads/main/catppuccin.gitconfig \
-        -o ~/.config/delta/catppuccin.gitconfig
+    if ! command -v delta > /dev/null; then
+        info "delta not found, install it manually"
+    fi
+    if [ ! -f ~/.config/delta/catppuccin.gitconfig ]; then
+        mkdir -p ~/.config/delta/themes
+        curl -sSfL https://raw.githubusercontent.com/catppuccin/delta/refs/heads/main/catppuccin.gitconfig \
+            -o ~/.config/delta/catppuccin.gitconfig
+    fi
 }
 
 setup_tmux() {
-    touch "$HOME/.tmux.conf"
+    if [ ! -d $HOME/.config/tmux/plugins/catppuccin/tmux ]; then
+        mkdir -p ~/.config/tmux/plugins/catppuccin
+        git clone -b v2.1.2 https://github.com/catppuccin/tmux.git $HOME/.config/tmux/plugins/catppuccin/tmux
+    fi
+    if [ ! -f "$HOME/.tmux.conf" ]; then
+        touch "$HOME/.tmux.conf"
+    else
+        mv -f "$HOME/.tmux.conf" "$HOME/.tmux.conf.bak"
+    fi
     cat <<EOF > "$HOME/.tmux.conf"
 set -g default-terminal "xterm-256color"
 set -g mouse on
@@ -146,7 +177,7 @@ setup_fish() {
 
     # Set Fish as default shell
     if [[ "$SHELL" != "$(which fish)" ]]; then
-        sudo chsh -s "$(which fish)" "$USER" || error "Failed to change shell to Fish"
+        sudo chsh -s "$(which fish)" "$(whoami)" || error "Failed to change shell to Fish"
     fi
 
     # Fisher plugin manager
@@ -157,11 +188,15 @@ setup_fish() {
     fi
 
     # install catppuccin theme
-    fish -c 'fisher install catppuccin/fish'
-    fish -c 'fish_config theme save "Catppuccin Mocha"'
+    if ! fish -c 'fisher list | grep -q catppuccin/fish'; then
+        fish -c 'fisher install catppuccin/fish'
+        fish -c 'fish_config theme save "Catppuccin Mocha"'
+    fi
 
     local fish_config="$HOME/.config/fish/config.fish"
-    if [ ! -f "$fish_config" ]; then
+    if [ -f "$fish_config" ]; then
+        # Backup existing config - only once
+        mv -f "$fish_config" "$fish_config.bak"
         cat <<EOF > $fish_config
 set TERM xterm-256color
 set EDITOR vim
@@ -181,8 +216,7 @@ setup_starship() {
 
     mkdir -p "$STARSHIP_CONFIG_HOME"
     if [[ ! -f "$STARSHIP_CONFIG_HOME/starship.toml" ]]; then
-        curl -fsSL https://raw.githubusercontent.com/kimle/dotfiles/main/.config/starship.toml \
-            -o "$STARSHIP_CONFIG_HOME/starship.toml" || error "Failed to download Starship config"
+        cp $PWD/.config/starship.toml $STARSHIP_CONFIG_HOME/starship.toml
         cat <<EOF >> /$HOME/.config/starship.toml
 [username]
 disabled = true
@@ -200,7 +234,7 @@ setup_mise() {
     fi
 
     mkdir -p "$MISE_HOME"
-    $MISE_HOME/mise use -g usage || error "Failed to setup Mise"
+    $MISE_HOME/mise use -g usage || error "Failed to setup usage"
     $MISE_HOME/mise completion fish > "$FISH_COMPLETIONS/mise.fish"
 }
 
@@ -216,6 +250,17 @@ setup_docker() {
     fi
 }
 
+setup_vim() {
+    info "Setting up Vim..."
+    # vim swap files
+    mkdir -p "$HOME/.vimtmp"
+    cp -r $PWD/.vim/ $HOME/.vim/
+    cp $PWD/.vimrc $HOME/.vimrc
+    git clone https://github.com/catppuccin/vim.git $HOME/misc/vim
+    cp $HOME/misc/vim/colors/* $HOME/.vim/colors/
+    rm -rf $HOME/misc/vim
+}
+
 main() {
     info "Starting system setup..."
     OS_TYPE="$(uname -s | tr '[:upper:]' '[:lower:]')"
@@ -223,15 +268,21 @@ main() {
 
     mkdir -p $MISE_HOME
     mkdir -p $FISH_COMPLETIONS
+    mkdir -p $HOME/misc
+
+    export PATH="$HOME/.local/bin:$PATH"
 
     install_packages "$OS_TYPE"
     setup_eza
+    setup_bat
+    setup_fd
     setup_fzf
     setup_tmux
     setup_fish
     setup_starship
     setup_mise
     setup_docker
+    setup_vim
 
     success "Setup completed successfully!"
     echo "Restart your terminal or run: exec fish"
