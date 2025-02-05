@@ -4,10 +4,10 @@ set -euo pipefail
 
 # Configuration
 declare -A PACKAGES=(
-    [common]="git ripgrep eza fish bat jq gcc delta vim fzf curl fastfetch tmux"
+    [common]="git ripgrep eza fish jq gcc delta vim curl fastfetch tmux"
     [linux]="podman"
-    [fedora]="docker-compose-plugin"
-    [ubuntu]="docker-compose-v2"
+    [fedora]="docker-compose-plugin fzf bat"
+    [ubuntu]="docker-compose-v2 batcat"
     [macos]=""
 )
 
@@ -77,6 +77,37 @@ setup_eza() {
         -o "$FISH_COMPLETIONS/eza.fish" || error "Failed to download Eza completions"
     curl -fsSL https://raw.githubusercontent.com/eza-community/eza-themes/refs/heads/main/themes/catppuccin.yml \
         -o "$HOME/.config/eza/theme.yml" || error "Failed to download Eza theme"
+}
+
+setup_fzf() {
+    info "Setting up fzf..."
+    if ! command -v fzf > /dev/null; then
+        git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+        ~/.fzf/install
+    fi
+}
+
+setup_bat() {
+    if ! command -v bat > /dev/null; then
+        if ! command -v batcat > /dev/null; then
+            info "bat not found, install it manually"
+        else
+            sudo ln -s "$(which batcat)" ~/.local/bin/bat
+        fi
+    fi
+    mkdir -p "$(bat --config-dir)/themes"
+    curl -fsSL https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Frappe.tmTheme \
+        -o "$(bat --config-dir)/themes/Catppuccin Frappe.tmTheme"
+    bat cache --build
+    local bat_config="$(bat --config-file)"
+    touch "$bat_config"
+    echo "--theme=\"Catppuccin Frappe\"" >> "$bat_config"
+}
+
+setup_delta() {
+    mkdir -p ~/.config/delta/themes
+    curl -sSfL https://raw.githubusercontent.com/catppuccin/delta/refs/heads/main/catppuccin.gitconfig \
+        -o ~/.config/delta/catppuccin.gitconfig
 }
 
 setup_tmux() {
@@ -168,8 +199,10 @@ main() {
     [[ "$OS_TYPE" == "darwin" ]] && export PATH="$HOME/.local/bin:/opt/homebrew/bin:$PATH"
 
     mkdir -p ~/.local/bin
+    mkdir -p ~/.config
     install_packages "$OS_TYPE"
     setup_eza
+    setup_fzf
     setup_tmux
     setup_fish
     setup_starship
