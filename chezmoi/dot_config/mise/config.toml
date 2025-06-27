@@ -13,11 +13,6 @@ usage = "latest"
 
 "npm:@google/gemini-cli" = "latest"
 
-[tasks."terraform:workspace:select"]
-description = "fzf select terraform workspace"
-alias = "tfws"
-run = "terraform workspace list | fzf | tr -s '[:space:]' | xargs -r -I {} terraform workspace select {}"
-
 [settings]
 idiomatic_version_file_enable_tools = ["node"]
 
