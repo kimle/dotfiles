@@ -7,7 +7,7 @@ declare -A PACKAGES=(
     [common]="git ripgrep eza bat fish jq gcc git-delta vim curl fastfetch tmux fd-find"
     [linux]="podman"
     [fedora]="docker-compose-plugin fzf"
-    [ubuntu]="docker-compose-v2"
+    [ubuntu]="docker-compose-v2 batcat fzf"
     [macos]=""
 )
 
@@ -194,10 +194,10 @@ setup_fish() {
     fi
 
     local fish_config="$HOME/.config/fish/config.fish"
-    if [ -f "$fish_config" ]; then
-        # Backup existing config - only once
+    if [ -f "$fish_config" ] && [ ! -f "$fish_config.bak" ]; then
         mv -f "$fish_config" "$fish_config.bak"
-        cat <<EOF > $fish_config
+    fi
+    cat <<EOF > $fish_config
 set TERM xterm-256color
 set EDITOR vim
 set EZA_CONFIG_DIR $HOME/.config/eza
@@ -205,7 +205,6 @@ starship init fish | source
 ~/.local/bin/mise activate fish | source
 fzf --fish | source
 EOF
-    fi
 }
 
 setup_starship() {
