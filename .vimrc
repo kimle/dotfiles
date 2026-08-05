@@ -5,8 +5,7 @@ filetype plugin indent on
 syntax on
 
 set termguicolors
-let g:everforest_background="soft"
-colorscheme everforest
+colorscheme catppuccin_mocha
 
 " general settings
 set number
