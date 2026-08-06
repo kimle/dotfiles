@@ -48,6 +48,23 @@ setup_fzf() {
     fi
 }
 
+setup_atuin() {
+    info "Setting up Atuin..."
+    if ! command -v atuin > /dev/null; then
+        if [ ! -x "$HOME/.atuin/bin/atuin" ]; then
+            # Official installer; --non-interactive skips all prompts.
+            # ATUIN_NO_MODIFY_PATH=1 keeps it from editing shell profiles,
+            # we manage PATH ourselves via the ~/.local/bin symlink below.
+            curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh \
+                | ATUIN_NO_MODIFY_PATH=1 sh -s -- --non-interactive \
+                || error "Failed to install Atuin"
+        fi
+        ln -sf "$HOME/.atuin/bin/atuin" "$HOME/.local/bin/atuin"
+    fi
+    atuin gen-completions --shell fish --out-dir "$FISH_COMPLETIONS" \
+        || error "Failed to generate atuin completions"
+}
+
 setup_bat() {
     # On some distros (Ubuntu) the binary is called batcat.
     # On Fedora / macOS it is bat.
@@ -158,6 +175,7 @@ setup_fish() {
 set TERM xterm-256color
 set EDITOR vim
 set EZA_CONFIG_DIR $HOME/.config/eza
+atuin init fish | source
 starship init fish | source
 ~/.local/bin/mise activate fish | source
 zoxide init fish | source

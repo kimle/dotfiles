@@ -48,6 +48,7 @@ main() {
     setup_bat
     setup_fd
     setup_fzf
+    setup_atuin
     setup_delta
     setup_tmux
     setup_fish
