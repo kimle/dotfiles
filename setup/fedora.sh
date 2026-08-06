@@ -17,14 +17,25 @@ source "$SCRIPT_DIR/common.sh"
 install_packages() {
     info "Installing packages on Fedora…"
 
-    # Remove tsflags=nodocs from /etc/dnf/dnf.conf before running
+    # Make man pages available in general: tsflags=nodocs in /etc/dnf/dnf.conf
+    # suppresses installation of docs/man pages for every package. Remove it so
+    # packages ship their man pages, then reinstall everything to restore the
+    # docs that were skipped while it was set.
+    if grep -q '^tsflags=nodocs' /etc/dnf/dnf.conf; then
+        info "Removing tsflags=nodocs from /etc/dnf/dnf.conf (man pages were disabled)"
+        sudo sed -i '/^tsflags=nodocs/d' /etc/dnf/dnf.conf
+        info "Reinstalling packages to restore man pages/docs..."
+        mapfile -t all_pkgs < <(rpm -qa)
+        sudo dnf reinstall -y "${all_pkgs[@]}" \
+            || info "Failed to restore docs for some packages; run 'sudo dnf reinstall \$(rpm -qa)' manually"
+    fi
 
     sudo dnf update -y
 
     sudo dnf install --skip-unavailable -y \
         git ripgrep eza bat fish jq gcc git-delta vim curl fastfetch tmux fd-find age \
         podman docker-compose-plugin fzf zoxide \
-        ncurses netcat
+        ncurses netcat man-db man-pages
 }
 
 # ──────────────────────────────────────────────
