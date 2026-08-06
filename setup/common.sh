@@ -63,6 +63,21 @@ setup_atuin() {
     fi
     atuin gen-completions --shell fish --out-dir "$FISH_COMPLETIONS" \
         || error "Failed to generate atuin completions"
+
+    # Write a minimal config only if none exists yet (never clobber user config):
+    # - enter_accept = false: Enter places the highlighted entry into the prompt
+    #   for editing instead of immediately executing it
+    # - tmux.enabled = true: use the atuin search UI inside a tmux popup
+    local atuin_config="$HOME/.config/atuin/config.toml"
+    if [ ! -f "$atuin_config" ]; then
+        mkdir -p "$HOME/.config/atuin"
+        cat <<'EOF' > "$atuin_config"
+enter_accept = false
+
+[tmux]
+enabled = true
+EOF
+    fi
 }
 
 setup_bat() {
@@ -113,36 +128,10 @@ setup_tmux() {
         mkdir -p ~/.config/tmux/plugins/catppuccin
         git clone -b v2.1.2 https://github.com/catppuccin/tmux.git $HOME/.config/tmux/plugins/catppuccin/tmux
     fi
-    if [ ! -f "$HOME/.tmux.conf" ]; then
-        touch "$HOME/.tmux.conf"
-    else
-        mv -f "$HOME/.tmux.conf" "$HOME/.tmux.conf.bak"
-    fi
-    cat <<EOF > "$HOME/.tmux.conf"
-set -g default-terminal "xterm-256color"
-set -g mouse on
-set -g history-limit 10000
-set -g base-index 1
-set -g set-titles on
-
-set-option -g renumber-windows on
-
-# bind prefix to CTRL-Space
-unbind C-b
-set -g prefix C-Space
-bind C-Space send-prefix
-
-set -g @catppuccin_flavor "mocha"
-set -g @catppuccin_window_status_style "default"
-
-run ~/.config/tmux/plugins/catppuccin/tmux/catppuccin.tmux
-
-set -g status-right-length 100
-set -g status-left-length 100
-set -g status-left ""
-set -g status-right "#{E:@catppuccin_status_application}"
-
-EOF
+    # Copy the tracked .tmux.conf from the repo instead of generating one.
+    local script_dir
+    script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+    cp "$script_dir/../.tmux.conf" "$HOME/.tmux.conf"
 }
 
 setup_fish() {
