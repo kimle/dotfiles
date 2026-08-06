@@ -143,8 +143,9 @@ setup_fish() {
         sudo chsh -s "$(which fish)" "$(whoami)" || error "Failed to change shell to Fish"
     fi
 
-    # Fisher plugin manager
-    if ! command -v fisher > /dev/null; then
+    # Fisher plugin manager (fisher is a fish function, not a binary, so
+    # check for it inside fish rather than via command -v)
+    if ! fish -c 'functions -q fisher' > /dev/null 2>&1; then
         curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | \
             fish -c 'source && fisher install jorgebucaran/fisher' \
             || error "Failed to install Fisher"
@@ -153,8 +154,8 @@ setup_fish() {
     # install catppuccin theme
     fish -c 'fish_config theme choose catppuccin-mocha'
 
-    # install forgit
-    fisher install wfxr/forgit
+    # install forgit (fisher is a fish function; must run inside fish)
+    fish -c 'fisher install wfxr/forgit'
 
     local fish_config="$HOME/.config/fish/config.fish"
     if [ -f "$fish_config" ] && [ ! -f "$fish_config.bak" ]; then
