@@ -1,0 +1,11 @@
+{{ if eq .chezmoi.os "linux" }}
+enter_accept = false
+search_mode = "daemon-fuzzy"
+
+[daemon]
+enabled = true
+autostart = true
+
+[tmux]
+enabled = false
+{{ end }}

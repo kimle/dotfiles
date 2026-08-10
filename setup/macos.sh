@@ -27,7 +27,7 @@ install_packages() {
 
     brew install \
         git ripgrep eza bat fish jq gcc git-delta vim curl fastfetch tmux fd-find age \
-        fzf zoxide
+        fzf zoxide chezmoi
 }
 
 # ──────────────────────────────────────────────
@@ -53,9 +53,12 @@ main() {
     setup_fish
     setup_starship
     setup_mise
+    setup_chezmoi
     setup_nvm
     setup_docker
     setup_vim
+
+    chezmoi apply || error "Failed to apply chezmoi dotfiles"
 
     success "macOS setup completed successfully!"
     echo "Restart your terminal or run: exec fish"

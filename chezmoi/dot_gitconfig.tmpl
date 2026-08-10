@@ -1,0 +1,64 @@
+[user]
+    name = {{ .git.name }}
+    email = {{ .git.email }}
+    signingkey = {{ .git.signingkey }}
+[alias]
+    co = checkout
+    st = status --short -uno
+    unstage = reset HEAD --
+    up = pull --rebase
+    ll = log --oneline
+    last = log -1 HEAD --stat
+    dv = difftool -t vimdiff -y
+    c = commit -v
+    p = push
+    pub = "!git push -u origin $(git branch --show-current)"
+    fx = "!git c --fixup $(git log $(git merge-base $(git symbolic-ref --short refs/remotes/origin/HEAD | cut -d '/' -f2) HEAD)..HEAD --oneline | fzf | cut -d ' ' -f1)"
+    swtc = "!git switch $(git for-each-ref --sort=-committerdate refs/heads/ --format='%(refname:short)' | fzf)"
+    cleanup = "!git branch --merged | rg -v '^\\*|main$' | xargs -r -n1 git branch -d"
+[push]
+    default = current
+[diff]
+    algorithm = histogram
+    renames = true
+[difftool]
+    prompt = true
+    trustExitCode = true
+[commit]
+	gpgsign = true
+    verbose = true
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	allowedSignersFile = {{ .chezmoi.homeDir }}/.config/git/allowed_signers
+[core]
+	excludesFile = {{ .chezmoi.homeDir }}/.gitignore
+    pager = delta
+    editor = vim
+[init]
+	defaultBranch = main
+[interactive]
+    diffFilter = delta --color-only
+[delta]
+    navigate = true    # use n and N to move between diff sections
+    ; syntax-theme = "catppuccin"
+    features = catppuccin-mocha
+    true-color = always
+    ; side-by-side = true
+    # delta detects terminal colors automatically; set one of these to disable auto-detection
+    # dark = true
+    # light = true
+[merge]
+    conflictstyle = zdiff3
+[include]
+	path = ~/.config/delta/themes/catppuccin.gitconfig
+[delta]
+	features = catppuccin-frappe
+[help]
+    autocorrect = prompt
+[fetch]
+    prune = true
+[column]
+    ui = auto
+[branch]
+    sort = -committerdate

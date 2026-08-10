@@ -34,7 +34,7 @@ install_packages() {
 
     sudo dnf install --skip-unavailable -y \
         git ripgrep eza bat fish jq gcc git-delta vim curl fastfetch tmux fd-find age \
-        podman docker-compose-plugin fzf zoxide \
+        podman docker-compose-plugin fzf zoxide chezmoi \
         ncurses netcat man-db man-pages
 }
 
@@ -62,9 +62,12 @@ main() {
     setup_fish
     setup_starship
     setup_mise
+    setup_chezmoi
     setup_nvm
     setup_docker
     setup_vim
+
+    chezmoi apply || error "Failed to apply chezmoi dotfiles"
 
     success "Fedora setup completed successfully!"
     echo "Restart your terminal or run: exec fish"

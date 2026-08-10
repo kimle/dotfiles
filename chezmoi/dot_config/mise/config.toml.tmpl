@@ -1,0 +1,16 @@
+[tools]
+aws = "latest"
+glow = "latest"
+hyperfine = "latest"
+k6 = "latest"
+sops = "latest"
+usage = "latest"
+
+[settings]
+experimental = true
+idiomatic_version_file_enable_tools = []
+
+{{ if index . "mise" }}{{ if index .mise "deepseek_api_key" }}
+[env]
+DEEPSEEK_API_KEY = { age = "{{ index .mise "deepseek_api_key" }}" }
+{{ end }}{{ end }}

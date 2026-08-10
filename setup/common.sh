@@ -5,7 +5,6 @@
 
 set -euo pipefail
 
-STARSHIP_CONFIG_HOME="$HOME/.config"
 MISE_HOME="$HOME/.local/bin"
 FISH_COMPLETIONS="$HOME/.config/fish/completions"
 
@@ -64,20 +63,7 @@ setup_atuin() {
     atuin gen-completions --shell fish --out-dir "$FISH_COMPLETIONS" \
         || error "Failed to generate atuin completions"
 
-    # Write a minimal config only if none exists yet (never clobber user config):
-    # - enter_accept = false: Enter places the highlighted entry into the prompt
-    #   for editing instead of immediately executing it
-    # - tmux.enabled = true: use the atuin search UI inside a tmux popup
-    local atuin_config="$HOME/.config/atuin/config.toml"
-    if [ ! -f "$atuin_config" ]; then
-        mkdir -p "$HOME/.config/atuin"
-        cat <<'EOF' > "$atuin_config"
-enter_accept = false
-
-[tmux]
-enabled = true
-EOF
-    fi
+    # atuin config is managed by chezmoi (dot_config/atuin/config.toml.tmpl)
 }
 
 setup_bat() {
@@ -128,10 +114,7 @@ setup_tmux() {
         mkdir -p ~/.config/tmux/plugins/catppuccin
         git clone -b v2.1.2 https://github.com/catppuccin/tmux.git $HOME/.config/tmux/plugins/catppuccin/tmux
     fi
-    # Copy the tracked .tmux.conf from the repo instead of generating one.
-    local script_dir
-    script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-    cp "$script_dir/../.tmux.conf" "$HOME/.tmux.conf"
+    # .tmux.conf is managed by chezmoi (dot_tmux.conf)
 }
 
 setup_fish() {
@@ -157,22 +140,7 @@ setup_fish() {
     # install forgit (fisher is a fish function; must run inside fish)
     fish -c 'fisher install wfxr/forgit'
 
-    local fish_config="$HOME/.config/fish/config.fish"
-    if [ -f "$fish_config" ] && [ ! -f "$fish_config.bak" ]; then
-        mv -f "$fish_config" "$fish_config.bak"
-    fi
-    cat <<EOF > $fish_config
-set TERM xterm-256color
-set EDITOR vim
-set EZA_CONFIG_DIR $HOME/.config/eza
-if type -q atuin
-    atuin init fish | source
-end
-starship init fish | source
-~/.local/bin/mise activate fish | source
-zoxide init fish | source
-fzf --fish | source
-EOF
+    # config.fish is managed by chezmoi (dot_config/fish/config.fish)
 }
 
 setup_starship() {
@@ -181,22 +149,7 @@ setup_starship() {
         curl -fsSL https://starship.rs/install.sh | sh -s -- -y || error "Failed to install Starship"
     fi
 
-    # Source directory where this script (or the common.sh) lives
-    local script_dir
-    script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-    mkdir -p "$STARSHIP_CONFIG_HOME"
-    if [[ ! -f "$STARSHIP_CONFIG_HOME/starship.toml" ]]; then
-        cp "$script_dir/../.config/starship.toml" "$STARSHIP_CONFIG_HOME/starship.toml"
-        cat <<EOF >> "$STARSHIP_CONFIG_HOME/starship.toml"
-
-# added by setup script
-[username]
-disabled = true
-
-[container]
-disabled = true
-EOF
-    fi
+    # starship.toml is managed by chezmoi (dot_config/starship.toml.tmpl)
 }
 
 setup_mise() {
@@ -208,6 +161,44 @@ setup_mise() {
     mkdir -p "$MISE_HOME"
     $MISE_HOME/mise use -g usage || error "Failed to setup usage"
     $MISE_HOME/mise completion fish > "$FISH_COMPLETIONS/mise.fish"
+}
+
+setup_chezmoi() {
+    info "Setting up chezmoi..."
+    if ! command -v chezmoi > /dev/null; then
+        info "chezmoi not found, install it manually (or add it to your package manager)"
+        return
+    fi
+    chezmoi completion fish > "$FISH_COMPLETIONS/chezmoi.fish"
+
+    # Generate the machine-local config once, prompting for git identity.
+    # The config (and the identity) never enters the dotfiles repo.
+    local config_dir="$HOME/.config/chezmoi"
+    local config_file="$config_dir/chezmoi.toml"
+    if [ -f "$config_file" ]; then
+        info "chezmoi config already exists, keeping it ($config_file)"
+        return
+    fi
+
+    mkdir -p "$config_dir"
+    local repo_dir
+    repo_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+
+    local git_name="" git_email="" git_signingkey=""
+    while [ -z "$git_name" ]; do read -rp "git user.name: " git_name; done
+    while [ -z "$git_email" ]; do read -rp "git user.email: " git_email; done
+    while [ -z "$git_signingkey" ]; do read -rp "git user.signingkey (public ssh key): " git_signingkey; done
+
+    cat > "$config_file" <<EOF
+sourceDir = "$repo_dir/chezmoi"
+
+[data]
+  [data.git]
+    name = "$git_name"
+    email = "$git_email"
+    signingkey = "$git_signingkey"
+EOF
+    success "Generated $config_file"
 }
 
 setup_nvm() {
@@ -244,8 +235,8 @@ setup_vim() {
     local script_dir
     script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
     cp -r "$script_dir/../.vim/" "$HOME/.vim/"
-    cp "$script_dir/../.vimrc" "$HOME/.vimrc"
     git clone https://github.com/catppuccin/vim.git "$HOME/misc/vim"
     cp "$HOME/misc/vim/colors/"* "$HOME/.vim/colors/"
     rm -rf "$HOME/misc/vim"
+    # .vimrc is managed by chezmoi (dot_vimrc)
 }

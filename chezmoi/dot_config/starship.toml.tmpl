@@ -38,9 +38,6 @@ symbol = 'aws'
 format = '[$symbol$active(\($project\))]($style) '
 disabled = true
 
-[direnv]
-disabled = false
-
 [palettes.catppuccin_frappe]
 rosewater = "#f2d5cf"
 flamingo = "#eebebe"
@@ -71,3 +68,12 @@ crust = "#232634"
 
 [terraform]
 disabled = false
+{{ if eq .chezmoi.os "linux" }}
+[hostname]
+disabled = false
+ssh_only = false
+{{ else }}
+[hostname]
+disabled = true
+{{ end }}
+
