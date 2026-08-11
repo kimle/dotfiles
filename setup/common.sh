@@ -231,12 +231,23 @@ setup_docker() {
 
 setup_vim() {
     info "Setting up Vim..."
-    mkdir -p "$HOME/.vimtmp"
+    mkdir -p "$HOME/.vimtmp"   # vim backupdir/swap dir, see dot_vimrc
     local script_dir
     script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+    # Populate the vim plugin submodules (commentary, surround) so the
+    # plugins land in ~/.vim as real files, not empty dirs.
+    git -C "$script_dir/.." submodule update --init --recursive \
+        || error "Failed to initialize vim plugin submodules"
+
     cp -r "$script_dir/../.vim/" "$HOME/.vim/"
-    git clone https://github.com/catppuccin/vim.git "$HOME/misc/vim"
-    cp "$HOME/misc/vim/colors/"* "$HOME/.vim/colors/"
-    rm -rf "$HOME/misc/vim"
+
+    # Fetch catppuccin colors into a temp dir so nothing is left in ~/misc.
+    local tmpdir
+    tmpdir="$(mktemp -d)"
+    git clone -q https://github.com/catppuccin/vim.git "$tmpdir/catppuccin-vim" \
+        || error "Failed to clone catppuccin vim colors"
+    cp "$tmpdir/catppuccin-vim/colors/"* "$HOME/.vim/colors/"
+    rm -rf "$tmpdir"
     # .vimrc is managed by chezmoi (dot_vimrc)
 }

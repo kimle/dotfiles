@@ -41,7 +41,6 @@ main() {
 
     mkdir -p "$MISE_HOME"
     mkdir -p "$FISH_COMPLETIONS"
-    mkdir -p "$HOME/misc"
 
     install_packages
     setup_eza
@@ -59,6 +58,9 @@ main() {
     setup_vim
 
     chezmoi apply || error "Failed to apply chezmoi dotfiles"
+
+    # Install the tools declared in the (now applied) mise config.
+    "$MISE_HOME/mise" install -y || error "Failed to install mise tools"
 
     success "macOS setup completed successfully!"
     echo "Restart your terminal or run: exec fish"
