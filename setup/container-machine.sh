@@ -1,0 +1,111 @@
+#!/bin/bash
+# Host-side setup for an apple/container container machine (macOS host).
+# Run AFTER the container machine is created and its in-VM setup has run.
+#
+# Does, in order:
+#   1. Generate an ed25519 keypair in ~/.container/ssh if missing
+#   2. Push the public key into the machine's ~/.ssh/authorized_keys
+#   3. Make sshd in the machine listen on the container ssh port (in
+#      addition to 22, so the container tool's own integration keeps working)
+#   4. Write ~/.container/ssh/config with a templated Host block
+#
+# Prompts for: container machine name, ssh Host alias, HostName, and user.
+# Port defaults to 32222 (override with CONTAINER_MACHINE_SSH_PORT).
+
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# shellcheck source=setup/common.sh
+source "$SCRIPT_DIR/common.sh"
+
+MACHINE=""
+ALIAS=""
+HOSTNAME=""
+USER=""
+PORT="${CONTAINER_MACHINE_SSH_PORT:-32222}"
+
+SSH_DIR="$HOME/.container/ssh"
+KEY="$SSH_DIR/id_ed25519"
+PUB="$KEY.pub"
+CONFIG="$SSH_DIR/config"
+
+main() {
+    info "Configuring container machine for SSH access..."
+    [ "$(uname -s)" = "Darwin" ] || error "This script runs on the macOS host only"
+    command -v container >/dev/null 2>&1 || error "apple/container CLI not found"
+    command -v ssh-keygen >/dev/null 2>&1 || error "ssh-keygen not found"
+
+    read_config
+
+    mkdir -p "$SSH_DIR"
+    chmod 700 "$SSH_DIR"
+
+    generate_key
+    ensure_machine_running
+    push_public_key
+    configure_sshd
+    write_ssh_config
+    success "Done. Try: ssh '$ALIAS'"
+}
+
+read_config() {
+    while [ -z "$MACHINE" ]; do read -rp "container machine name (see 'container machine ls'): " MACHINE; done
+    while [ -z "$ALIAS" ]; do read -rp "ssh Host alias (e.g. dev.machine): " ALIAS; done
+    while [ -z "$HOSTNAME" ]; do read -rp "ssh HostName (how the machine resolves): " HOSTNAME; done
+    while [ -z "$USER" ]; do read -rp "ssh user: " USER; done
+}
+
+generate_key() {
+    if [ -f "$KEY" ]; then
+        info "SSH key already exists ($KEY)"
+    else
+        info "Generating ed25519 keypair..."
+        ssh-keygen -t ed25519 -N "" -f "$KEY" || error "Failed to generate keypair"
+    fi
+}
+
+ensure_machine_running() {
+    info "Making sure machine '$MACHINE' is running..."
+    container machine run -n "$MACHINE" true || error "Machine '$MACHINE' failed to start"
+}
+
+push_public_key() {
+    info "Pushing public key to '$MACHINE' authorized_keys..."
+    local pub
+    pub="$(cat "$PUB")"
+    if container machine run -n "$MACHINE" -- sh -c "grep -qF '$pub' ~/.ssh/authorized_keys 2>/dev/null"; then
+        info "Key already authorized"
+    else
+        container machine run -n "$MACHINE" -i -- \
+            sh -c 'cat >> ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys && chmod 700 ~/.ssh' \
+            < "$PUB" || error "Failed to add key to authorized_keys"
+    fi
+}
+
+configure_sshd() {
+    info "Making sshd listen on port $PORT (keeping 22 for the container tool)..."
+    container machine run -n "$MACHINE" -- sudo sh -c "
+        grep -q '^Port $PORT\$' /etc/ssh/sshd_config ||
+            printf '\n# container-machine setup\nPort $PORT\n' >> /etc/ssh/sshd_config
+        systemctl restart sshd 2>/dev/null || systemctl restart ssh 2>/dev/null || true
+    " || error "Failed to configure sshd (is passwordless sudo set up in the machine?)"
+}
+
+write_ssh_config() {
+    info "Writing ssh config for '$ALIAS'..."
+    cat > "$CONFIG" <<EOF
+Host $ALIAS
+   HostName $HOSTNAME
+   Port $PORT
+   ForwardAgent yes
+   UserKnownHostsFile $SSH_DIR/known_hosts
+   User $USER
+   IdentityFile $KEY
+   IdentitiesOnly yes
+EOF
+    chmod 600 "$CONFIG"
+    ssh -G "$ALIAS" >/dev/null 2>&1 || error "ssh config failed to parse"
+    info "Config written to $CONFIG (make sure your ~/.ssh/config includes this dir)"
+}
+
+main "$@"
