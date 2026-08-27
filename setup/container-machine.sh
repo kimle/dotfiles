@@ -73,22 +73,30 @@ push_public_key() {
     info "Pushing public key to '$MACHINE' authorized_keys..."
     local pub
     pub="$(cat "$PUB")"
-    if container machine run -n "$MACHINE" -- sh -c "grep -qF '$pub' ~/.ssh/authorized_keys 2>/dev/null"; then
+    # The container CLI joins the command args and re-parses them through the
+    # machine's shell, so a nested `sh -c` wrapper does NOT work (only the word
+    # right after -c would become the script). Pass the whole command as ONE
+    # argument instead; the machine shell then parses it with full quoting.
+    if container machine run -n "$MACHINE" -- "grep -qF '$pub' ~/.ssh/authorized_keys 2>/dev/null"; then
         info "Key already authorized"
     else
         container machine run -n "$MACHINE" -i -- \
-            sh -c 'cat >> ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys && chmod 700 ~/.ssh' \
+            "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys && chmod 700 ~/.ssh" \
             < "$PUB" || error "Failed to add key to authorized_keys"
     fi
 }
 
 configure_sshd() {
     info "Making sshd listen on port $PORT (keeping 22 for the container tool)..."
-    container machine run -n "$MACHINE" -- sudo sh -c "
-        grep -q '^Port $PORT\$' /etc/ssh/sshd_config ||
-            printf '\n# container-machine setup\nPort $PORT\n' >> /etc/ssh/sshd_config
-        systemctl restart sshd 2>/dev/null || systemctl restart ssh 2>/dev/null || true
-    " || error "Failed to configure sshd (is passwordless sudo set up in the machine?)"
+    # Same quoting rule as push_public_key: no nested `sh -c`, one argument,
+    # single line. `sudo` is applied per privileged command.
+    container machine run -n "$MACHINE" -- \
+        "sudo grep -q '^Port ${PORT}\$' /etc/ssh/sshd_config || printf '\\n# container-machine setup\\nPort ${PORT}\\n' | sudo tee -a /etc/ssh/sshd_config >/dev/null; sudo systemctl restart sshd 2>/dev/null || sudo systemctl restart ssh 2>/dev/null || sudo pkill -HUP sshd 2>/dev/null || true" \
+        || error "Failed to configure sshd (is passwordless sudo set up in the machine?)"
+    # The restart above is best-effort and its exit status is masked by `|| true`,
+    # so verify the config change explicitly instead of trusting exit codes.
+    container machine run -n "$MACHINE" -- "sudo grep -q '^Port ${PORT}\$' /etc/ssh/sshd_config" \
+        || error "sshd_config does not contain 'Port $PORT' — configuration failed"
 }
 
 write_ssh_config() {
