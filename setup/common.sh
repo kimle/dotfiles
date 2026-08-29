@@ -102,10 +102,10 @@ setup_delta() {
     if ! command -v delta > /dev/null; then
         info "delta not found, install it manually"
     fi
-    if [ ! -f ~/.config/delta/catppuccin.gitconfig ]; then
+    if [ ! -f ~/.config/delta/themes/catppuccin.gitconfig ]; then
         mkdir -p ~/.config/delta/themes
         curl -sSfL https://raw.githubusercontent.com/catppuccin/delta/refs/heads/main/catppuccin.gitconfig \
-            -o ~/.config/delta/catppuccin.gitconfig
+            -o ~/.config/delta/themes/catppuccin.gitconfig
     fi
 }
 
