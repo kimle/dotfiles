@@ -66,6 +66,18 @@ setup_atuin() {
     # atuin config is managed by chezmoi (dot_config/atuin/config.toml.tmpl)
 }
 
+setup_bun() {
+    info "Setting up Bun..."
+    if [ ! -x "$HOME/.bun/bin/bun" ]; then
+        curl -fsSL https://bun.com/install | bash \
+            || error "Failed to install Bun"
+    else
+        info "Bun already installed"
+    fi
+
+    # Bun's install directory and PATH are managed by chezmoi (dot_config/fish/config.fish)
+}
+
 setup_bat() {
     # On some distros (Ubuntu) the binary is called batcat.
     # On Fedora / macOS it is bat.

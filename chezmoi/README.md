@@ -51,7 +51,7 @@ Secrets never enter this repo:
 | `dot_gitconfig.tmpl` | renders git identity + signing key from `[data.git]` |
 | `dot_config/starship.toml.tmpl` | hostname module only on linux |
 | `dot_config/mise/config.toml.tmpl` | `[env]` block only when the machine has the key |
-| `dot_config/atuin/config.toml.tmpl` | linux only (atuin is Fedora-only) |
+| `dot_config/atuin/config.toml.tmpl` | enables daemon fuzzy search and the tmux popup |
 
 ## Agent skill
 

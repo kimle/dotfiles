@@ -35,7 +35,7 @@ install_packages() {
     sudo dnf install --skip-unavailable -y \
         git ripgrep eza bat fish jq gcc git-delta vim curl fastfetch tmux fd-find age \
         podman docker-compose-plugin fzf zoxide chezmoi \
-        ncurses netcat man-db man-pages
+        ncurses netcat man-db man-pages unzip
 }
 
 # ──────────────────────────────────────────────
@@ -56,6 +56,7 @@ main() {
     setup_fd
     setup_fzf
     setup_atuin
+    setup_bun
     setup_delta
     setup_tmux
     setup_fish
